@@ -1,7 +1,87 @@
 {{page-title 'Frontend'}}
 
 {{! The following component displays Ember's default welcome message. }}
-<h1>Main page</h1>
+<AuApp>
+  4
+  <AuMainHeader
+    @brandLink='https://www.vlaanderen.be/nl'
+    @homeRoute='docs.templates.app-sidebar'
+    @appTitle='App title'
+    @contactRoute='docs.templates.app-sidebar'
+  >
+    5
+    <AuDropdown
+      @title='Aangemeld als ...'
+      @buttonLabel='Account settings'
+      @alignment='right'
+    >
+      6
+      <AuButton @skin='tertiary' role='menuitem'>
+        7
+        <AuIcon @icon='logout' @alignment='left' />Afmelden 8
+      </AuButton>
+      9
+    </AuDropdown>
+    10
+  </AuMainHeader>
+  11
+  <AuMainContainer as |m|>
+    12
+    <m.sidebar>
+      13
+      <div class='au-c-sidebar'>
+        14
+        <div class='au-c-sidebar__content'>
+          15
+          <nav>
+            16
+            <ul class='au-c-list-navigation'>
+              17
+              <li class='au-c-list-navigation__item'>
+                18
+                <AuNavigationLink @linkRoute='docs.templates.app-sidebar'>
+                  19
+                  <AuIcon @icon='documents' @alignment='left' />
+                  20 Navigation item 21
+                </AuNavigationLink>
+                22
+              </li>
+              23
+            </ul>
+            24
+          </nav>
+          25
+        </div>
+        26
+        <div class='au-c-sidebar__footer'>
+          27
+          <AuLinkExternal
+            href='https://www.vlaanderen.be/'
+            @width='block'
+            @skin='secondary'
+            @icon='manual'
+            @iconAlignment='left'
+          >
+            28 Manual 29
+          </AuLinkExternal>
+          30
+        </div>
+        31
+      </div>
+      32
+    </m.sidebar>
+    33
+    <m.content @scroll={{true}}>
+      34
+      <div class='au-d-component-block au-d-component-block--overflow'>
+        35 Main content 36
+      </div>
+      37
+    </m.content>
+    38
+  </AuMainContainer>
+  39
+</AuApp>
 {{! Feel free to remove this! }}
 
 {{outlet}}
