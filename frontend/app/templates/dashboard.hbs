@@ -1,0 +1,12 @@
+<Navbar />
+<Table />
+<AuModal @modalOpen={{this.showModal}} @closeModal={{this.toggleModal}}>
+  <:title>{{this.title}}</:title>
+  <:body>
+    <p>Modal content</p>
+  </:body>
+  <:footer>
+    <AuButton>Action</AuButton>
+  </:footer>
+</AuModal>
+{{outlet}}

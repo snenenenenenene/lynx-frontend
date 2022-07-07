@@ -1,0 +1,26 @@
+<AuToolbar class='au-o-box' as |Group|>
+  <Group>
+    <AuHeading @skin='2'>
+      Belastingen
+    </AuHeading>
+  </Group>
+  <Group class='au-c-toolbar__group--center'>
+    <PowerSelect
+      style='width: 200px; height: 38px; '
+      @options={{this.options}}
+      @selected={{this.selected}}
+      @searchEnabled={{true}}
+      @search={{this.searchRepo}}
+      @loadingMessage='Aan het laden...'
+      @allowClear={{true}}
+      @noMatchesMessage='Geen resultaten'
+      @onChange={{fn (mut this.selected)}}
+      as |municipality|
+    >
+      {{municipality.title}}
+    </PowerSelect>
+    <AuButton style='margin-left: 20px;'>
+      Filter
+    </AuButton>
+  </Group>
+</AuToolbar>
