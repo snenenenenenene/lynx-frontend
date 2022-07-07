@@ -5,23 +5,18 @@ import { inject as service } from '@ember/service';
 
 export default class TableComponent extends Component {
   @service municipalities;
-  @service modal;
 
-  @action printData() {
-    console.log(this.modal.modalData);
-  }
+  // @action printData() {
+  //   console.log(this.modal.modalData);
+  // }
 
-  @tracked showMap = true;
+  @tracked showMap = false;
   @tracked lng = 4;
   @tracked lat = 51;
   @tracked zoom = 12;
   @tracked location = [51, 4];
   @tracked view = true;
   @tracked options = this.municipalities.data;
-  @tracked modalData = this.modal.modalData;
-  @tracked showModal = this.modal.showModal;
-  @tracked detailsSign = {};
-
   @action toggleView() {
     this.showMap = !this.showMap;
   }
@@ -36,8 +31,4 @@ export default class TableComponent extends Component {
   contains = (substr, str) => {
     return str.includes(this.selected.title);
   };
-
-  // querriedData() {
-  //   return this.options;
-  // }
 }

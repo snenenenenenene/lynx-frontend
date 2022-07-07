@@ -76,22 +76,22 @@
         </c.header>
         <c.body as |row|>
           {{#each this.dataset.data as |item|}}
-            <td>{{item.title}}</td>
+            <td
+              {{on 'click' this.municipalities.toggleModal}}
+            >{{item.title}}</td>
             <td>{{item.title}}</td>
           {{/each}}
           {{#if this.selected.title}}
             {{#if (eq row.title this.selected.title)}}
-              <td {{on 'click' this.toggleModal}}>
-
+              <td {{on 'click' this.municipalities.toggleModal}}>
                 {{row.title}}
-
               </td>
               <td>
                 {{row.tax}}
               </td>
             {{/if}}
           {{else}}
-            <td {{on 'click' this.toggleModal}}>
+            <td {{on 'click' this.municipalities.toggleModal}}>
               {{row.title}}
             </td>
             <td>

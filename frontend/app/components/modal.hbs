@@ -1,0 +1,13 @@
+{{yield}}
+<AuModal
+  @modalOpen={{this.municipalities.showModal}}
+  @closeModal={{this.municipalities.toggleModal}}
+>
+  <:title>{{this.municipalities.modalData.title}}</:title>
+  <:body>
+    <p>{{this.municipalities.modalData.tax}}</p>
+  </:body>
+  <:footer>
+    <AuButton>Action</AuButton>
+  </:footer>
+</AuModal>
