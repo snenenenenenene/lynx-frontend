@@ -1,15 +1,15 @@
 import Route from '@ember/routing/route';
-import { action } from '@ember/object';
+// import { action } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
-import { inject as service } from '@ember/service';
+// import { inject as service } from '@ember/service';
 
 export default class DashboardRoute extends Route {
-  @service modal;
+  // @service modal;
   @tracked options = [];
-  @action toggleModal() {
-    this.showModal = !this.showModal;
-    console.log(this.showModal);
-  }
+  // @tracked showModal = false;
+  // @action toggleModal() {
+  //   this.showModal = !this.showModal;
+  // }
 
   model(params) {
     const { municipality_name } = params;

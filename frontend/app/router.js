@@ -8,7 +8,6 @@ export default class Router extends EmberRouter {
 
 Router.map(function () {
   this.route('four-oh-four', { path: '/*path' });
-
-  this.route('index', { path: '/' });
   this.route('dashboard');
+  this.route('index', { path: '/' });
 });
