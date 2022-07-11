@@ -8,9 +8,21 @@ export default class MunicipalitiesService extends Service {
 
   @tracked modalData = municipality_data[0];
   @tracked showModal = false;
+  @tracked showMap = true;
+  @tracked query = '';
 
   @action toggleModal() {
     console.log(this.showModal);
     this.showModal = !this.showModal;
+  }
+
+  @action toggleView() {
+    this.showMap = !this.showMap;
+  }
+
+  @action searchRepo(term) {
+    return this.data.filter((mun) =>
+      mun.title.toLowerCase().includes(term.toLowerCase())
+    );
   }
 }

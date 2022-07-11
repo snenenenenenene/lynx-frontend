@@ -3,24 +3,27 @@
     <AuHeading @skin='2'>
       Belastingen
     </AuHeading>
+    <AuButton
+      {{on 'click' this.municipalities.toggleView}}
+      style='margin-left: 20px; width: 100px;'
+    >
+      {{#if this.municipalities.showMap}}Table{{else}}Map{{/if}}</AuButton>
   </Group>
   <Group class='au-c-toolbar__group--center'>
     <PowerSelect
       style='width: 200px; height: 38px; '
-      @options={{this.options}}
-      @selected={{this.selected}}
+      @options={{this.municipalities.options}}
+      @selected={{this.municipalities.query}}
       @searchEnabled={{true}}
-      @search={{this.searchRepo}}
+      @search={{this.municipalities.searchRepo}}
       @loadingMessage='Aan het laden...'
       @allowClear={{true}}
+      @placeholder='Zoek een gemeente'
       @noMatchesMessage='Geen resultaten'
-      @onChange={{fn (mut this.selected)}}
+      @onChange={{fn (mut this.municipalities.query)}}
       as |municipality|
     >
       {{municipality.title}}
     </PowerSelect>
-    <AuButton style='margin-left: 20px;'>
-      Filter
-    </AuButton>
   </Group>
 </AuToolbar>

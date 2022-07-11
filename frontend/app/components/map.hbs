@@ -1,0 +1,12 @@
+<LeafletMap
+  id='map-cursor'
+  @lat={{this.lat}}
+  @lng={{this.lng}}
+  @zoom={{this.zoom}}
+  @onClick={{this.onMapClick}}
+  as |layers|
+>
+  {{! <layers.geojson @geoJSON='{this.geoData}' /> }}
+  <layers.geojson @geoJSON={{this.geoData}} />
+  <layers.tile @url='https://tile.openstreetmap.be/osmbe/{z}/{x}/{y}.png' />
+</LeafletMap>

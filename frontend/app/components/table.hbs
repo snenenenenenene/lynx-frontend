@@ -1,96 +1,34 @@
-<div>
+<div style='margin-top: 30px;'>
   <AuDataTable
-    @content={{this.options}}
+    @content={{this.municipalities.data}}
     @fields='title description'
     @noDataMessage='Geen data'
     @sort={{this.sort}}
     as |t|
   >
-    <t.menu as |menu|>
-      <menu.general>
-        <AuToolbar class='au-o-box' as |Group|>
-          <Group>
-            <AuHeading @skin='2'>
-              Belastingen
-            </AuHeading>
-            <AuButton
-              {{on 'click' this.toggleView}}
-              style='margin-left: 20px; width: 100px;'
-            >
-              {{#if this.showMap}}Table{{else}}Map{{/if}}</AuButton>
-          </Group>
-          <Group class='au-c-toolbar__group--center'>
-            <PowerSelect
-              style='width: 200px; height: 38px; '
-              @options={{this.options}}
-              @selected={{this.selected}}
-              @searchEnabled={{true}}
-              @search={{this.searchRepo}}
-              @loadingMessage='Aan het laden...'
-              @allowClear={{true}}
-              @noMatchesMessage='Geen resultaten'
-              @onChange={{fn (mut this.selected)}}
-              as |municipality|
-            >
-              {{municipality.title}}
-            </PowerSelect>
-            <AuButton
-              {{on 'click' this.printData}}
-              style='margin-left: 20px;width: 100px;'
-            >
-              Filter
-            </AuButton>
-          </Group>
-        </AuToolbar>
-      </menu.general>
-    </t.menu>
-
-    {{#if this.showMap}}
-      <LeafletMap
-        @lat={{this.lat}}
-        @lng={{this.lng}}
-        @zoom={{this.zoom}}
-        as |layers|
-      >
-        <layers.tile
-          @url='https://tile.openstreetmap.be/osmbe/{z}/{x}/{y}.png'
+    <t.content as |c|>
+      <c.header>
+        <AuDataTableThSortable
+          @field='title'
+          @currentSorting={{this.sort}}
+          @label='Gemeente'
+          @class='data-table__header-title'
         />
-      </LeafletMap>
+        <AuDataTableThSortable
+          @field='description'
+          @currentSorting={{this.sort}}
+          @label='Tax'
+          @class='data-table__header-title'
+        />
 
-    {{else}}
-      <t.content as |c|>
-        <c.header>
-          <AuDataTableThSortable
-            @field='title'
-            @currentSorting={{this.sort}}
-            @label='Gemeente'
-            @class='data-table__header-title'
-          />
-          <AuDataTableThSortable
-            @field='description'
-            @currentSorting={{this.sort}}
-            @label='Tax'
-            @class='data-table__header-title'
-          />
-
-        </c.header>
-        <c.body as |row|>
-          {{#each this.dataset.data as |item|}}
-            <td
-              {{on 'click' this.municipalities.toggleModal}}
-            >{{item.title}}</td>
-            <td>{{item.title}}</td>
-          {{/each}}
-          {{#if this.selected.title}}
-            {{#if (eq row.title this.selected.title)}}
-              <td {{on 'click' this.municipalities.toggleModal}}>
-                {{row.title}}
-              </td>
-              <td>
-                {{row.tax}}
-              </td>
-            {{/if}}
-          {{else}}
+      </c.header>
+      <c.body as |row|>
+        {{#each this.dataset.data as |item|}}
+          <td {{on 'click' this.municipalities.toggleModal}}>{{item.title}}</td>
+          <td>{{item.title}}</td>
+        {{/each}}
+        {{#if this.municipalities.query.title}}
+          {{#if (eq row.title this.municipalities.query.title)}}
             <td {{on 'click' this.municipalities.toggleModal}}>
               {{row.title}}
             </td>
@@ -98,13 +36,16 @@
               {{row.tax}}
             </td>
           {{/if}}
+        {{else}}
+          <td {{on 'click' this.municipalities.toggleModal}}>
+            {{row.title}}
+          </td>
+          <td>
+            {{row.tax}}
+          </td>
+        {{/if}}
 
-          {{!-- {{#if (this.contains this.selected row.title)}}
-        <td>{{row.title}}</td>
-        <td>{{row.tax}}</td>
-      {{/if}} --}}
-        </c.body>
-      </t.content>
-    {{/if}}
+      </c.body>
+    </t.content>
   </AuDataTable>
 </div>
