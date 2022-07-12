@@ -165,7 +165,13 @@ $paddingValue: 1vh;
 }
 
 .leaflet-interactive:hover {
-  fill: #003b8e;
+  fill: darkblue;
+  opacity: 0.9;
+}
+
+#map-cursor {
+  background: #eee;
+  outline: 0;
 }
 
 @import 'ember-power-select';

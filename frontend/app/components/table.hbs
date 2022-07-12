@@ -23,7 +23,7 @@
         <AuDataTableThSortable
           @field='description'
           @currentSorting={{this.sort}}
-          @label='Administratieve Prestaties'
+          @label='Adm. Prestaties'
           @class='data-table__header-title'
         /><AuDataTableThSortable
           @field='description'
@@ -38,12 +38,12 @@
         /><AuDataTableThSortable
           @field='description'
           @currentSorting={{this.sort}}
-          @label='Vertoningen en Vermakelijkheden'
+          @label='Vertoningen'
           @class='data-table__header-title'
         /><AuDataTableThSortable
           @field='description'
           @currentSorting={{this.sort}}
-          @label='Ingebruikneming v.h. Openbaar Domein'
+          @label='Openbaar Domein'
           @class='data-table__header-title'
         /><AuDataTableThSortable
           @field='description'
@@ -54,15 +54,12 @@
 
       </c.header>
       <c.body as |row|>
-        {{!-- {{#each this.dataset.data as |item|}}
-          <td
-            {{on 'click' this.municipalities.tableToggleModal}}
-          >{{item.title}}</td>
-          <td>{{item.title}}</td>
-        {{/each}} --}}
         {{#if this.municipalities.query.title}}
           {{#if (eq row.title this.municipalities.query.title)}}
-            <td {{on 'click' this.municipalities.tableToggleModal}}>
+            <td
+              style='width: 200px;'
+              {{on 'click' this.municipalities.tableToggleModal}}
+            >
               {{row.title}}
             </td>
             <td>
@@ -82,7 +79,10 @@
             </td>
           {{/if}}
         {{else}}
-          <td {{on 'click' this.municipalities.tableToggleModal}}>
+          <td
+            style='width: 200px;'
+            {{on 'click' this.municipalities.tableToggleModal}}
+          >
             {{row.title}}
           </td>
           <td>

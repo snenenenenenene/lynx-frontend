@@ -3912,6 +3912,18 @@ export const municipality_data = [
     },
   },
   {
+    title: 'Baarle-Hertog',
+    tax: {
+      belastingreglementen: 12,
+      administratieve_prestaties: 13,
+      openbare_hygiene: 13,
+      patrimonium: 13,
+      vertoningen_en_vermakelijkheden: 13,
+      ingebruikneming_van_het_openbaar_domein: 13,
+      openbare_netheid: 13,
+    },
+  },
+  {
     title: 'Beveren',
     tax: {
       belastingreglementen: 12,
@@ -4682,13 +4694,13 @@ export const municipality_data = [
   {
     title: 'Antwerpen',
     tax: {
-      belastingreglementen: 12,
+      belastingreglementen: 120,
       administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+      openbare_hygiene: 146,
+      patrimonium: 16,
+      vertoningen_en_vermakelijkheden: 35,
+      ingebruikneming_van_het_openbaar_domein: 253,
+      openbare_netheid: 65,
     },
   },
   {

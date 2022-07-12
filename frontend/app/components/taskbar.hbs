@@ -5,9 +5,15 @@
     </AuHeading>
     <AuButton
       {{on 'click' this.municipalities.toggleView}}
-      style='margin-left: 20px; width: 100px;'
+      style='margin-left: 20px; width: 180px; display: flex; justify-content: space-around;'
     >
-      {{#if this.municipalities.showMap}}Table{{else}}Map{{/if}}</AuButton>
+      {{#if this.municipalities.showMap}}<AuIcon
+          @size='large'
+          @icon='table'
+        />Bekijken in tabel{{else}}<AuIcon
+          @size='large'
+          @icon='search'
+        />Bekijken in kaart{{/if}}</AuButton>
   </Group>
   <Group class='au-c-toolbar__group--center'>
     <PowerSelect
@@ -18,7 +24,22 @@
       @search={{this.municipalities.searchRepo}}
       @loadingMessage='Aan het laden...'
       @allowClear={{true}}
-      @placeholder='Zoek een gemeente'
+      @placeholder='Afvalbelastingen'
+      @noMatchesMessage='Geen resultaten'
+      @onChange={{fn (mut this.municipalities.query)}}
+      as |category|
+    >
+      {{category.title}}
+    </PowerSelect>
+    <PowerSelect
+      style='width: 200px; height: 38px; '
+      @options={{this.municipalities.options}}
+      @selected={{this.municipalities.query}}
+      @searchEnabled={{true}}
+      @search={{this.municipalities.searchRepo}}
+      @loadingMessage='Aan het laden...'
+      @allowClear={{true}}
+      @placeholder='Zottegem'
       @noMatchesMessage='Geen resultaten'
       @onChange={{fn (mut this.municipalities.query)}}
       as |municipality|
