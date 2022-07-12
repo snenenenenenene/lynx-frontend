@@ -32,10 +32,12 @@
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^2.4.1",
+    "ember-c3": "^4.0.2",
     "ember-cli": "~4.4.0",
     "ember-cli-app-version": "^5.0.0",
     "ember-cli-autoprefixer": "^2.0.0",
     "ember-cli-babel": "^7.26.11",
+    "ember-cli-chart": "^3.7.2",
     "ember-cli-dependency-checker": "^3.3.1",
     "ember-cli-htmlbars": "^6.0.1",
     "ember-cli-inject-live-reload": "^2.1.0",
@@ -45,6 +47,7 @@
     "ember-data": "~4.4.0",
     "ember-export-application-global": "^2.0.1",
     "ember-fetch": "^8.1.1",
+    "ember-highcharts": "^3.2.1",
     "ember-load-initializers": "^2.1.2",
     "ember-page-title": "^7.0.0",
     "ember-power-select": "^5.0.4",
@@ -76,6 +79,7 @@
   "dependencies": {
     "ember-functions-as-helper-polyfill": "^2.1.1",
     "ember-leaflet": "^5.0.1",
+    "highcharts": "^10.2.0",
     "leaflet": "^1.8.0"
   }
 }

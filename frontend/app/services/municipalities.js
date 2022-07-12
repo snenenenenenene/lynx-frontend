@@ -11,8 +11,40 @@ export default class MunicipalitiesService extends Service {
   @tracked showMap = true;
   @tracked query = '';
 
-  @action toggleModal() {
-    console.log(this.showModal);
+  @action toggleModal(data) {
+    this.modalData = {
+      title: data.target.feature.properties.ADMUNADU,
+      tax: {
+        belastingreglementen: 12,
+        administratieve_prestaties: 13,
+        openbare_hygiene: 13,
+        patrimonium: 13,
+        vertoningen_en_vermakelijkheden: 13,
+        ingebruikneming_van_het_openbaar_domein: 13,
+        openbare_netheid: 13,
+      },
+    };
+
+    this.showModal = !this.showModal;
+  }
+
+  @action tableToggleModal(data) {
+    this.modalData = {
+      title: data.target.innerText,
+      tax: {
+        belastingreglementen: 12,
+        administratieve_prestaties: 13,
+        openbare_hygiene: 13,
+        patrimonium: 13,
+        vertoningen_en_vermakelijkheden: 13,
+        ingebruikneming_van_het_openbaar_domein: 13,
+        openbare_netheid: 13,
+      },
+    };
+    this.showModal = !this.showModal;
+  }
+
+  @action closeModal() {
     this.showModal = !this.showModal;
   }
 

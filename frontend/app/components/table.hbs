@@ -17,31 +17,88 @@
         <AuDataTableThSortable
           @field='description'
           @currentSorting={{this.sort}}
-          @label='Tax'
+          @label='Belastingreglementen'
+          @class='data-table__header-title'
+        />
+        <AuDataTableThSortable
+          @field='description'
+          @currentSorting={{this.sort}}
+          @label='Administratieve Prestaties'
+          @class='data-table__header-title'
+        /><AuDataTableThSortable
+          @field='description'
+          @currentSorting={{this.sort}}
+          @label='Openbare Hygiene'
+          @class='data-table__header-title'
+        /><AuDataTableThSortable
+          @field='description'
+          @currentSorting={{this.sort}}
+          @label='Patrimonium'
+          @class='data-table__header-title'
+        /><AuDataTableThSortable
+          @field='description'
+          @currentSorting={{this.sort}}
+          @label='Vertoningen en Vermakelijkheden'
+          @class='data-table__header-title'
+        /><AuDataTableThSortable
+          @field='description'
+          @currentSorting={{this.sort}}
+          @label='Ingebruikneming v.h. Openbaar Domein'
+          @class='data-table__header-title'
+        /><AuDataTableThSortable
+          @field='description'
+          @currentSorting={{this.sort}}
+          @label='Openbare Netheid'
           @class='data-table__header-title'
         />
 
       </c.header>
       <c.body as |row|>
-        {{#each this.dataset.data as |item|}}
-          <td {{on 'click' this.municipalities.toggleModal}}>{{item.title}}</td>
+        {{!-- {{#each this.dataset.data as |item|}}
+          <td
+            {{on 'click' this.municipalities.tableToggleModal}}
+          >{{item.title}}</td>
           <td>{{item.title}}</td>
-        {{/each}}
+        {{/each}} --}}
         {{#if this.municipalities.query.title}}
           {{#if (eq row.title this.municipalities.query.title)}}
-            <td {{on 'click' this.municipalities.toggleModal}}>
+            <td {{on 'click' this.municipalities.tableToggleModal}}>
               {{row.title}}
             </td>
             <td>
-              {{row.tax}}
+              {{row.tax.belastingreglementen}}
+            </td><td>
+              {{row.tax.administratieve_prestaties}}
+            </td><td>
+              {{row.tax.openbare_hygiene}}
+            </td><td>
+              {{row.tax.patrimonium}}
+            </td><td>
+              {{row.tax.vertoningen_en_vermakelijkheden}}
+            </td><td>
+              {{row.tax.ingebruikneming_van_het_openbaar_domein}}
+            </td><td>
+              {{row.tax.openbare_netheid}}
             </td>
           {{/if}}
         {{else}}
-          <td {{on 'click' this.municipalities.toggleModal}}>
+          <td {{on 'click' this.municipalities.tableToggleModal}}>
             {{row.title}}
           </td>
           <td>
-            {{row.tax}}
+            {{row.tax.belastingreglementen}}
+          </td><td>
+            {{row.tax.administratieve_prestaties}}
+          </td><td>
+            {{row.tax.openbare_hygiene}}
+          </td><td>
+            {{row.tax.patrimonium}}
+          </td><td>
+            {{row.tax.vertoningen_en_vermakelijkheden}}
+          </td><td>
+            {{row.tax.ingebruikneming_van_het_openbaar_domein}}
+          </td><td>
+            {{row.tax.openbare_netheid}}
           </td>
         {{/if}}
 

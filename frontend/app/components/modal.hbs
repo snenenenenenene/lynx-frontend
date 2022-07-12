@@ -1,13 +1,20 @@
 {{yield}}
 <AuModal
   @modalOpen={{this.municipalities.showModal}}
-  @closeModal={{this.municipalities.toggleModal}}
+  @closeModal={{this.municipalities.closeModal}}
 >
   <:title>{{this.municipalities.modalData.title}}</:title>
   <:body>
-    <p>{{this.municipalities.modalData.tax}}</p>
+    {{!-- <p>{{this.municipalities.modalData.tax}}</p> --}}
+
+    <C3Chart
+      @data={{this.data}}
+      @title={{this.title}}
+      @padding={{this.padding}}
+    />
+
   </:body>
   <:footer>
-    <AuButton>Action</AuButton>
+    <AuButton {{on 'click' (fn this.myClick)}}>Action</AuButton>
   </:footer>
 </AuModal>
