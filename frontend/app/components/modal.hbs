@@ -5,8 +5,10 @@
 >
   <:title>{{this.municipalities.modalData.title}}</:title>
   <:body>
-    {{!-- <p>{{this.municipalities.modalData.tax}}</p> --}}
-
+    <div style='width: 100%; display: flex; justify-content: end; gap: 10px;'>
+      <AuButton @icon='chevron-left' {{on 'click' this.nextGraph}} />
+      <AuButton @icon='chevron-right' {{on 'click' this.nextGraph}} />
+    </div>
     <C3Chart
       @data={{this.data}}
       @title={{this.title}}
@@ -15,6 +17,6 @@
 
   </:body>
   <:footer>
-    <AuButton {{on 'click' (fn this.myClick)}}>Action</AuButton>
+
   </:footer>
 </AuModal>

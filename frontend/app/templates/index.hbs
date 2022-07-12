@@ -3,10 +3,8 @@
   <Navbar />
   <AuMainContainer as |m|>
     <m.content>
-      <AuContentHeader
-        @titlePartOne='Vlaanderen'
-        @titlePartTwo='is lokaal bestuur'
-      >
+      <AuContentHeader @titlePartTwo='Hoeveel belastingen betaal ik in...?'>
+
         <img
           src={{'https://appuniversum.github.io/ember-appuniversum/images/loket-header-1600.jpg'}}
           alt='Foto van een laptop met daarop het vlaanderen logo.'
@@ -30,56 +28,54 @@
                   en Brussel kan men via deze applicatie bekijken hoeveel
                   belastingen inwoners uit andere regio's zouden moeten betalen.
                   .</p>
+                <AuButton @icon='arrow-right' @iconAlignment='right'>
+                  <LinkTo @route='dashboard' style='color: white;'>
+                    Dashboard
+                  </LinkTo>
+                </AuButton>
               </AuContent>
             </div>
-            <div
-              class='au-o-grid__item au-u-1-4@small au-u-1-2@medium au-u-text-right@medium'
-            >
-              <AuButton @icon='login' @iconAlignment='left'>
-                <LinkTo @route='dashboard' style='color: white;'>
-                  Dashboard
-                </LinkTo>
-              </AuButton>
+            <div style='width: 50%; margin: auto 0; padding-left: 20px;'>
+              <img src='assets/logo.svg' />
             </div>
           </div>
         </div>
       </section>
       <section class='au-o-region-large au-u-background-gray-200'>
         <div class='au-o-layout'>
-          <AuContent @skin='large' class='au-u-margin-bottom'>
-            <AuHeading @level='2' @skin='3' class='au-u-margin-bottom'>De
-              functionaliteiten van LLT</AuHeading>
-            <p>interesting text
-              <a
-                class='au-c-link'
-                href='#!'
-                target='_blank'
-                rel='noopener noreferrer'
-              >Bekijk de handleiding hier.</a></p>
-            <div style='display: flex;'>
-
-              <p style='margin-right: 20px;'>Hoeveel belastingen betaal ik in</p>
-              <AuInput
-                placeholder='Brussel'
-                style='outline: none; background-color: #e8ebee; color:white; '
-              />
-            </div>
-          </AuContent>
           <div class='au-o-grid au-o-grid--small'>
             <div class='au-o-grid__item au-u-1-2@small'>
               <AuCard @textCenter='true' as |c|>
                 <c.header @badgeSkin='brand' @badgeIcon='pencil'>
                   <AuHeading @level='3' @skin='4'>
-                    Feature
+                    Wat zijn belastingen?
                   </AuHeading>
                 </c.header>
-                <c.content>
-                  <p>Feature description</p>
-                  <ul>
-                    <li>Feature list;</li>
-                    <li>Feature list;</li>
-                    <li>Feature list;</li>
-                  </ul>
+                <c.content
+                  style='padding: 0 100px; text-align: start; line-height: 24px;'
+                >
+                  <p>
+                    In een notendop is een belasting een bepaald bedrag, die
+                    volgens de wet door de overheid opgelegd wordt aan
+                    ‘anderen’. (beter woord hiervoor)
+                  </p>
+                  <p>
+                    Het geld dat de overheid hiermee verwerft, wordt gebruikt
+                    voor algemeen nut. Hiermee bedoelen we dingen zoals
+                    onderwijs, infrastructuur, uitkeringen...
+                  </p>
+                  <p>
+                    Naast het financieren van de overheid, hebben belastingen
+                    ook een herverdelende functie. Niet iedereen moet namelijk
+                    evenveel belastingen betalen waardoor iedereen gelijke
+                    kansen krijgt.
+                  </p>
+                  <p>
+                    Ook kunnen belastingen het gedrag van de bevolking
+                    reguleren. Bijvoorbeeld: Zo moedigt de overheid mensen aan
+                    om hun geld in pensioensparen te stoppen door de
+                    belastingvoordelen die u ervan kunt krijgen te verhogen.
+                  </p>
                 </c.content>
                 <c.footer>
                   <p>
@@ -97,16 +93,22 @@
               <AuCard @textCenter='true' as |c|>
                 <c.header @badgeSkin='brand' @badgeIcon='pencil'>
                   <AuHeading @level='3' @skin='4'>
-                    Feature
+                    Hoe betaal je belastingen?
                   </AuHeading>
                 </c.header>
-                <c.content>
-                  <p>Feature description</p>
-                  <ul>
-                    <li>Feature list;</li>
-                    <li>Feature list;</li>
-                    <li>Feature list;</li>
-                  </ul>
+                <c.content
+                  style='padding: 0 100px; text-align: start; line-height: 24px;'
+                >
+                  <p>Voor u begint met het betalen van belastingen, is het
+                    belangrijk dat u weet wat deze precies zijn. Als dit nog
+                    niet het geval is, klink dan op deze link.
+                  </p>
+                  <p>
+                    Tegenwoordig krijgt u al uw belastingen via Tax-on-web (of
+                    via de post), waar u de bedragen ziet met de betreffende
+                    rekeningnummer waar u naartoe moet storten.
+                  </p>
+
                 </c.content>
                 <c.footer>
                   <p>

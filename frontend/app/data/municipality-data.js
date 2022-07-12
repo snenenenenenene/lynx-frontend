@@ -2616,7 +2616,7 @@ export const municipality_data = [
     },
   },
   {
-    title: 'Brussels',
+    title: 'Brussel',
     tax: {
       belastingreglementen: 12,
       administratieve_prestaties: 13,
@@ -3132,7 +3132,7 @@ export const municipality_data = [
     },
   },
   {
-    title: 'Bruges',
+    title: 'Brugge',
     tax: {
       belastingreglementen: 12,
       administratieve_prestaties: 13,

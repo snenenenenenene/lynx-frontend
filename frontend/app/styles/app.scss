@@ -47,6 +47,15 @@ $paddingValue: 1vh;
     overflow: visible;
   }
 
+  .au-c-content-header {
+    margin: 30px 80px 0;
+    height: 250px;
+  }
+
+  .au-o-region-large {
+    margin: 30px 80px 0;
+  }
+
   .ember-view {
     // width: 600px;
   }
@@ -153,6 +162,10 @@ $paddingValue: 1vh;
 
 .filter-visible {
   right: 0;
+}
+
+.leaflet-interactive:hover {
+  fill: #003b8e;
 }
 
 @import 'ember-power-select';

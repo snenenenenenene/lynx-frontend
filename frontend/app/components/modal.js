@@ -1,8 +1,7 @@
-import { action } from '@ember/object';
 import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
 import { inject as service } from '@ember/service';
-
+import { action } from '@ember/object';
 export default class ModalComponent extends Component {
   @service municipalities;
   // retrieve municipality data from municipalities.data by using the title
@@ -11,30 +10,26 @@ export default class ModalComponent extends Component {
       municipality.title.toUpperCase() ===
       this.municipalities.modalData.title.toUpperCase()
   );
-  @tracked tax_data = [];
+
+  @tracked graphType = ['bar', 'pie'];
+
+  @tracked currGraphNr = 1;
+
+  @action nextGraph() {
+    if (this.currGraphNr >= 1) {
+      this.currGraphNr = 0;
+    } else {
+      this.currGraphNr++;
+    }
+    console.log(this.graphType[this.currGraphNr]);
+    this.data = { ...this.data, type: this.graphType[this.currGraphNr] };
+  }
 
   chart = null;
   @tracked data = {
-    columns: [
-      ['data1', 30],
-      ['data2', 120],
-    ],
-    type: 'pie',
+    columns: [...Object.entries(this.municipality.tax).map((tax) => tax)],
+    type: this.graphType[this.currGraphNr],
   };
   title = { text: 'Belastingsonderverdeling' };
   padding = { top: 20 };
-
-  @action myClick() {
-    console.log('WJA');
-    try {
-      // console.log(this.municipality);
-      //iterate through municipality.tax and log it
-      this.tax_data = Object.entries(this.municipality.tax).forEach((tax) => {
-        console.log(this.tax_data);
-      });
-    } catch (error) {
-      console.log(error);
-    }
-    // alert(`clicked ${data.name}`);
-  }
 }
