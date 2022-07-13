@@ -1,0 +1,150 @@
+{{page-title 'Lynx'}}
+<AuApp>
+  <Navbar />
+  <AuMainContainer as |m|>
+    <m.content>
+      <AuContentHeader @titlePartTwo='Hoeveel belastingen betaal ik in...?'>
+
+        <img
+          src={{'https://appuniversum.github.io/ember-appuniversum/images/loket-header-1600.jpg'}}
+          alt='Foto van een laptop met daarop het vlaanderen logo.'
+        />
+      </AuContentHeader>
+      <section class='au-o-region-large'>
+        <div class='au-o-layout'>
+          <div class='au-o-grid au-o-grid--small'>
+            <div class='au-o-grid__item au-u-3-4@small au-u-1-2@medium'>
+              <AuContent @skin='large'>
+                <h1>Linked Local Taxes</h1>
+                <p class='au-c-heading au-c-heading--4'>Een webapplicatie die
+                  helpt met het transparant distribueren van informatie omtrent
+                  belastingen.</p>
+                <p>Door
+                  <a
+                    class='au-c-link'
+                    href='https://lokaalbestuur.vlaanderen.be/besluitendatabank'
+                  >data</a>
+                  te gebruiken die verzameld wordt door gemeentes in Vlaanderen
+                  en Brussel kan men via deze applicatie bekijken hoeveel
+                  belastingen inwoners uit andere regio's zouden moeten betalen.
+                  .</p>
+                <AuButton @icon='arrow-right' @iconAlignment='right'>
+                  <LinkTo @route='dashboard' style='color: white;'>
+                    Dashboard
+                  </LinkTo>
+                </AuButton>
+              </AuContent>
+            </div>
+            <div style='width: 50%; margin: auto 0; padding-left: 20px;'>
+              <img src='assets/logo.svg' />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='au-o-region-large au-u-background-gray-200'>
+        <div class='au-o-layout'>
+          <div class='au-o-grid au-o-grid--small'>
+            <div class='au-o-grid__item au-u-1-2@small'>
+              <AuCard @textCenter='true' as |c|>
+                <c.header @badgeSkin='brand' @badgeIcon='pencil'>
+                  <AuHeading @level='3' @skin='4'>
+                    Wat zijn belastingen?
+                  </AuHeading>
+                </c.header>
+                <c.content
+                  style='padding: 0 100px; text-align: start; line-height: 24px;'
+                >
+                  <p>
+                    In een notendop is een belasting een bepaald bedrag, die
+                    volgens de wet door de overheid opgelegd wordt aan
+                    ‘anderen’. (beter woord hiervoor)
+                  </p>
+                  <p>
+                    Het geld dat de overheid hiermee verwerft, wordt gebruikt
+                    voor algemeen nut. Hiermee bedoelen we dingen zoals
+                    onderwijs, infrastructuur, uitkeringen...
+                  </p>
+                  <p>
+                    Naast het financieren van de overheid, hebben belastingen
+                    ook een herverdelende functie. Niet iedereen moet namelijk
+                    evenveel belastingen betalen waardoor iedereen gelijke
+                    kansen krijgt.
+                  </p>
+                  <p>
+                    Ook kunnen belastingen het gedrag van de bevolking
+                    reguleren. Bijvoorbeeld: Zo moedigt de overheid mensen aan
+                    om hun geld in pensioensparen te stoppen door de
+                    belastingvoordelen die u ervan kunt krijgen te verhogen.
+                  </p>
+                </c.content>
+                <c.footer>
+                  <p>
+                    <a
+                      class='au-c-button'
+                      href='#!'
+                      rel='noopener noreferrer'
+                      target='_blank'
+                    >Manual link</a>
+                  </p>
+                </c.footer>
+              </AuCard>
+            </div>
+            <div class='au-o-grid__item au-u-1-2@small'>
+              <AuCard @textCenter='true' as |c|>
+                <c.header @badgeSkin='brand' @badgeIcon='pencil'>
+                  <AuHeading @level='3' @skin='4'>
+                    Hoe betaal je belastingen?
+                  </AuHeading>
+                </c.header>
+                <c.content
+                  style='padding: 0 100px; text-align: start; line-height: 24px;'
+                >
+                  <p>Voor u begint met het betalen van belastingen, is het
+                    belangrijk dat u weet wat deze precies zijn. Als dit nog
+                    niet het geval is, klink dan op deze link.
+                  </p>
+                  <p>
+                    Tegenwoordig krijgt u al uw belastingen via Tax-on-web (of
+                    via de post), waar u de bedragen ziet met de betreffende
+                    rekeningnummer waar u naartoe moet storten.
+                  </p>
+
+                </c.content>
+                <c.footer>
+                  <p>
+                    <a
+                      class='au-c-button'
+                      href='#!'
+                      rel='noopener noreferrer'
+                      target='_blank'
+                    >Manual link</a>
+                  </p>
+                </c.footer>
+              </AuCard>
+            </div>
+          </div>
+        </div>
+      </section>
+      <AuMainFooter>
+        <AuHeading @level='3' @skin='4'>
+          lynx.osoc.be is een officiële website van de Vlaamse overheid
+        </AuHeading>
+        <AuContent @skin='small'>
+          <p>Uitgegeven door
+            <a
+              class='au-c-link'
+              href='https://www.vlaanderen.be/organisaties/administratieve-diensten-van-de-vlaamse-overheid/beleidsdomein-kanselarij-en-bestuur/agentschap-binnenlands-bestuur'
+            >Agentschap Binnenlands Bestuur</a></p>
+          <ul class='au-c-list-horizontal'>
+            <li class='au-c-list-horizontal__item'>
+              <AuLink @route='index' @skin='secondary'>Disclaimer</AuLink>
+            </li>
+            <li class='au-c-list-horizontal__item'>
+              <AuLink @route='index' @skin='secondary'>Cookieverklaring</AuLink>
+            </li>
+          </ul>
+        </AuContent>
+      </AuMainFooter>
+    </m.content>
+  </AuMainContainer>
+</AuApp>

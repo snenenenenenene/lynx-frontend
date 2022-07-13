@@ -1,0 +1,108 @@
+<div style='margin-top: 30px;'>
+  <AuDataTable
+    @content={{this.municipalities.data}}
+    @fields='title description'
+    @noDataMessage='Geen data'
+    @sort={{this.sort}}
+    as |t|
+  >
+    <t.content as |c|>
+      <c.header>
+        <AuDataTableThSortable
+          @field='title'
+          @currentSorting={{this.sort}}
+          @label='Gemeente'
+          @class='data-table__header-title'
+        />
+        <AuDataTableThSortable
+          @field='description'
+          @currentSorting={{this.sort}}
+          @label='Belastingreglementen'
+          @class='data-table__header-title'
+        />
+        <AuDataTableThSortable
+          @field='description'
+          @currentSorting={{this.sort}}
+          @label='Adm. Prestaties'
+          @class='data-table__header-title'
+        /><AuDataTableThSortable
+          @field='description'
+          @currentSorting={{this.sort}}
+          @label='Openbare Hygiene'
+          @class='data-table__header-title'
+        /><AuDataTableThSortable
+          @field='description'
+          @currentSorting={{this.sort}}
+          @label='Patrimonium'
+          @class='data-table__header-title'
+        /><AuDataTableThSortable
+          @field='description'
+          @currentSorting={{this.sort}}
+          @label='Vertoningen'
+          @class='data-table__header-title'
+        /><AuDataTableThSortable
+          @field='description'
+          @currentSorting={{this.sort}}
+          @label='Openbaar Domein'
+          @class='data-table__header-title'
+        /><AuDataTableThSortable
+          @field='description'
+          @currentSorting={{this.sort}}
+          @label='Openbare Netheid'
+          @class='data-table__header-title'
+        />
+
+      </c.header>
+      <c.body as |row|>
+        {{#if this.municipalities.query.title}}
+          {{#if (eq row.title this.municipalities.query.title)}}
+            <td
+              style='width: 200px;'
+              {{on 'click' this.municipalities.tableToggleModal}}
+            >
+              {{row.title}}
+            </td>
+            <td>
+              {{row.tax.belastingreglementen}}
+            </td><td>
+              {{row.tax.administratieve_prestaties}}
+            </td><td>
+              {{row.tax.openbare_hygiene}}
+            </td><td>
+              {{row.tax.patrimonium}}
+            </td><td>
+              {{row.tax.vertoningen_en_vermakelijkheden}}
+            </td><td>
+              {{row.tax.ingebruikneming_van_het_openbaar_domein}}
+            </td><td>
+              {{row.tax.openbare_netheid}}
+            </td>
+          {{/if}}
+        {{else}}
+          <td
+            style='width: 200px;'
+            {{on 'click' this.municipalities.tableToggleModal}}
+          >
+            {{row.title}}
+          </td>
+          <td>
+            {{row.tax.belastingreglementen}}
+          </td><td>
+            {{row.tax.administratieve_prestaties}}
+          </td><td>
+            {{row.tax.openbare_hygiene}}
+          </td><td>
+            {{row.tax.patrimonium}}
+          </td><td>
+            {{row.tax.vertoningen_en_vermakelijkheden}}
+          </td><td>
+            {{row.tax.ingebruikneming_van_het_openbaar_domein}}
+          </td><td>
+            {{row.tax.openbare_netheid}}
+          </td>
+        {{/if}}
+
+      </c.body>
+    </t.content>
+  </AuDataTable>
+</div>
