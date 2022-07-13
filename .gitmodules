@@ -1,0 +1,3 @@
+[submodule "public-taxes-backend"]
+	path = public-taxes-backend
+	url = https://github.com/LBONTEN/public-taxes-backend.git
