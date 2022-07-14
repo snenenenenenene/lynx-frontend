@@ -12,6 +12,10 @@ export default class MapComponent extends Component {
 
   @tracked geoData = soup;
 
+  @action onLocationfound(e) {
+    console.log(e);
+  }
+
   @action style() {
     return {
       weight: 1,
