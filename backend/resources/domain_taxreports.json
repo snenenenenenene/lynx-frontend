@@ -32,7 +32,7 @@
 					"cardinality": "one"
 				}
 			},
-			"new-resource-bsae": "http://dev.lynx.lblod.info/tax-reports/"
+			"new-resource-base": "http://dev.lynx.lblod.info/tax-reports/"
 		},
 
 
