@@ -1,0 +1,62 @@
+{
+	"version": "0.1",
+	"prefixes": {
+		"lynx": "http://dev.lynx.lblod.info/vocabulary#",
+		"skos": "http://www.w3.org/2004/02/skos/core#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+	},
+
+	"resources": {
+		"tax-reports": {
+			"name": "taxReport",
+			"class": "lynx:TaxReport",
+			"attributes": {
+				"year": {
+					"type": "number",
+					"predicate": "lynx:year"
+				},
+				"amount": {
+					"type": "number",
+					"predicate": "lynx:totalAmount"
+				}
+			},
+			"relationships": {
+				"mar-code": {
+					"predicate": "lynx:hasTaxType",
+					"target": "marCode",
+					"cardinality": "one"
+				},
+				"municipality": {
+					"predicate": "lynx:inMunicipality",
+					"target": "bestuursorgaan",
+					"cardinality": "one"
+				}
+			},
+			"new-resource-bsae": "http://dev.lynx.lblod.info/tax-reports/"
+		},
+
+
+		"mar-codes": {
+			"name": "marCode",
+			"class": "lynx:MARCode",
+			"attributes": {
+				"code": {
+					"type": "string",
+					"predicate": "skos:notation"
+				},
+				"description": {
+					"type": "string",
+					"predicate": "skos:prefLabel"
+				}
+			},
+			"relationships": {
+				"tax-categories": {
+					"predicate": "lynx:fromCategory",
+					"target": "taxCategory",
+					"cardinality": "many"
+				}
+			},
+			"new-resource-base": "http://lblod.data.gift/concepts/"
+		}
+	}
+}
