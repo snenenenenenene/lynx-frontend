@@ -18,3 +18,6 @@
 (read-domain-file "slave-leidinggevenden-domain.lisp")
 (read-domain-file "master-submissions-domain.lisp")
 (read-domain-file "master-search-query.lisp")
+
+(read-domain-file "domain_taxtypes.json")
+(read-domain-file "domain_taxreports.json")

@@ -1,0 +1,46 @@
+{
+	"version": "0.1",
+	"prefixes": {
+		"lynx": "http://dev.lynx.lblod.info/vocabulary#",
+		"skos": "http://www.w3.org/2004/02/skos/core#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+	},
+
+	"resources": {
+		"tax-categories": {
+			"name": "taxCategory",
+			"class": "lynx:TaxCategory",
+			"attributes": {
+				"description": {
+					"type": "string",
+					"predicate": "skos:prefLabel"
+				}
+			},
+			"new-resource-base": "http://dev.lynx.lblod.info/tax-categories/"
+		},
+
+
+		"mar-codes": {
+			"name": "marCode",
+			"class": "lynx:MARCode",
+			"attributes": {
+				"code": {
+					"type": "string",
+					"predicate": "skos:notation"
+				},
+				"description": {
+					"type": "string",
+					"predicate": "skos:prefLabel"
+				}
+			},
+			"relationships": {
+				"tax-categories": {
+					"predicate": "lynx:fromCategory",
+					"target": "taxCategory",
+					"cardinality": "many"
+				}
+			},
+			"new-resource-base": "http://lblod.data.gift/concepts/"
+		}
+	}
+}
