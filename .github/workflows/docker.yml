@@ -27,11 +27,11 @@ jobs:
         with:
           context: backend/resources
           push: true
-          tags: ${{ github.respository_owner }}/lynx-resources:latest
+          tags: ${{ github.repository_owner }}/lynx-resources:latest
 
       - name: Build and push (migrations)
         uses: docker/build-push-action@v3
         with:
           context: backend/migrations
           push: true
-          tags: ${{ github.respository_owner }}/lynx-migrations:latest
+          tags: ${{ github.repository_owner }}/lynx-migrations:latest
