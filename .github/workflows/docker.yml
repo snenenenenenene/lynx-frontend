@@ -1,4 +1,4 @@
-ame: LYNX Docker deploy
+name: LYNX Docker deploy
 
 on:
   push:
