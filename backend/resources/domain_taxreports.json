@@ -31,7 +31,8 @@
 					"target": "bestuursorgaan",
 					"cardinality": "one"
 				}
-			}
+			},
+			"new-resource-bsae": "http://dev.lynx.lblod.info/tax-reports/"
 		},
 
 
