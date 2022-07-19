@@ -1,0 +1,17 @@
+PREFIX ext:<http://mu.semte.ch/vocabularies/ext/>
+DELETE {
+  GRAPH ?g {
+    ?s ext:sessionRole ?role.
+  }
+}
+INSERT {
+  GRAPH ?g {
+    ?s ext:sessionRole "BesluitendatabankGebruiker".
+  }
+}
+WHERE {
+  BIND(<http://data.lblod.info/id/account/956347eb-f293-4b9d-b041-9afd1fa68c0e> as ?s)
+  GRAPH ?g {
+    ?s ext:sessionRole ?role.
+  }
+}

@@ -4,5 +4,5 @@
 
 
 {$BACKEND_URL} {
-	reverse_proxy identifier:80
+	reverse_proxy resources:80
 }

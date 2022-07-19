@@ -1,4 +1,4 @@
-version: '0.01'
+version: '3.7'
 
 services:
   caddy:
@@ -15,49 +15,36 @@ services:
       - BACKEND_URL=${BACKEND_URL}
 
 
-  ember:
-    build: ./frontend
-    environment:
-      - BACKEND_URL=${BACKEND_URL}
-
-
-
-  identifier:
-    image: semtech/mu-identifier:1.9.1
-    links:
-      - dispatcher:dispatcher
-    environment:
-      - DEFAULT_ACCESS_CONTROL_ALLOW_ORIGIN_HEADER=*
-
-  dispatcher:
-    build: ./backend/dispatcher
-    links:
-      - resources:resources
-
-  # db:
-  #   build: ./backend/virtuoso
+  # ember:
+  #   build: ./frontend
   #   environment:
-  #     SPARQL_UPDATE: "true"
-  #     DEFAULT_GRAPH: "http://mu.semte.ch/application"
-  #   ports:
-  #     - "8890:8890"
-  #   volumes:
-  #     - virtuoso_data:/data
+  #     - BACKEND_URL=${BACKEND_URL}
 
-  # resources:
-  #   build: ./backend/resources
-  #   links:
-  #     - db:database
 
-  # migrations:
-  #   build: ./backend/migrations
-  #   links:
-  #     - db:database
-  #   environment:
-  #     - BATCH_SIZE=750  # Otherwise virtuoso will create pretty long SQL queries and keep retrying with a smaller batch size until it succeeds
+  db:
+    build: ./backend/virtuoso
+    environment:
+      SPARQL_UPDATE: "true"
+      DEFAULT_GRAPH: "http://mu.semte.ch/application"
+    ports:
+      - "8890:8890"
+    volumes:
+      - virtuoso_data:/data
+
+  resources:
+    build: ./backend/resources
+    links:
+      - db:database
+
+  migrations:
+    build: ./backend/migrations
+    links:
+      - db:database
+    environment:
+      - BATCH_SIZE=750  # Otherwise virtuoso will create pretty long SQL queries and keep retrying with a smaller batch size until it succeeds
 
 
 volumes:
   caddy_data:
   caddy_config:
-#   virtuoso_data:
+  virtuoso_data:

@@ -1,0 +1,48 @@
+PREFIX besluit: <http://data.vlaanderen.be/ns/besluit#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mu:<http://mu.semte.ch/vocabularies/core/>
+PREFIX ext:<http://mu.semte.ch/vocabularies/ext/>
+PREFIX dct: <http://purl.org/dc/terms/>
+
+INSERT DATA {
+  GRAPH <http://mu.semte.ch/graphs/organizations/141d9d6b-54af-4d17-b313-8d1c30bc3f5b> {
+    <http://data.lblod.info/id/bestuurseenheden/141d9d6b-54af-4d17-b313-8d1c30bc3f5b>
+      a besluit:Bestuurseenheid ;
+      mu:uuid "141d9d6b-54af-4d17-b313-8d1c30bc3f5b" ;
+      skos:prefLabel "Agentschap Binnenlands Bestuur" ;
+      dct:identifier "OVO001835" .
+
+    <http://data.lblod.info/id/persoon/7b36a9a0-8514-48a9-b666-70e7080646f4> a foaf:Person ;
+      mu:uuid "7b36a9a0-8514-48a9-b666-70e7080646f4" ;
+      foaf:firstName "Lezer" ;
+      foaf:familyName "Mock user (ABB)" ;
+      foaf:member <http://data.lblod.info/id/bestuurseenheden/141d9d6b-54af-4d17-b313-8d1c30bc3f5b> ;
+      foaf:account <http://data.lblod.info/id/account/956347eb-f293-4b9d-b041-9afd1fa68c0e> .
+
+    <http://data.lblod.info/id/account/956347eb-f293-4b9d-b041-9afd1fa68c0e> a foaf:OnlineAccount ;
+      mu:uuid "956347eb-f293-4b9d-b041-9afd1fa68c0e" ;
+      foaf:accountServiceHomepage <https://github.com/lblod/mock-login-service>;
+      ext:sessionRole "PubliekeBesluitendatabank-BesluitendatabankLezer" .
+  }
+
+  GRAPH <http://mu.semte.ch/graphs/public> {
+    <http://data.lblod.info/id/bestuurseenheden/141d9d6b-54af-4d17-b313-8d1c30bc3f5b>
+      a besluit:Bestuurseenheid ;
+      mu:uuid "141d9d6b-54af-4d17-b313-8d1c30bc3f5b" ;
+      skos:prefLabel "Agentschap Binnenlands Bestuur" ;
+      dct:identifier "OVO001835" .
+
+    <http://data.lblod.info/id/persoon/7b36a9a0-8514-48a9-b666-70e7080646f4> a foaf:Person ;
+      mu:uuid "7b36a9a0-8514-48a9-b666-70e7080646f4" ;
+      foaf:firstName "Lezer" ;
+      foaf:familyName "Mock user (ABB)" ;
+      foaf:member <http://data.lblod.info/id/bestuurseenheden/141d9d6b-54af-4d17-b313-8d1c30bc3f5b> ;
+      foaf:account <http://data.lblod.info/id/account/956347eb-f293-4b9d-b041-9afd1fa68c0e> .
+
+    <http://data.lblod.info/id/account/956347eb-f293-4b9d-b041-9afd1fa68c0e> a foaf:OnlineAccount ;
+      mu:uuid "956347eb-f293-4b9d-b041-9afd1fa68c0e" ;
+      foaf:accountServiceHomepage <https://github.com/lblod/mock-login-service>;
+      ext:sessionRole "PubliekeBesluitendatabank-BesluitendatabankLezer" .
+  }
+}
