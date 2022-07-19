@@ -1,0 +1,23 @@
+{{page-title 'Decisions'}}
+
+<AuToolbar class='au-o-box' as |Group|>
+  <Group>
+    <AuHeading @skin='2'>
+      Algemene info over
+      {{this.model.currentMunicipality}}
+    </AuHeading>
+  </Group>
+  <Group class='au-c-toolbar__group--center'>
+    <AuButton @icon='book' @iconAlignment='left'>
+      <LinkTo
+        @model={{this.model.currentMunicipality}}
+        @route={{'municipality.info'}}
+        style='color: white;'
+      >
+        Algemene info
+      </LinkTo>
+    </AuButton>
+  </Group>
+</AuToolbar>
+<MunicipalityDecision />
+{{outlet}}

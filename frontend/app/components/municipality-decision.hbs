@@ -1,4 +1,3 @@
-<h1>Decisions for {{this.model}}</h1>
 <div style='margin-top: 30px;'>
   <AuDataTable
     @content={{this.municipality.decisions}}
@@ -31,15 +30,15 @@
       </c.header>
       <c.body as |row|>
         <td>
-          MAR3423
+          {{row.code}}
         </td>
         <td>
-          Soep Belastingen
+          {{row.category}}
         </td>
         <td>
-          +20 euro
+          {{row.change}}
         </td><td>
-          13/43/13
+          {{row.date}}
         </td>
       </c.body>
     </t.content>

@@ -2735,6 +2735,14 @@ export const municipality_data = [
       totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
       averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
+    decisions: [
+      {
+        code: 'MAR3232',
+        category: 'Afval',
+        change: 'dasdas',
+        date: '2020-01-01',
+      },
+    ],
   },
   {
     title: 'Waterloo',

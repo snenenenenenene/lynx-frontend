@@ -7,6 +7,10 @@ import { action } from '@ember/object';
 export default class MunicipalitiesService extends Service {
   @tracked data = municipality_data;
   @tracked tax_cat = tax_data;
+  @tracked currentMunicipalityRoute = 'BRUGGE';
+  @action setCurrentMunicipalityRoute(municipality) {
+    this.currentMunicipalityRoute = municipality;
+  }
 
   @tracked modalData = municipality_data[0];
   @tracked showModal = false;
