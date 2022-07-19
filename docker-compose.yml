@@ -1,26 +1,6 @@
 version: '3.7'
 
 services:
-  caddy:
-    build: ./caddy
-    ports:
-      - 80:80
-      - 443:443
-      - 8000:8000
-    volumes:
-      - caddy_data:/data
-      - caddy_config:/config
-    environment:
-      - FRONTEND_URL=${FRONTEND_URL}
-      - BACKEND_URL=${BACKEND_URL}
-
-
-  # ember:
-  #   build: ./frontend
-  #   environment:
-  #     - BACKEND_URL=${BACKEND_URL}
-
-
   db:
     build: ./backend/virtuoso
     environment:
@@ -30,6 +10,13 @@ services:
       - "8890:8890"
     volumes:
       - virtuoso_data:/data
+
+  dispatcher:
+    build: ./backend/dispatcher
+    ports:
+      - "8000:80"
+    links:
+      - resources:resources
 
   resources:
     build: ./backend/resources
