@@ -1,5 +1,5 @@
 INSERT DATA {
-  GRAPH <http://mu.semte.ch/graphs/public> {
+  GRAPH <http://mu.semte.ch/application> {
     <https://data.vlaanderen.be/id/concept/BesluitDocumentType/672bf096-dccd-40af-ab60-bd7de15cc461>
         a <http://www.w3.org/2004/02/skos/core#Concept>, <http://www.w3.org/2000/01/rdf-schema#Class>;
         <http://mu.semte.ch/vocabularies/core/uuid> "672bf096-dccd-40af-ab60-bd7de15cc461";

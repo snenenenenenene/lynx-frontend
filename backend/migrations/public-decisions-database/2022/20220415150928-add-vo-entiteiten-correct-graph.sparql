@@ -1,5 +1,5 @@
 DELETE DATA {
-  GRAPH <http://mu.semte.ch/graphs/access-for-role/PubliekeBesluitendatabank-BesluitendatabankLezer> {
+  GRAPH <http://mu.semte.ch/application> {
 <http://data.lblod.info/id/bestuurseenheden/89241b16-c9ef-5be6-de6c-8d9db9d391d4>
   a <http://data.vlaanderen.be/ns/besluit#Bestuurseenheid>;
   <http://mu.semte.ch/vocabularies/core/uuid> "89241b16-c9ef-5be6-de6c-8d9db9d391d4";
@@ -814,7 +814,7 @@ DELETE DATA {
 ;
 
 INSERT DATA {
-  GRAPH <http://mu.semte.ch/graphs/public> {
+  GRAPH <http://mu.semte.ch/application> {
 <http://data.lblod.info/id/bestuurseenheden/89241b16-c9ef-5be6-de6c-8d9db9d391d4>
   a <http://data.vlaanderen.be/ns/besluit#Bestuurseenheid>;
   <http://mu.semte.ch/vocabularies/core/uuid> "89241b16-c9ef-5be6-de6c-8d9db9d391d4";

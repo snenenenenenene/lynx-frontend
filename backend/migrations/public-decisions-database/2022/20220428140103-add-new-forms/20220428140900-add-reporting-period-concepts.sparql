@@ -1,6 +1,6 @@
 INSERT DATA {
 
-  GRAPH <http://mu.semte.ch/graphs/public> {
+  GRAPH <http://mu.semte.ch/application> {
 
     <http://lblod.data.gift/concept-schemes/4e719768-d43b-4ca1-ab92-b463e15721f5> <http://mu.semte.ch/vocabularies/core/uuid> "4e719768-d43b-4ca1-ab92-b463e15721f5" .
 
