@@ -37,19 +37,19 @@
               {{row.title}}
             </td>
             <td>
-              {{row.tax.belastingreglementen}}
+              {{row.taxData.totalRevenue}}
             </td><td>
-              {{row.tax.administratieve_prestaties}}
+              {{row.taxData.averageRevenue}}
             </td><td>
-              {{row.tax.openbare_hygiene}}
-            </td><td>
-              {{row.tax.patrimonium}}
-            </td><td>
-              {{row.tax.vertoningen_en_vermakelijkheden}}
-            </td><td>
-              {{row.tax.ingebruikneming_van_het_openbaar_domein}}
-            </td><td>
-              {{row.tax.openbare_netheid}}
+              <AuButton @icon='unordered-list' @iconAlignment='right'>
+                <LinkTo
+                  @route={{'municipality'}}
+                  @model={{row.title}}
+                  style='color: white;'
+                >
+                  Meer info
+                </LinkTo>
+              </AuButton>
             </td>
           {{/if}}
         {{else}}
@@ -60,15 +60,14 @@
             {{row.title}}
           </td>
           <td>
-            {{row.totalRevenue}}
+            {{row.taxData.totalRevenue}}
           </td><td>
-            {{row.tax.averageRevenue}}
+            {{row.taxData.averageRevenue}}
           </td><td>
-            <AuButton>
-
+            <AuButton @icon='unordered-list' @iconAlignment='right'>
               <LinkTo
-                @route={{'municipality'}}
                 @model={{row.title}}
+                @route={{'municipality.info'}}
                 style='color: white;'
               >
                 Meer info
@@ -76,7 +75,6 @@
             </AuButton>
           </td>
         {{/if}}
-
       </c.body>
     </t.content>
   </AuDataTable>

@@ -16,15 +16,7 @@ export default class MunicipalitiesService extends Service {
   @action toggleModal(data) {
     this.modalData = {
       title: data.target.feature.properties.ADMUNADU,
-      tax: {
-        belastingreglementen: 12,
-        administratieve_prestaties: 13,
-        openbare_hygiene: 13,
-        patrimonium: 13,
-        vertoningen_en_vermakelijkheden: 13,
-        ingebruikneming_van_het_openbaar_domein: 13,
-        openbare_netheid: 13,
-      },
+      taxData: { totalRevenue: 1000000, averageRevenue: 1000000 },
     };
 
     this.showModal = !this.showModal;
@@ -33,15 +25,7 @@ export default class MunicipalitiesService extends Service {
   @action tableToggleModal(data) {
     this.modalData = {
       title: data.target.innerText,
-      tax: {
-        belastingreglementen: 12,
-        administratieve_prestaties: 13,
-        openbare_hygiene: 13,
-        patrimonium: 13,
-        vertoningen_en_vermakelijkheden: 13,
-        ingebruikneming_van_het_openbaar_domein: 13,
-        openbare_netheid: 13,
-      },
+      taxData: { totalRevenue: 1000000, averageRevenue: 1000000 },
     };
     this.showModal = !this.showModal;
   }

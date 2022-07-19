@@ -2,7 +2,7 @@ import { inject as service } from '@ember/service';
 import { tracked } from '@glimmer/tracking';
 import { action } from '@ember/object';
 import Component from '@glimmer/component';
-export default class DetailsComponent extends Component {
+export default class MunicipalityDecisionComponent extends Component {
   @service municipalities;
 
   @tracked municipality = this.municipalities.data.find(

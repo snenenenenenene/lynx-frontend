@@ -1,5450 +1,3173 @@
 export const municipality_data = [
   {
     title: 'Zottegem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Heist-op-den-Berg',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Denderleeuw',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Schoten',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Lasne',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Riemst',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Libramont-Chevigny',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Houthalen-Helchteren',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Beernem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Zwalm',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Opglabbeek',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Ham',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Chastre',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Alken',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Staden',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Meensel',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Houthalen',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Aalst',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Zaventem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Sint-Pieters-Leeuw',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Dendermonde',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Genk',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Meise',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Eupen',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Kruibeke',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Koksijde',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Haaltert',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Grez-Doiceau',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Hoeilaart',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Villers-la-Ville',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Destelbergen',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Putte',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Vorst',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Oostende',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Herstal',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Hoogstraten',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Saint-Ghislain',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Lochristi',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Wanze',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Mont-Saint-Guibert',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Eeklo',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Lennik',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Farciennes',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Hechtel-Eksel',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Milmort',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Kortemark',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Sint-Amands',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Knesselare',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Groot-Bijgaarden',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Eksel',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Hasselt',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Beringen',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Beersel',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Gembloux',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Lummen',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Andenne',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Hannut',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Thuin',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Maaseik',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Awans',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Zonnebeke',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Bierbeek',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Arendonk',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Herselt',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Begijnendijk',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Tremelo',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Vosselaar',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Lint',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Oostrozebeke',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Tarcienne',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Messancy',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Linkebeek',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Schaerbeek',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Ghent',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Sint-Jans-Molenbeek',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Leuven',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Verviers',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Kortrijk',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Turnhout',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Ath',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Roosdaal',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'La Hulpe',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Puurs',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Ciney',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Damme',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Wemmel',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Schilde',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Leuze-en-Hainaut',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Saint Vith',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Lovendegem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Moerbeke-Waas',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Borsbeek',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Spa',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Broechem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Jumet',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Marcinelle',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Zelzate',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Ottignies-Louvain-la-Neuve',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Grimbergen',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Wevelgem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Lubbeek',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Sint-Katelijne-Waver',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Malmedy',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Hooglede',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Bassenge',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Harze',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Vorselaar',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Ledegem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Merksem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Houthulst',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Bouwel',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Erembodegem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Ruddervoorde',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Fl√©malle-Grande',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Wellen',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Brasschaat',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Jette',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Sint-Agatha-Berchem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Lier',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Huy',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Ranst',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Flemalle',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Beauvechain',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Aartselaar',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Seneffe',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Meulebeke',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Meeuwen-Gruitrode',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Deerlijk',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Kraainem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Anzegem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Herenthout',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Ichtegem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Heverlee',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Berchem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Lichtaart',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
-    },
-  },
-  {
-    title: '',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Geel',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Kontich',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Tienen',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Aarschot',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Jodoigne',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Heusden-Zolder',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Lebbeke',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Bornem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Neerpelt',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Sint-Genesius-Rode',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Herve',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Merksplas',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Waasmunster',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Oudenburg',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Elewijt',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Dessel',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Uccle',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Laeken',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Etterbeek',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Booischot',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Chatelet',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Roeulx',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Merchtem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Ixelles',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Ypres',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Tournai',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Saint-Josse-ten-Noode',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Watermael-Boitsfort',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Mortsel',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Waregem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Londerzeel',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Gooik',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Veurne',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Ninove',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Vise',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Arlon',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Zedelgem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Diest',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Limal',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Brecht',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Boussu',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Opwijk',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Nazareth',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Peer',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Chievres',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Pont-a-Celles',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Leopoldsburg',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Wervik',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Morlanwelz',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Overpelt',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Koekelberg',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Malle',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Hornu',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Steenokkerzeel',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Borgerhout',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Affligem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Wegnez',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Ingelmunster',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Handzame',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Ghlin',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Tubize',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Vilvoorde',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Izegem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Courcelles',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Virton',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Rijkevorsel',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Knokke-Heist',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Lede',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Blegny',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Essen',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Sint-Gillis-Waas',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Zwevegem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Tielt-Winge',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Gistel',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Zonhoven',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Herk-de-Stad',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Vielsalm',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'De Haan',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Boutersem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Halen',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Wichelen',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Laakdal',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Brussel',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Hemiksem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Namur',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Gilly',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Wavre',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Alleur',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Tervuren',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Nieuwerkerken-Aalst',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Dilbeek',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Sint-Truiden',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Deinze',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Herent',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Kortenberg',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Kalmthout',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Kampenhout',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Wielsbeke',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Hulshout',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Zandhoven',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Boortmeerbeek',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Wijnegem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Ardooie',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Desselgem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Dilsen',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Mons',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Nivelles',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Sint-Niklaas',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Overijse',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: "Braine-l'Alleud",
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Edegem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Torhout',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Sambreville',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Harelbeke',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Wezembeek-Oppem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Bastogne',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Zulte',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Rumst',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Oosterzele',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Laarne',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Libramont',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Lint',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Bavikhove',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Heule',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: '(not set)',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Brugge',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Asse',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Auderghem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Jabbeke',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Duffel',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Berlaar',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Eghezee',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Lille',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Melle',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Hoegaarden',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Gavere',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Wilrijk',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Oostakker',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Seraing',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Ronse',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Jemeppe-sur-Sambre',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: "Fontaine-l'Eveque",
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Ham-sur-Heure-Nalinnes',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Blankenberge',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Chaumont-Gistoux',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Olen',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Keerbergen',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Schelle',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Aubange',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Sint-Martens-Latem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Deurne',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Ans',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Haasrode',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Merelbeke',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Kasterlee',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Huldenberg',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Maldegem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Jurbise',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Gerpinnes',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Haacht',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Peruwelz',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Waremme',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Nevele',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Linter',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Couvin',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Bree',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Boom',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Kruishoutem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Waarschoot',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Montigny-le-Tilleul',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Erpe-Mere',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Berlare',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Hoeselt',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Woluwe-Saint-Lambert',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Lokeren',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Geraardsbergen',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Zoersel',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Beerse',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Brakel',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Oostkamp',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Willebroek',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Walcourt',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Aywaille',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Dinant',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'De Panne',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Profondeville',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Aubange',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Borgloon',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Diegem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Saint-Gilles',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Baarle-Hertog',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Beveren',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Mouscron',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Aalter',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Westerlo',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Temse',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Scherpenheuvel-Zichem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Manage',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Wuustwezel',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Bredene',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Stabroek',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Frameries',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Zoutleeuw',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Stekene',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Colfontaine',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Oupeye',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Petit-Rechain',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Gosselies',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Souvret',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Engis',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Florenville',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Haine-Saint-Paul',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Woluwe-Saint-Pierre',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Braine-le-Comte',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Oudenaarde',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Mol',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Chapelle-lez-Herlaimont',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Menen',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Tongeren',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Balen',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Retie',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Soumagne',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Mechelen',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Charleroi',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Halle',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Roeselare',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Poperinge',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Landen',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Quaregnon',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Galmaarden',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Grobbendonk',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Lessines',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Esneux',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Assenede',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Meerhout',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Kessel-Lo',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Kermt',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Machelen',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Forest',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Maasmechelen',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Dilsen-Stokkem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Hamme',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Diksmuide',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Rotselaar',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Nijlen',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Herzele',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Boechout',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Hamont-Achel',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Holsbeek',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Zemst',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Bonheiden',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Mettet',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Oud-Turnhout',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Bocholt',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Sint-Andries',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Antwerpen',
-    tax: {
-      belastingreglementen: 120,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 146,
-      patrimonium: 16,
-      vertoningen_en_vermakelijkheden: 35,
-      ingebruikneming_van_het_openbaar_domein: 253,
-      openbare_netheid: 65,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Waterloo',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Zele',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Evergem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Wandre',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Zwijndrecht',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Nieuwpoort',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Liedekerke',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Chaudfontaine',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Amay',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Ternat',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Wommelgem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Enghien',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Buggenhout',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Herne',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Battice',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Baudour',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Limbourg',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Lanklaar',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Zellik',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Lembeke',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Malmedy',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Liege',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Evere',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'La Louviere',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Lommel',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Tielt',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Marche-en-Famenne',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Fleurus',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Tessenderlo',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Binche',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Ganshoren',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Kapellen',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Kapelle-op-den-Bos',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Clavier',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Hove',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Wingene',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Zomergem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Sint-Lievens-Houtem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Zingem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Paal',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: "Sint-Job-in-'t-Goor",
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Anderlecht',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Soignies',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Wetteren',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Bilzen',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Herentals',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Lanaken',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Bertem',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Middelkerke',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Grace-Hollogne',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Sprimont',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Diepenbeek',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Kinrooi',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Kuurne',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Yvoir',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Lichtervelde',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Saintes',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Jambes',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Boncelles',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Averbode',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Wilsele',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
   {
     title: 'Everberg',
-    tax: {
-      belastingreglementen: 12,
-      administratieve_prestaties: 13,
-      openbare_hygiene: 13,
-      patrimonium: 13,
-      vertoningen_en_vermakelijkheden: 13,
-      ingebruikneming_van_het_openbaar_domein: 13,
-      openbare_netheid: 13,
+    taxData: {
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
     },
   },
 ];

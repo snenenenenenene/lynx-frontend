@@ -121,11 +121,24 @@ $paddingValue: 1vh;
   align-items: center;
 }
 .nav-icon {
-  font-size: 2rem;
   display: flex;
   justify-content: center;
   height: 100%;
+  align-items: center;
   flex-direction: column;
+}
+
+.nav-icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.mobile-nav {
+  visibility: hidden;
+}
+
+.au-c-main-header {
+  visibility: visible;
 }
 
 @media (max-width: 480px) {
@@ -135,6 +148,7 @@ $paddingValue: 1vh;
   }
 
   .mobile-nav {
+    visibility: visible;
   }
 }
 

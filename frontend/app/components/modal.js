@@ -4,7 +4,7 @@ import { inject as service } from '@ember/service';
 import { action } from '@ember/object';
 export default class ModalComponent extends Component {
   @service municipalities;
-  // retrieve municipality data from municipalities.data by using the title
+
   @tracked municipality = this.municipalities.data.find(
     (municipality) =>
       municipality.title.toUpperCase() ===
@@ -27,7 +27,7 @@ export default class ModalComponent extends Component {
 
   chart = null;
   @tracked data = {
-    columns: [...Object.entries(this.municipality.tax).map((tax) => tax)],
+    columns: [...Object.entries(this.municipality.taxData).map((tax) => tax)],
     type: this.graphType[this.currGraphNr],
   };
   title = { text: 'Belastingsonderverdeling' };

@@ -11,7 +11,8 @@ Router.map(function () {
   this.route('index', { path: '/' });
   this.route('dashboard');
 
-  this.route('municipality', {
-    path: 'gemeente/:mun_id',
+  this.route('municipality', { path: 'gemeente/:mun_id' }, function () {
+    this.route('info');
+    this.route('decisions', { path: '/beslissingen' });
   });
 });

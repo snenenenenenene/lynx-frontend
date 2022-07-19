@@ -2,28 +2,22 @@
 <AuToolbar class='au-o-box' as |Group|>
   <Group>
     <AuHeading @skin='2'>
+      Algemene info over
       {{this.model}}
     </AuHeading>
 
   </Group>
   <Group class='au-c-toolbar__group--center'>
-    <PowerSelect
-      style='width: 200px; height: 38px; '
-      @options={{this.municipalities.options}}
-      @selected={{this.municipalities.query}}
-      @searchEnabled={{true}}
-      @search={{this.municipalities.searchRepo}}
-      @loadingMessage='Aan het laden...'
-      @allowClear={{true}}
-      @placeholder='Zottegem'
-      @noMatchesMessage='Geen resultaten'
-      @onChange={{fn (mut this.municipalities.query)}}
-      as |municipality|
-    >
-      {{municipality.title}}
-    </PowerSelect>
+    <AuButton @icon='message' @iconAlignment='right'>
+      <LinkTo
+        @model={{this.model}}
+        @route={{'municipality.decisions'}}
+        style='color: white;'
+      >
+        Meer info
+      </LinkTo>
+    </AuButton>
   </Group>
 </AuToolbar>
-<h1>info about {{this.model}}</h1>
 <Details />
 {{!-- {{outlet}} --}}
