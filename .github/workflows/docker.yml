@@ -22,6 +22,20 @@ jobs:
           username: ${{ secrets.GHCR_USERNAME }}
           password: ${{ secrets.GHCR_TOKEN }}
 
+      - name: Build and push (db)
+        uses: docker/build-push-action@v3
+        with:
+          context: backend/virtuoso
+          push: true
+          tags: ghcr.io/${{ github.repository_owner }}/lynx-db:latest
+
+      - name: Build and push (dispatcher)
+        uses: docker/build-push-action@v3
+        with:
+          context: backend/dispatcher
+          push: true
+          tags: ghcr.io/${{ github.repository_owner }}/lynx-dispatcher:latest
+
       - name: Build and push (resources)
         uses: docker/build-push-action@v3
         with:
