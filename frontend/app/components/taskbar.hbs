@@ -24,21 +24,6 @@
       @search={{this.municipalities.searchRepo}}
       @loadingMessage='Aan het laden...'
       @allowClear={{true}}
-      @placeholder='Afvalbelastingen'
-      @noMatchesMessage='Geen resultaten'
-      @onChange={{fn (mut this.municipalities.query)}}
-      as |category|
-    >
-      {{category.title}}
-    </PowerSelect>
-    <PowerSelect
-      style='width: 200px; height: 38px; '
-      @options={{this.municipalities.options}}
-      @selected={{this.municipalities.query}}
-      @searchEnabled={{true}}
-      @search={{this.municipalities.searchRepo}}
-      @loadingMessage='Aan het laden...'
-      @allowClear={{true}}
       @placeholder='Zottegem'
       @noMatchesMessage='Geen resultaten'
       @onChange={{fn (mut this.municipalities.query)}}

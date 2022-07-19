@@ -1,0 +1,58 @@
+<div style='width: 100%; display: flex; justify-content: end; gap: 10px;'>
+  <AuButton @icon='chevron-left' {{on 'click' this.nextGraph}} />
+  <AuButton @icon='chevron-right' {{on 'click' this.nextGraph}} />
+</div>
+<C3Chart @data={{this.data}} @title={{this.title}} @padding={{this.padding}} />
+<h1>Decisions for {{this.model}}</h1>
+<div style='margin-top: 30px;'>
+  <AuDataTable
+    @content={{this.municipality.decisions}}
+    @fields='title description'
+    @noDataMessage='Geen data'
+    @sort={{this.sort}}
+    as |t|
+  >
+    <t.content as |c|>
+      <c.header>
+        <AuDataTableThSortable
+          @field='title'
+          @currentSorting={{this.sort}}
+          @label='Code'
+          @class='data-table__header-title'
+        /><AuDataTableThSortable
+          @field='title'
+          @currentSorting={{this.sort}}
+          @label='Categorie'
+          @class='data-table__header-title'
+        />
+        <AuDataTableThSortable
+          @field='description'
+          @currentSorting={{this.sort}}
+          @label='Verandering'
+          @class='data-table__header-title'
+        />
+        <AuDataTableThSortable
+          @field='description'
+          @currentSorting={{this.sort}}
+          @label='Datum'
+          @class='data-table__header-title'
+        />
+
+      </c.header>
+      <c.body as |row|>
+        <td>
+          MAR3423
+        </td>
+        <td>
+          Soep Belastingen
+        </td>
+        <td>
+          +20 euro
+        </td><td>
+          13/43/13
+        </td>
+
+      </c.body>
+    </t.content>
+  </AuDataTable>
+</div>

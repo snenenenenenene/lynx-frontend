@@ -3,55 +3,29 @@
     @content={{this.municipalities.data}}
     @fields='title description'
     @noDataMessage='Geen data'
-    @sort={{this.sort}}
     as |t|
   >
     <t.content as |c|>
       <c.header>
         <AuDataTableThSortable
           @field='title'
-          @currentSorting={{this.sort}}
           @label='Gemeente'
           @class='data-table__header-title'
         />
         <AuDataTableThSortable
           @field='description'
-          @currentSorting={{this.sort}}
-          @label='Belastingreglementen'
+          @label='Totale inkomsten'
           @class='data-table__header-title'
         />
         <AuDataTableThSortable
           @field='description'
-          @currentSorting={{this.sort}}
-          @label='Adm. Prestaties'
+          @label='Globale inkomen per inwoner'
           @class='data-table__header-title'
         /><AuDataTableThSortable
           @field='description'
-          @currentSorting={{this.sort}}
-          @label='Openbare Hygiene'
-          @class='data-table__header-title'
-        /><AuDataTableThSortable
-          @field='description'
-          @currentSorting={{this.sort}}
-          @label='Patrimonium'
-          @class='data-table__header-title'
-        /><AuDataTableThSortable
-          @field='description'
-          @currentSorting={{this.sort}}
-          @label='Vertoningen'
-          @class='data-table__header-title'
-        /><AuDataTableThSortable
-          @field='description'
-          @currentSorting={{this.sort}}
-          @label='Openbaar Domein'
-          @class='data-table__header-title'
-        /><AuDataTableThSortable
-          @field='description'
-          @currentSorting={{this.sort}}
-          @label='Openbare Netheid'
+          @label=''
           @class='data-table__header-title'
         />
-
       </c.header>
       <c.body as |row|>
         {{#if this.municipalities.query.title}}
@@ -86,19 +60,20 @@
             {{row.title}}
           </td>
           <td>
-            {{row.tax.belastingreglementen}}
+            {{row.totalRevenue}}
           </td><td>
-            {{row.tax.administratieve_prestaties}}
+            {{row.tax.averageRevenue}}
           </td><td>
-            {{row.tax.openbare_hygiene}}
-          </td><td>
-            {{row.tax.patrimonium}}
-          </td><td>
-            {{row.tax.vertoningen_en_vermakelijkheden}}
-          </td><td>
-            {{row.tax.ingebruikneming_van_het_openbaar_domein}}
-          </td><td>
-            {{row.tax.openbare_netheid}}
+            <AuButton>
+
+              <LinkTo
+                @route={{'municipality'}}
+                @model={{row.title}}
+                style='color: white;'
+              >
+                Meer info
+              </LinkTo>
+            </AuButton>
           </td>
         {{/if}}
 

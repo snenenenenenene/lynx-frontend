@@ -109,6 +109,35 @@ $paddingValue: 1vh;
   color: #000;
 }
 
+.mobile-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: white;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  border-top: black 1px solid;
+  align-items: center;
+}
+.nav-icon {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+@media (max-width: 480px) {
+  .au-c-main-header {
+    display: none;
+    visibility: hidden;
+  }
+
+  .mobile-nav {
+  }
+}
+
 .filter {
   width: 30%;
   max-width: 400px;

@@ -18,9 +18,13 @@
   </:body>
   <:footer>
     <AuButton @icon='unordered-list' @iconAlignment='right'>
-      {{!-- <LinkTo @route={{'/dashboard/:municipality_id'}} style='color: white;'>
-        Meer
-      </LinkTo> --}}
+      <LinkTo
+        @route={{'municipality'}}
+        @model={{this.municipalities.modalData.title}}
+        style='color: white;'
+      >
+        Meer info
+      </LinkTo>
     </AuButton>
   </:footer>
 </AuModal>
