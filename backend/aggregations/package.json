@@ -1,0 +1,36 @@
+{
+  "name": "mu-javascript-template",
+  "version": "1.6.0",
+  "description": "Template for mu services written in JavaScript",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mu-semtech/mu-javascript-template.git"
+  },
+  "keywords": [
+    "mu-semtech"
+  ],
+  "dependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.0",
+    "@babel/node": "^7.13.13",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-proposal-decorators": "^7.13.15",
+    "@babel/preset-env": "^7.14.1",
+    "@babel/preset-typescript": "^7.16.7",
+    "babel-plugin-module-resolver": "4.1.0",
+    "body-parser": "~1.19.0",
+    "coffeescript": "^2.6.1",
+    "env-var": "^7.0.0",
+    "express": "^4.17.1",
+    "express-http-context": "~1.2.4",
+    "nodemon": "^2.0.7",
+    "query-types": "^0.1.4",
+    "sparql-client-2": "https://github.com/erikap/node-sparql-client.git",
+    "sparqljs": "^3.5.2",
+    "typescript": "^4.6.2",
+    "uuid": "^8.3.2"
+  },
+  "author": "Aad Versteden <aad.versteden@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://mu.semte.ch"
+}
