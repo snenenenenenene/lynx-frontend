@@ -167,6 +167,24 @@ defmodule Dispatcher do
     forward conn, [], "http://frontend/index.html"
   end
 
+
+  ###############################################################
+  # LYNX backend
+  ###############################################################
+
+  get "/tax-categories/*path", @json do
+    Proxy.forward conn, path, "http://resources/tax-categories/"
+  end
+
+  get "/mar-codes/*path", @json do
+    Proxy.forward conn, path, "http://resources/mar-codes/"
+  end
+
+  get "/tax-reports/*path", @json do
+    Proxy.forward conn, path, "http://resources/tax-reports/"
+  end
+
+
   #################################################################
   # Fallback
   #################################################################

@@ -33,30 +33,6 @@
 				}
 			},
 			"new-resource-base": "http://dev.lynx.lblod.info/tax-reports/"
-		},
-
-
-		"mar-codes": {
-			"name": "marCode",
-			"class": "lynx:MARCode",
-			"attributes": {
-				"code": {
-					"type": "string",
-					"predicate": "skos:notation"
-				},
-				"description": {
-					"type": "string",
-					"predicate": "skos:prefLabel"
-				}
-			},
-			"relationships": {
-				"tax-categories": {
-					"predicate": "lynx:fromCategory",
-					"target": "taxCategory",
-					"cardinality": "many"
-				}
-			},
-			"new-resource-base": "http://lblod.data.gift/concepts/"
 		}
 	}
 }
