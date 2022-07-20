@@ -1,4 +1,4 @@
-import { app, query, errorHandler } from "mu";
+import { app, query, errorHandler } from "./helpers/mu/index.mjs";
 import sparqljs from "sparqljs";
 import { DataFactory } from "rdf-data-factory";
 
@@ -38,7 +38,7 @@ function replaceVariableIfExists(query, positions, value) {
 }
 
 app.get("/", function (req, res) {
-  res.send("Hello mu-javascript-template");
+  res.send('"Hello mu-javascript-template"');
 });
 
 app.get("/revenue-query", function (req, res) {
@@ -56,6 +56,10 @@ app.get("/revenue-query", function (req, res) {
     req.query.marcode = req.query.marcode.slice(3);
   }
 
+  const page = req.query.page || 0;
+  const pageSize = req.query.pageSize || 25;
+  const offset = page * pageSize;
+
   const defaultQuery = `
     PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     PREFIX lynx: <http://dev.lynx.lblod.info/vocabulary#>
@@ -64,12 +68,13 @@ app.get("/revenue-query", function (req, res) {
     SELECT (sum(?amount) as ?totalAmount)
     WHERE {
       ?r a lynx:TaxReport;
-        lynx:amount ?amount;
-        lynx:hasTaxType ?marcode;
+        lynx:totalAmount ?amount;
+        lynx:hasTaxType ?_marcode;
         lynx:inMunicipality ?_municipality;
         lynx:year ?year.
       
-      ?marcode lynx:fromCategory ?_category.
+      ?_marcode skos:notation ?marcode;
+        lynx:fromCategory ?_category.
       ?_municipality mu:inProvincie ?_province.
 
       ?_municipality skos:prefLabel ?municipality.
@@ -78,18 +83,16 @@ app.get("/revenue-query", function (req, res) {
     }`;
 
   const parsedQuery = parser.parse(defaultQuery);
+  parsedQuery.limit = pageSize;
+  parsedQuery.offset = offset;
 
-  // TODO: Add support for municipality and province once DBs merged
   // Represents the different parameters and their positions in the query
   const paramsSchema = {
-    marcode: [
-      [2, "object"],
-      [5, "subject"],
-    ],
     year: [[4, "object"]],
-    municipality: [[7, "subject"]],
-    category: [[8, "object"]],
-    province: [[9, "subject"]],
+    marcode: [[5, "object"]],
+    municipality: [[8, "object"]],
+    category: [[9, "object"]],
+    province: [[10, "object"]],
   };
 
   // We fill in the query with the values from the request
@@ -99,8 +102,9 @@ app.get("/revenue-query", function (req, res) {
     }
   }
 
-  
-  const groupBy = req.query.groupBy ? req.query.groupBy.split(",") : Array.from(defaultGroupBy);
+  const groupBy = req.query.groupBy
+    ? req.query.groupBy.split(",")
+    : Array.from(defaultGroupBy);
   const variables = groupBy.map((v) => nodeFactory.variable(v));
   // We add the group by variables to the select
   parsedQuery.variables.unshift(...variables);
@@ -109,13 +113,21 @@ app.get("/revenue-query", function (req, res) {
 
   const newQuery = generator.stringify(parsedQuery);
 
+  console.log("starting query...\n", newQuery);
+
   query(newQuery)
     .then(function (response) {
-      res.send(JSON.stringify(response));
+      res.send(
+        JSON.stringify({
+          results: response.results.bindings.map(),
+        })
+      );
     })
     .catch(function (err) {
-      res.send("Oops something went wrong: " + JSON.stringify(err));
+      res.send(JSON.stringify(err));
     });
+
+  console.log("query finished");
 });
 
 app.use(errorHandler);
