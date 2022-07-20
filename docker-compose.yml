@@ -22,6 +22,12 @@ services:
   migrations:
     build: ./backend/migrations
 
+  aggregations:
+    build: ./backend/aggregations 
+    environment:
+      - BATCH_SIZE=750  # Otherwise virtuoso will create pretty long SQL queries and keep retrying with a smaller batch size until it succeeds
+    ports:
+      - 8888:80
 
 volumes:
   virtuoso_data:
