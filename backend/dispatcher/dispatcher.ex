@@ -63,6 +63,10 @@ defmodule Dispatcher do
     Proxy.forward conn, path, "http://resources/tax-reports/"
   end
 
+  get "/aggregations/*path", @json do
+    Proxy.forward conn, path, "http://aggregations/"
+  end
+
 
   #################################################################
   # Fallback
