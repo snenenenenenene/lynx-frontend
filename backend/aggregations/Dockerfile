@@ -13,7 +13,6 @@ ENV DEBUG_AUTH_HEADERS 'true'
 
 WORKDIR /usr/src/app
 COPY package.json /usr/src/app/package.json
-COPY ./scripts /app/scripts
 RUN npm config set unsafe-perm true && npm install
 COPY . .
 

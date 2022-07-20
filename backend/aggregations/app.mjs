@@ -57,7 +57,7 @@ app.get("/revenue-query", function (req, res) {
   }
 
   const page = req.query.page || 0;
-  const pageSize = req.query.pageSize || 25;
+  const pageSize = req.query.pageSize || 100;
   const offset = page * pageSize;
 
   const defaultQuery = `
@@ -119,7 +119,7 @@ app.get("/revenue-query", function (req, res) {
     .then(function (response) {
       res.send(
         JSON.stringify({
-          results: response.results.bindings.map(),
+          results: response.results.bindings,
         })
       );
     })
