@@ -42,6 +42,13 @@ jobs:
           context: backend/resources
           push: true
           tags: ghcr.io/${{ github.repository_owner }}/lynx-resources:latest
+      
+      - name: Build and push (aggregations)
+        uses: docker/build-push-action@v3
+        with:
+          context: backend/aggregations
+          push: true
+          tags: ghcr.io/${{ github.repository_owner }}/lynx-aggregations:latest
 
       - name: Build and push (migrations)
         uses: docker/build-push-action@v3
