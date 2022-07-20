@@ -1,5 +1,5 @@
-import { app, errorHandler } from './server';
-import sparql from './sparql';
+import { app, errorHandler } from './server.mjs';
+import sparql from './sparql.mjs';
 import { v1 as uuidV1 } from 'uuid';
 
 // generates a uuid
