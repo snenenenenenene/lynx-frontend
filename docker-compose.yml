@@ -1,7 +1,7 @@
 version: '3.7'
 
 services:
-  db:
+  database:
     build: ./backend/virtuoso
     environment:
       SPARQL_UPDATE: "true"
@@ -15,20 +15,12 @@ services:
     build: ./backend/dispatcher
     ports:
       - "8000:80"
-    links:
-      - resources:resources
 
   resources:
     build: ./backend/resources
-    links:
-      - db:database
 
   migrations:
     build: ./backend/migrations
-    links:
-      - db:database
-    environment:
-      - BATCH_SIZE=750  # Otherwise virtuoso will create pretty long SQL queries and keep retrying with a smaller batch size until it succeeds
 
 
 volumes:
