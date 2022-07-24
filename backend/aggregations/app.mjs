@@ -1,5 +1,6 @@
 import { app, query, errorHandler } from "./helpers/mu/index.mjs";
 import sparqljs from "sparqljs";
+import fs from "fs";
 import { DataFactory } from "rdf-data-factory";
 
 const parser = new sparqljs.Parser();
@@ -12,6 +13,10 @@ const integerType = nodeFactory.namedNode(
 );
 const floatType = nodeFactory.namedNode(
   "http://www.w3.org/2001/XMLSchema#decimal"
+);
+
+const municipalities = JSON.parse(
+  fs.readFileSync("./data/municipalities.json")
 );
 
 /**
@@ -37,8 +42,8 @@ function replaceVariableIfExists(query, positions, value) {
   return true;
 }
 
-app.get("/", function (req, res) {
-  res.send('"Hello mu-javascript-template"');
+app.get("/", function (_, res) {
+  res.send('"Welcome to LBLOD\'s aggregations API"');
 });
 
 app.get("/revenue-query", function (req, res) {
@@ -113,7 +118,63 @@ app.get("/revenue-query", function (req, res) {
 
   const newQuery = generator.stringify(parsedQuery);
 
-  console.log("starting query...\n", newQuery);
+  query(newQuery)
+    .then(function (response) {
+      res.send(
+        JSON.stringify({
+          results: response.results.bindings,
+        })
+      );
+    })
+    .catch(function (err) {
+      res.send(JSON.stringify(err));
+    });
+});
+
+app.get("/decisions-query", function (req, res) {
+  // Use current year as default
+  const year = req.query.year || new Date().getFullYear();
+  const municipality = req.query.municipality;
+
+  if (typeof year !== "number" && year.length != 4) {
+    res.send(JSON.stringify({ detail: "Invalid year" }));
+  }
+
+  if (!(municipality in municipalities)) {
+    res.send(JSON.stringify({ detail: "Invalid municipality" }));
+  }
+
+  const defaultQuery = `
+  PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+  select (count(?s) as ?count) {
+    ?s a <http://rdf.myexperiment.org/ontologies/base/Submission>;
+      <http://www.w3.org/ns/prov#generated> ?formdata;
+      <http://purl.org/pav/createdBy> ?bestuureenheid.
+  
+    # ONLY SHOW THOSE AFFECTING THE INTERESTING AREA
+    ?bestuureenheid <http://data.vlaanderen.be/ns/besluit#werkingsgebied> ?_werkingsgebied.
+  
+    ?_werkingsgebied <http://www.w3.org/2000/01/rdf-schema#label> ?werkingsgebied.
+  
+    FILTER(?werkingsgebied = "MUNICIPALITY" || ?werkingsgebied = "PROVINCE") 
+  
+    # ONLY SHOW THOSE IN THE SPECIFIED TIMEFRAME
+    ?formdata <http://mu.semte.ch/vocabularies/ext/sessionStartedAtTime> ?datetime.
+  
+    FILTER (?datetime < xsd:dateTime("END_YEAR") && ?datetime > xsd:dateTime("START_YEAR"))
+  }`;
+
+  const parsedQuery = parser.parse(defaultQuery);
+
+  parsedQuery.where[1].expression.args[0].args[1].value = municipality;
+  parsedQuery.where[1].expression.args[1].args[1].value =
+    municipalities[municipality];
+
+  parsedQuery.where[3].expression.args[0].args[1].args[0].value = `${year}-12-31T23:59:59Z`;
+  parsedQuery.where[3].expression.args[1].args[1].args[0].value = `${year}-01-01T00:00:00Z`;
+
+  const newQuery = generator.stringify(parsedQuery);
 
   query(newQuery)
     .then(function (response) {
@@ -126,8 +187,36 @@ app.get("/revenue-query", function (req, res) {
     .catch(function (err) {
       res.send(JSON.stringify(err));
     });
+});
 
-  console.log("query finished");
+app.get("/municipalities", function (_, res) {
+  const q = `
+    PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+    PREFIX mu: <http://mu.semte.ch/vocabularies/ext/>
+    PREFIX besluit: <http://data.vlaanderen.be/ns/besluit#>
+
+    SELECT DISTINCT ?municipality ?province
+    WHERE {
+      ?_municipality mu:inProvincie ?_province;
+        besluit:classificatie ?classificatie;
+        skos:prefLabel ?municipality .
+        
+      ?classificatie skos:prefLabel "Gemeente" .
+
+      ?_province skos:prefLabel ?province.
+    }`;
+
+  query(q)
+    .then(function (response) {
+      res.send(
+        JSON.stringify({
+          results: response.results.bindings,
+        })
+      );
+    })
+    .catch(function (err) {
+      res.send(JSON.stringify(err));
+    });
 });
 
 app.use(errorHandler);
