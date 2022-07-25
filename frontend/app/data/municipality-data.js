@@ -13,13 +13,39 @@ const addDecisionData = () => {
     () => {
       return {
         category: [
+          'Water',
+          'Opvolgende Belastingen',
+          'Voertuigen',
+          'Milieu',
+          'Verkrotting & Leegstand',
+          'Riolering',
+          'Water',
+          'Tucht',
+          'Administratie & Vergunningen',
+          'Andere',
+          'Wegen',
+          'Urbanisatiebelastingen',
+          'Vuil',
+          'Sterfte',
+          'Drijfkracht',
+          'Grondstoffen',
+          'Handel',
+          'Vermaak',
+          'Taxi',
+          'Reclame',
+          'Openbare Domein',
+          'Tanks & Vergaarbakken',
+          'Openbare Hygiene',
+          'Verblijf',
+          'Prive-wegwijzers',
+          'Plaats',
+          'Grondstoffen',
+          'Strand',
+          'Bouwen',
+          'Parkeren',
           'Dieren',
-          'Paardenfluisteres',
-          'Transport',
-          'Infrastructure',
-          'Gasboetes',
-        ][Math.floor(Math.random() * 5)],
-        change: 'https://www.minecraft.net',
+        ][Math.floor(Math.random() * 15)],
+        document: 'https://www.minecraft.net',
         subcategories: [
           { title: 'Hamster', value: Math.floor(Math.random() * 100) + 1 },
           { title: 'Paard', value: Math.floor(Math.random() * 100) + 1 },
@@ -49,11 +75,6 @@ export const municipality_data = [
   },
   {
     title: 'Schoten',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Lasne',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -89,11 +110,6 @@ export const municipality_data = [
   },
   {
     title: 'Ham',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Chastre',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -143,16 +159,6 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Meise',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Eupen',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
     title: 'Kruibeke',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
@@ -164,21 +170,6 @@ export const municipality_data = [
   },
   {
     title: 'Haaltert',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Grez-Doiceau',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Hoeilaart',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Villers-la-Ville',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -213,47 +204,12 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Saint-Ghislain',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
     title: 'Lochristi',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
   {
-    title: 'Wanze',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Mont-Saint-Guibert',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
     title: 'Eeklo',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Lennik',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Farciennes',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Hechtel-Eksel',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Milmort',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -298,37 +254,7 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Gembloux',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Lummen',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Andenne',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Hannut',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Thuin',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
     title: 'Maaseik',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Awans',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -377,16 +303,7 @@ export const municipality_data = [
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
-  {
-    title: 'Tarcienne',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Messancy',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
+
   {
     title: 'Linkebeek',
     taxData: addTaxData(),
@@ -398,7 +315,7 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Ghent',
+    title: 'Gent',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -409,11 +326,6 @@ export const municipality_data = [
   },
   {
     title: 'Leuven',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Verviers',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -438,17 +350,7 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'La Hulpe',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
     title: 'Puurs',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Ciney',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -468,16 +370,6 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Leuze-en-Hainaut',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Saint Vith',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
     title: 'Lovendegem',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
@@ -493,32 +385,12 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Spa',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
     title: 'Broechem',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
   {
-    title: 'Jumet',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Marcinelle',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
     title: 'Zelzate',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Ottignies-Louvain-la-Neuve',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -543,22 +415,7 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Malmedy',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
     title: 'Hooglede',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Bassenge',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Harze',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -598,11 +455,6 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Fl√©malle-Grande',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
     title: 'Wellen',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
@@ -628,22 +480,7 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Huy',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
     title: 'Ranst',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Flemalle',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Beauvechain',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -659,11 +496,6 @@ export const municipality_data = [
   },
   {
     title: 'Meulebeke',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Meeuwen-Gruitrode',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -728,11 +560,6 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Jodoigne',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
     title: 'Heusden-Zolder',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
@@ -788,7 +615,7 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Uccle',
+    title: 'Ukkel',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -808,16 +635,6 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Chatelet',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Roeulx',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
     title: 'Merchtem',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
@@ -828,12 +645,12 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Ypres',
+    title: 'Ieper',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
   {
-    title: 'Tournai',
+    title: 'Turnhout',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -928,16 +745,6 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Chievres',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Pont-a-Celles',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
     title: 'Leopoldsburg',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
@@ -968,11 +775,6 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Hornu',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
     title: 'Steenokkerzeel',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
@@ -983,52 +785,12 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Affligem',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Wegnez',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Ingelmunster',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Handzame',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Ghlin',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Tubize',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
     title: 'Vilvoorde',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
   {
     title: 'Izegem',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Courcelles',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Virton',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -1124,26 +886,6 @@ export const municipality_data = [
   },
   {
     title: 'Hemiksem',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Namur',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Gilly',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Wavre',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Alleur',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -1248,7 +990,7 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Overijse',
+    title: 'Overijsel',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -1268,22 +1010,12 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Sambreville',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
     title: 'Harelbeke',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
   {
     title: 'Wezembeek-Oppem',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Bastogne',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -1328,11 +1060,6 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: '(not set)',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
     title: 'Brugge',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
@@ -1359,16 +1086,6 @@ export const municipality_data = [
   },
   {
     title: 'Berlaar',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Eghezee',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Lille',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -1408,27 +1125,7 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Jemeppe-sur-Sambre',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: "Fontaine-l'Eveque",
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Ham-sur-Heure-Nalinnes',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
     title: 'Blankenberge',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Chaumont-Gistoux',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -1553,11 +1250,6 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Montigny-le-Tilleul',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
     title: 'Erpe-Mere',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
@@ -1569,11 +1261,6 @@ export const municipality_data = [
   },
   {
     title: 'Hoeselt',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Woluwe-Saint-Lambert',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -1613,32 +1300,7 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Walcourt',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Aywaille',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Dinant',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
     title: 'De Panne',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Profondeville',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Aubange',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -1653,11 +1315,6 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Saint-Gilles',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
     title: 'Baarle-Hertog',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
@@ -1668,7 +1325,7 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Mouscron',
+    title: 'Moeskroen',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -1693,11 +1350,6 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Manage',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
     title: 'Wuustwezel',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
@@ -1713,32 +1365,12 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Frameries',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
     title: 'Zoutleeuw',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
   {
     title: 'Stekene',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Colfontaine',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Oupeye',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Petit-Rechain',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -1787,11 +1419,7 @@ export const municipality_data = [
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
-  {
-    title: 'Chapelle-lez-Herlaimont',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
+
   {
     title: 'Menen',
     taxData: addTaxData(),
@@ -1804,16 +1432,6 @@ export const municipality_data = [
   },
   {
     title: 'Balen',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Retie',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Soumagne',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -1844,11 +1462,6 @@ export const municipality_data = [
   },
   {
     title: 'Landen',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Quaregnon',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -1986,26 +1599,6 @@ export const municipality_data = [
     title: 'Antwerpen',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
-    decisions: [
-      {
-        code: 'MAR3232',
-        category: 'Afval',
-        change: 'dasdas',
-        date: '2020-01-01',
-      },
-      {
-        code: 'MAR3233',
-        category: 'Paardenfluisteraars',
-        change: '-423689 euri',
-        date: '2042-01-01',
-      },
-      {
-        code: 'MAR3245',
-        category: 'Hamsters',
-        change: '+439 euri',
-        date: '2190-02-01',
-      },
-    ],
   },
   {
     title: 'Waterloo',
@@ -2039,16 +1632,6 @@ export const municipality_data = [
   },
   {
     title: 'Liedekerke',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Chaudfontaine',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Amay',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -2108,22 +1691,7 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Malmedy',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Liege',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
     title: 'Evere',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'La Louviere',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },
@@ -2253,16 +1821,6 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Grace-Hollogne',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Sprimont',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
     title: 'Diepenbeek',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
@@ -2278,27 +1836,7 @@ export const municipality_data = [
     decisionData: addDecisionData(),
   },
   {
-    title: 'Yvoir',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
     title: 'Lichtervelde',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Saintes',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Jambes',
-    taxData: addTaxData(),
-    decisionData: addDecisionData(),
-  },
-  {
-    title: 'Boncelles',
     taxData: addTaxData(),
     decisionData: addDecisionData(),
   },

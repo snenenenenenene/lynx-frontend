@@ -1,6 +1,6 @@
 <div style='margin-top: 30px;'>
   <AuDataTable
-    @content={{this.municipality.decisions}}
+    @content={{this.municipality.decisionData}}
     @fields='title description'
     @noDataMessage='Geen data'
     as |t|
@@ -29,7 +29,9 @@
           {{row.category}}
         </td>
         <td>
-          {{row.change}}
+          <a href={{row.document}}>
+            {{row.document}}
+          </a>
         </td>
         <td>
           {{row.date}}

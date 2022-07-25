@@ -14,12 +14,12 @@
         />
         <AuDataTableThSortable
           @field='description'
-          @label='Totale inkomsten'
+          @label='Totale inkomsten (€)'
           @class='data-table__header-title'
         />
         <AuDataTableThSortable
           @field='description'
-          @label='Globale inkomen per inwoner'
+          @label='Globale inkomen per inwoner (€)'
           @class='data-table__header-title'
         /><AuDataTableThSortable
           @field='description'
@@ -37,9 +37,9 @@
               {{row.title}}
             </td>
             <td>
-              {{row.taxData.totalRevenue}}
+              {{format-currency row.taxData.1.totalRevenue}}
             </td><td>
-              {{row.taxData.averageRevenue}}
+              {{format-currency row.taxData.1.averageRevenue}}
             </td><td>
               <AuButton @icon='unordered-list' @iconAlignment='right'>
                 <LinkTo
@@ -60,9 +60,9 @@
             {{row.title}}
           </td>
           <td>
-            {{row.taxData.totalRevenue}}
+            {{format-currency row.taxData.1.totalRevenue}}
           </td><td>
-            {{row.taxData.averageRevenue}}
+            {{format-currency row.taxData.1.averageRevenue}}
           </td><td>
             <AuButton @icon='unordered-list' @iconAlignment='right'>
               <LinkTo

@@ -17,19 +17,65 @@ export default class MunicipalitiesService extends Service {
   @tracked showMap = true;
   @tracked query = '';
 
+  @action currentSelectedMunicipality(mun) {
+    return this.data.find(
+      (municipality) => municipality.title.toUpperCase() === mun.toUpperCase()
+    );
+  }
+
   @action toggleModal(data) {
-    this.modalData = {
-      title: data.target.feature.properties.ADMUNADU,
-      taxData: { totalRevenue: 1000000, averageRevenue: 1000000 },
+    this.modalData = this.currentSelectedMunicipality(
+      data.target.feature.properties.ADMUNADU
+    );
+
+    this.counts = this.modalData.decisionData.reduce((acc, decision) => {
+      try {
+        const index = acc.findIndex((val) => val[0] === decision.category);
+
+        if (index === -1) {
+          acc.push([decision.category, decision.total]);
+        } else {
+          acc[index][1]++;
+        }
+        return acc;
+      } catch (error) {
+        console.log(error);
+      }
+    }, []);
+    this.modalGraphData = {
+      type: 'bar',
+      columns: this.counts,
     };
 
     this.showModal = !this.showModal;
   }
 
+  @tracked modalGraphData = {
+    columns: this.counts,
+    type: 'bar',
+  };
+
+  @tracked counts = this.modalData.decisionData.reduce((acc, decision) => {
+    try {
+      const index = acc.findIndex((val) => val[0] === decision.category);
+
+      if (index === -1) {
+        acc.push([decision.category, decision.total]);
+      } else {
+        acc[index][1]++;
+      }
+      return acc;
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
+
   @action tableToggleModal(data) {
-    this.modalData = {
-      title: data.target.innerText,
-      taxData: { totalRevenue: 1000000, averageRevenue: 1000000 },
+    this.modalData = this.currentSelectedMunicipality(data.target.innerText);
+
+    this.modalGraphData = {
+      type: 'bar',
+      columns: this.counts,
     };
     this.showModal = !this.showModal;
   }
