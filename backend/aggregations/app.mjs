@@ -179,10 +179,14 @@ app.get("/decisions-query", function (req, res) {
 
   const parsedQuery = parser.parse(defaultQuery);
 
+  // Replacing the 1st filter values to fit the request's municipality
+  // Query -> 1st filter -> 1st and 2nd arguments of the OR expression  -> 2nd argument in the equals
   parsedQuery.where[1].expression.args[0].args[1].value = municipality;
   parsedQuery.where[1].expression.args[1].args[1].value =
-    municipalities[municipality];
-
+  municipalities[municipality];
+  
+  // Replacing the 2st filter values to filter the request's year
+  // Query -> 2nd filter -> 1st and 2nd arguments of the AND expression  -> 1st argument in the dataTime function
   parsedQuery.where[3].expression.args[0].args[1].args[0].value = `${year}-12-31T23:59:59Z`;
   parsedQuery.where[3].expression.args[1].args[1].args[0].value = `${year}-01-01T00:00:00Z`;
 
