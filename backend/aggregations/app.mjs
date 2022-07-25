@@ -46,6 +46,26 @@ app.get("/", function (_, res) {
   res.send('"Welcome to LBLOD\'s aggregations API"');
 });
 
+/**
+ * Returns the requested aggregation for municipality tax revenue.
+ *
+ * ## Query parameters
+ * ### Filters
+ * - `municipality`: the municipality to get the tax revenue for
+ * - `province`: the province to get the tax revenue for
+ * - `marcode`: the marcode to get the tax revenue for
+ * - `category`: the tax category to get the tax revenue for
+ * - `year`: the year to get the tax revenue for
+ * ### Aggregation
+ * - `groupBy`: comma-separated list of variables (same as filters) to group by
+ *
+ * ## Response
+ * results: List containing the revenue sum and the `groupBy` variables
+ *
+ * ## Example
+ * `http://localhost:8000/aggregations/revenue-query?municipality=Leuven&year=2022&groupBy=category`
+ * Returns the tax revenue for Leuven in 2022 grouped by category
+ */
 app.get("/revenue-query", function (req, res) {
   // By default we'll group by the variables not provided
   const defaultGroupBy = new Set([
@@ -143,6 +163,20 @@ app.get("/revenue-query", function (req, res) {
     });
 });
 
+/**
+ * Returns the requested aggregation for decision amounts.
+ *
+ * ## Query parameters
+ * - `year`: the year to get the decision amounts for, defaults to the current year
+ * - `municipality`: the municipality to get the decision amounts for
+ *
+ * ## Response
+ * count: Amount of decisions the municipality made that year
+ *
+ * ## Example
+ * `http://localhost:8000/aggregations/decisions-query?municipality=Leuven&year=2022`
+ * Returns the amount of tax decisions made in Leuven in 2022
+ */
 app.get("/decisions-query", function (req, res) {
   // Use current year as default
   const year = req.query.year || new Date().getFullYear();
@@ -184,7 +218,7 @@ app.get("/decisions-query", function (req, res) {
   parsedQuery.where[1].expression.args[0].args[1].value = municipality;
   parsedQuery.where[1].expression.args[1].args[1].value =
   municipalities[municipality];
-  
+
   // Replacing the 2st filter values to filter the request's year
   // Query -> 2nd filter -> 1st and 2nd arguments of the AND expression  -> 1st argument in the dataTime function
   parsedQuery.where[3].expression.args[0].args[1].args[0].value = `${year}-12-31T23:59:59Z`;
@@ -196,7 +230,7 @@ app.get("/decisions-query", function (req, res) {
     .then(function (response) {
       res.send(
         JSON.stringify({
-          results: response.results.bindings,
+          count: parseInt(response.results.bindings[0].count.value),
         })
       );
     })
