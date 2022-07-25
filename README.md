@@ -9,54 +9,75 @@
 		left: 0;
 		bottom: 0;
 		width: 100%;
-		background-color: white;
-		color: black;
+
 		text-align: center;
 	}
 
 </style>
 
 
-# Public Tax Decisions
-#### Project for the Belgian Agency of Domestic Affairs.
-<center><img src="resources/Crest_ABB.svg" width="350"></center>
+<center><img src="resources/Crest_ABB.svg" width="250"></center>
 
-## A brief summary of Lynx
+# LYNX
+#### Project for the Belgian Agency of Domestic Affairs.
+<br/>
+
+# A brief summary of Lynx
 
 <center><img src="resources/mockup.png" style="size:60%;"></center>
 
 <br/>
-LYNX is a linked open data web-based application developed for Agentschap Binnenlands Bestuur (ABB) in collaboration with Open Summer of Code. The web app simplifies the information hierarchy between citizens and their local governments in Flanders and Brussels with the final goal to improve communication transparency in tax information. As the amount of tax data becomes more abundant without a clear and organized structure, citizens find it too difficult to stay up to date with the tax decisions from their local municipality and many are discouraged to do their own research. With LYNX, citizens will be able to consult the latest tax decisions in their local municipalities, as well as compare tax-related information between other municipalities. Thanks to linked open data, this government service will increase citizen engagement in the decision-making process and further improve data-sharing culture between residents and their municipalities.  
-<br/>  
-  
-## Setting up
+LYNX is a linked open data web-based application developed for Agentschap Binnenlands Bestuur (ABB) in collaboration with Open Summer of Code. The web app simplifies the information hierarchy between citizens and their local governments in Flanders and Brussels with the final goal to improve communication transparency in tax information. As the amount of tax data becomes more abundant without a clear and organized structure, citizens find it too difficult to stay up to date with the tax decisions from their local municipality and many are discouraged to do their own research. With LYNX, citizens will be able to consult the latest tax decisions in their local municipalities, as well as compare tax-related information between other municipalities. Thanks to linked open data, this government service will increase citizen engagement in the decision-making process and further improve data-sharing culture between residents and their municipalities.
+<br/><br/>  
+
+# Setting up
 For setting up a local development environment, you first need to install a pair of dependencies. 
   
-### Dependencies
+## Dependencies
   
   For the backend you will need:
-  - Docker
+  - Docker: [Click here to install](https://docs.docker.com/get-docker/)
 
   And for the frontend:
-  - NodeJS
+  - NodeJS: [Click here to install](https://nodejs.org/en/download/)
   
+<br/>
   
+# Running and Deploying
   
-### Running and Deploying
-  
-  For running the backend you can do:
+  ## Backend
+  For running the backend you first need to change to the backend directory:  
   ```
   cd backend
+  ```  
+  
+  then instantiate the docker environment
+  ```
   docker compose-up
   ```
   
-  For running the frontend you can do:
+  After these instructions you will find the API on localhost:8890
+  
+  ## Frontend
+  For running the frontend you need to change to the frontend directory:
   ```
   cd frontend
-  npm install
-  npm start
+  ```  
+  
+  Then install the node dependencies.
   ```
-<br/>
+  npm install
+  ```  
+  
+  After that you can start the frontend application
+  ```
+  npm start
+  ```  
+  
+  You will find the application on localhost:5000
+<br/><br/>
+
+# Credits
 
 <footer>
 	<img src="resources/vo_naakt.jpg" alt="snoep"/><br/>
