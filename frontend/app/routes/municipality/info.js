@@ -5,7 +5,6 @@ export default class MunicipalityInfoRoute extends Route {
   model() {
     return {
       currentMunicipality: () => {
-        console.log(this.municipalities.currentMunicipalityRoute);
         return this.municipalities.currentMunicipalityRoute;
       },
     };

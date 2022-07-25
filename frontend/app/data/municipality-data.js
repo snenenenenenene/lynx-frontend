@@ -1,2740 +1,1991 @@
+const addTaxData = () => {
+  return [2018, 2019, 2020, 2021, 2022].map((minecraft) => {
+    return {
+      year: minecraft,
+      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
+      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
+    };
+  });
+};
+
+const addDecisionData = () => {
+  return Array.from(Array(Math.floor(Math.random() * 32) + 10).keys()).map(
+    () => {
+      return {
+        category: [
+          'Dieren',
+          'Paardenfluisteres',
+          'Transport',
+          'Infrastructure',
+          'Gasboetes',
+        ][Math.floor(Math.random() * 5)],
+        subcategories: [
+          { title: 'Hamster', value: Math.floor(Math.random() * 100) + 1 },
+          { title: 'Paard', value: Math.floor(Math.random() * 100) + 1 },
+        ],
+        total: Math.floor(Math.random() * 10000) + 100,
+        date: '11-11-2019',
+        link: 'https://www.minecraft.net',
+      };
+    }
+  );
+};
+
 export const municipality_data = [
   {
     title: 'Zottegem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Heist-op-den-Berg',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Denderleeuw',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Schoten',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Lasne',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Riemst',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Libramont-Chevigny',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Houthalen-Helchteren',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Beernem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Zwalm',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Opglabbeek',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Ham',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Chastre',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Alken',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Staden',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Meensel',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Houthalen',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Aalst',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Zaventem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Sint-Pieters-Leeuw',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Dendermonde',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Genk',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Meise',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Eupen',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Kruibeke',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Koksijde',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Haaltert',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Grez-Doiceau',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Hoeilaart',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Villers-la-Ville',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Destelbergen',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Putte',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Vorst',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Oostende',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Herstal',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Hoogstraten',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Saint-Ghislain',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Lochristi',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Wanze',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Mont-Saint-Guibert',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Eeklo',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Lennik',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Farciennes',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Hechtel-Eksel',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Milmort',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Kortemark',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Sint-Amands',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Knesselare',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Groot-Bijgaarden',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Eksel',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Hasselt',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Beringen',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Beersel',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Gembloux',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Lummen',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Andenne',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Hannut',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Thuin',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Maaseik',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Awans',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Zonnebeke',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Bierbeek',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Arendonk',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Herselt',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Begijnendijk',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Tremelo',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Vosselaar',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Lint',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Oostrozebeke',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Tarcienne',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Messancy',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Linkebeek',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Schaerbeek',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Ghent',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Sint-Jans-Molenbeek',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Leuven',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Verviers',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Kortrijk',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Turnhout',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Ath',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Roosdaal',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'La Hulpe',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Puurs',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Ciney',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Damme',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Wemmel',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Schilde',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Leuze-en-Hainaut',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Saint Vith',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Lovendegem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Moerbeke-Waas',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Borsbeek',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Spa',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Broechem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Jumet',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Marcinelle',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Zelzate',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Ottignies-Louvain-la-Neuve',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Grimbergen',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Wevelgem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Lubbeek',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Sint-Katelijne-Waver',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Malmedy',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Hooglede',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Bassenge',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Harze',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Vorselaar',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Ledegem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Merksem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Houthulst',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Bouwel',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Erembodegem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Ruddervoorde',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Fl√©malle-Grande',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Wellen',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Brasschaat',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Jette',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Sint-Agatha-Berchem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Lier',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Huy',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Ranst',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Flemalle',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Beauvechain',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Aartselaar',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Seneffe',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Meulebeke',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Meeuwen-Gruitrode',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Deerlijk',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Kraainem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Anzegem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Herenthout',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Ichtegem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Heverlee',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Berchem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Lichtaart',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Geel',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Kontich',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Tienen',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Aarschot',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Jodoigne',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Heusden-Zolder',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Lebbeke',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Bornem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Neerpelt',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Sint-Genesius-Rode',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Herve',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Merksplas',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Waasmunster',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Oudenburg',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Elewijt',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Dessel',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Uccle',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Laeken',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Etterbeek',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Booischot',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Chatelet',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Roeulx',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Merchtem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Ixelles',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Ypres',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Tournai',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Saint-Josse-ten-Noode',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Watermael-Boitsfort',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Mortsel',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Waregem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Londerzeel',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Gooik',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Veurne',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Ninove',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Vise',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Arlon',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Zedelgem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Diest',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Limal',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Brecht',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Boussu',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Opwijk',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Nazareth',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Peer',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Chievres',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Pont-a-Celles',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Leopoldsburg',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Wervik',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Morlanwelz',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Overpelt',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Koekelberg',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Malle',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Hornu',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Steenokkerzeel',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Borgerhout',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Affligem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Wegnez',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Ingelmunster',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Handzame',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Ghlin',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Tubize',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Vilvoorde',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Izegem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Courcelles',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Virton',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Rijkevorsel',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Knokke-Heist',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Lede',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Blegny',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Essen',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Sint-Gillis-Waas',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Zwevegem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Tielt-Winge',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Gistel',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Zonhoven',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Herk-de-Stad',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Vielsalm',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'De Haan',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Boutersem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Halen',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Wichelen',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Laakdal',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Brussel',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Hemiksem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Namur',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Gilly',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Wavre',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Alleur',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Tervuren',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Nieuwerkerken-Aalst',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Dilbeek',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Sint-Truiden',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Deinze',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Herent',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Kortenberg',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Kalmthout',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Kampenhout',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Wielsbeke',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Hulshout',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Zandhoven',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Boortmeerbeek',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Wijnegem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Ardooie',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Desselgem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Dilsen',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Mons',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Nivelles',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Sint-Niklaas',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Overijse',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: "Braine-l'Alleud",
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Edegem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Torhout',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Sambreville',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Harelbeke',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Wezembeek-Oppem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Bastogne',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Zulte',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Rumst',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Oosterzele',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Laarne',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Libramont',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Lint',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Bavikhove',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Heule',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: '(not set)',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Brugge',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Asse',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Auderghem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Jabbeke',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Duffel',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Berlaar',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Eghezee',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Lille',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Melle',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Hoegaarden',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Gavere',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Wilrijk',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Oostakker',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Seraing',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Ronse',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Jemeppe-sur-Sambre',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: "Fontaine-l'Eveque",
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Ham-sur-Heure-Nalinnes',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Blankenberge',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Chaumont-Gistoux',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Olen',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Keerbergen',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Schelle',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Aubange',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Sint-Martens-Latem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Deurne',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Ans',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Haasrode',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Merelbeke',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Kasterlee',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Huldenberg',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Maldegem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Jurbise',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Gerpinnes',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Haacht',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Peruwelz',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Waremme',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Nevele',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Linter',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Couvin',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Bree',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Boom',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Kruishoutem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Waarschoot',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Montigny-le-Tilleul',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Erpe-Mere',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Berlare',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Hoeselt',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Woluwe-Saint-Lambert',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Lokeren',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Geraardsbergen',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Zoersel',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Beerse',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Brakel',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Oostkamp',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Willebroek',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Walcourt',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Aywaille',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Dinant',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'De Panne',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Profondeville',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Aubange',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Borgloon',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Diegem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Saint-Gilles',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Baarle-Hertog',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Beveren',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Mouscron',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Aalter',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Westerlo',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Temse',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Scherpenheuvel-Zichem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Manage',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Wuustwezel',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Bredene',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Stabroek',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Frameries',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Zoutleeuw',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Stekene',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Colfontaine',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Oupeye',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Petit-Rechain',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Gosselies',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Souvret',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Engis',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Florenville',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Haine-Saint-Paul',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Woluwe-Saint-Pierre',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Braine-le-Comte',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Oudenaarde',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Mol',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Chapelle-lez-Herlaimont',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Menen',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Tongeren',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Balen',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Retie',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Soumagne',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Mechelen',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Charleroi',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Halle',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Roeselare',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Poperinge',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Landen',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Quaregnon',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Galmaarden',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Grobbendonk',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Lessines',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Esneux',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Assenede',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Meerhout',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Kessel-Lo',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Kermt',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Machelen',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Forest',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Maasmechelen',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Dilsen-Stokkem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Hamme',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Diksmuide',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Rotselaar',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Nijlen',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Herzele',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Boechout',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Hamont-Achel',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Holsbeek',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Zemst',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Bonheiden',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Mettet',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Oud-Turnhout',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Bocholt',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Sint-Andries',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Antwerpen',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
     decisions: [
       {
         code: 'MAR3232',
@@ -2742,440 +1993,328 @@ export const municipality_data = [
         change: 'dasdas',
         date: '2020-01-01',
       },
+      {
+        code: 'MAR3233',
+        category: 'Paardenfluisteraars',
+        change: '-423689 euri',
+        date: '2042-01-01',
+      },
+      {
+        code: 'MAR3245',
+        category: 'Hamsters',
+        change: '+439 euri',
+        date: '2190-02-01',
+      },
     ],
   },
   {
     title: 'Waterloo',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Zele',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Evergem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Wandre',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Zwijndrecht',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Nieuwpoort',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Liedekerke',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Chaudfontaine',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Amay',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Ternat',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Wommelgem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Enghien',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Buggenhout',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Herne',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Battice',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Baudour',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Limbourg',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Lanklaar',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Zellik',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Lembeke',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Malmedy',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Liege',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Evere',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'La Louviere',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Lommel',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Tielt',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Marche-en-Famenne',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Fleurus',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Tessenderlo',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Binche',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Ganshoren',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Kapellen',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Kapelle-op-den-Bos',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Clavier',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Hove',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Wingene',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Zomergem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Sint-Lievens-Houtem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Zingem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Paal',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: "Sint-Job-in-'t-Goor",
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Anderlecht',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Soignies',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Wetteren',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Bilzen',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Herentals',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Lanaken',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Bertem',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Middelkerke',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Grace-Hollogne',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Sprimont',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Diepenbeek',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Kinrooi',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Kuurne',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Yvoir',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Lichtervelde',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Saintes',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Jambes',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Boncelles',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Averbode',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Wilsele',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
   {
     title: 'Everberg',
-    taxData: {
-      totalRevenue: Math.floor(Math.random() * 10000000) + 1000,
-      averageRevenue: Math.floor(Math.random() * 5000000) + 300000,
-    },
+    taxData: addTaxData(),
+    decisionData: addDecisionData(),
   },
 ];

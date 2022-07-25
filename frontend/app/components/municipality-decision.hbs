@@ -9,10 +9,6 @@
       <c.header>
         <AuDataTableThSortable
           @field='title'
-          @label='Code'
-          @class='data-table__header-title'
-        /><AuDataTableThSortable
-          @field='title'
           @label='Categorie'
           @class='data-table__header-title'
         />
@@ -29,9 +25,6 @@
 
       </c.header>
       <c.body as |row|>
-        <td>
-          {{row.code}}
-        </td>
         <td>
           {{row.category}}
         </td>
