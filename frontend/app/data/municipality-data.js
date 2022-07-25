@@ -19,13 +19,13 @@ const addDecisionData = () => {
           'Infrastructure',
           'Gasboetes',
         ][Math.floor(Math.random() * 5)],
+        change: 'https://www.minecraft.net',
         subcategories: [
           { title: 'Hamster', value: Math.floor(Math.random() * 100) + 1 },
           { title: 'Paard', value: Math.floor(Math.random() * 100) + 1 },
         ],
         total: Math.floor(Math.random() * 10000) + 100,
         date: '11-11-2019',
-        link: 'https://www.minecraft.net',
       };
     }
   );
