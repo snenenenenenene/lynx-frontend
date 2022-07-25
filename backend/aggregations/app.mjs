@@ -25,17 +25,17 @@ const municipalities = JSON.parse(
  * @param {*} positions: list of tuples (row, section) to fill in
  * @param {*} value: the value to verify
  */
-function replaceVariableIfExists(query, positions, value) {
+function replaceVariableIfExists(query, schema, value, language) {
   if (!value) return false;
 
-  let datatype;
+  let datatype = schema.language;
   if (typeof value == "number") {
     datatype = value % 1 === 0 ? integerType : floatType;
   }
 
   const literal = nodeFactory.literal(value.toString(), datatype);
 
-  for (const position of positions) {
+  for (const position of schema.positions) {
     query.where[0].triples[position[0]][position[1]] = literal;
   }
 
@@ -93,16 +93,28 @@ app.get("/revenue-query", function (req, res) {
 
   // Represents the different parameters and their positions in the query
   const paramsSchema = {
-    year: [[4, "object"]],
-    marcode: [[5, "object"]],
-    municipality: [[8, "object"]],
-    category: [[9, "object"]],
-    province: [[10, "object"]],
+    year: {
+      positions: [[4, "object"]],
+    },
+    marcode: {
+      positions: [[5, "object"]],
+      language: "nl",
+    },
+    municipality: {
+      positions: [[8, "object"]],
+    },
+    category: {
+      positions: [[9, "object"]],
+      language: "nl",
+    },
+    province: {
+      positions: [[10, "object"]],
+    },
   };
 
   // We fill in the query with the values from the request
-  for (const [key, positions] of Object.entries(paramsSchema)) {
-    if (replaceVariableIfExists(parsedQuery, positions, req.query[key])) {
+  for (const [key, schema] of Object.entries(paramsSchema)) {
+    if (replaceVariableIfExists(parsedQuery, schema, req.query[key])) {
       defaultGroupBy.delete(key);
     }
   }
