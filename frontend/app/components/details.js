@@ -16,7 +16,7 @@ export default class DetailsComponent extends Component {
   @tracked currGraphNr = 1;
 
   @tracked color = {
-    pattern: ['#003B8E'],
+    pattern: ['#003B8E', '#FFA10A', '#FFE615'],
   };
 
   @tracked graphData1 = {
@@ -24,7 +24,7 @@ export default class DetailsComponent extends Component {
     x: 'x',
     columns: [
       ['x', 2018, 2019, 2020, 2021, 2022],
-      ['Revenue', ...this.municipality.taxData.map((tax) => tax.totalRevenue)],
+      ['Omzet', ...this.municipality.taxData.map((tax) => tax.totalRevenue)],
     ],
     categories: [...this.municipality.taxData.map((tax) => tax.year)],
 
