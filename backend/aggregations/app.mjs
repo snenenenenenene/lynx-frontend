@@ -22,10 +22,10 @@ const municipalities = JSON.parse(
 /**
  * Modifies the query object to fill in the missing variables with literals
  * @param {*} query: the query object
- * @param {*} positions: list of tuples (row, section) to fill in
+ * @param {*} schema: positions = list of tuples (row, section) to fill in, language = string language
  * @param {*} value: the value to verify
  */
-function replaceVariableIfExists(query, schema, value, language) {
+function replaceVariableIfExists(query, schema, value) {
   if (!value) return false;
 
   let datatype = schema.language;
