@@ -1,0 +1,88 @@
+@prefix mu: <http://mu.semte.ch/vocabularies/core/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ext: <http://mu.semte.ch/vocabularies/ext/BestuurseenheidClassificatieCode> .
+
+
+<http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/5ab0e9b8a3b2ca7c5e000003>
+	mu:uuid "5ab0e9b8a3b2ca7c5e000003" ;
+	a ext:BestuurseenheidClassificatieCode ;
+	a skos:Concept ;
+	skos:prefLabel "District" .
+
+<http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/66ec74fd-8cfc-4e16-99c6-350b35012e86>
+	mu:uuid "66ec74fd-8cfc-4e16-99c6-350b35012e86" ;
+	a ext:BestuurseenheidClassificatieCode ;
+	a skos:Concept ;
+	skos:prefLabel "Bestuur van de eredienst" .
+
+<http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/a3922c6d-425b-474f-9a02-ffb71a436bfc>
+	mu:uuid "a3922c6d-425b-474f-9a02-ffb71a436bfc" ;
+	a ext:BestuurseenheidClassificatieCode ;
+	a skos:Concept ;
+	skos:prefLabel "Politiezone" .
+
+<http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/ea446861-2c51-45fa-afd3-4e4a37b71562>
+	mu:uuid "ea446861-2c51-45fa-afd3-4e4a37b71562" ;
+	a ext:BestuurseenheidClassificatieCode ;
+	a skos:Concept ;
+	skos:prefLabel "Hulpverleningszone" .
+
+<http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/f9cac08a-13c1-49da-9bcb-f650b0604054>
+	mu:uuid "f9cac08a-13c1-49da-9bcb-f650b0604054" ;
+	a ext:BestuurseenheidClassificatieCode ;
+	a skos:Concept ;
+	skos:prefLabel "Centraal bestuur van de eredienst" .
+
+<http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/36a82ba0-7ff1-4697-a9dd-2e94df73b721>
+	mu:uuid "36a82ba0-7ff1-4697-a9dd-2e94df73b721" ;
+	a ext:BestuurseenheidClassificatieCode ;
+	a skos:Concept ;
+	skos:prefLabel "Autonoom gemeentebedrijf" .
+
+<http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/5ab0e9b8a3b2ca7c5e000000>
+	mu:uuid "5ab0e9b8a3b2ca7c5e000000" ;
+	a ext:BestuurseenheidClassificatieCode ;
+	a skos:Concept ;
+	skos:prefLabel "Provincie" .
+
+<http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/5ab0e9b8a3b2ca7c5e000001>
+	mu:uuid "5ab0e9b8a3b2ca7c5e000001" ;
+	a ext:BestuurseenheidClassificatieCode ;
+	a skos:Concept ;
+	skos:prefLabel "Gemeente" .
+
+<http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/5ab0e9b8a3b2ca7c5e000002>
+	mu:uuid "5ab0e9b8a3b2ca7c5e000002" ;
+	a ext:BestuurseenheidClassificatieCode ;
+	a skos:Concept ;
+	skos:prefLabel "OCMW" .
+
+<http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/80310756-ce0a-4a1b-9b8e-7c01b6cc7a2d>
+	mu:uuid "80310756-ce0a-4a1b-9b8e-7c01b6cc7a2d" ;
+	a ext:BestuurseenheidClassificatieCode ;
+	a skos:Concept ;
+	skos:prefLabel "Autonoom provinciebedrijf" .
+
+<http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/b156b67f-c5f4-4584-9b30-4c090be02fdc>
+	mu:uuid "b156b67f-c5f4-4584-9b30-4c090be02fdc" ;
+	a ext:BestuurseenheidClassificatieCode ;
+	a skos:Concept ;
+	skos:prefLabel "Projectvereniging" .
+
+<http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/cc4e2d67-603b-4784-9b61-e50bac1ec089>
+	mu:uuid "cc4e2d67-603b-4784-9b61-e50bac1ec089" ;
+	a ext:BestuurseenheidClassificatieCode ;
+	a skos:Concept ;
+	skos:prefLabel "OCMW vereniging" .
+
+<http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/cd93f147-3ece-4308-acab-5c5ada3ec63d>
+	mu:uuid "cd93f147-3ece-4308-acab-5c5ada3ec63d" ;
+	a ext:BestuurseenheidClassificatieCode ;
+	a skos:Concept ;
+	skos:prefLabel "Opdrachthoudende vereniging" .
+
+<http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/d01bb1f6-2439-4e33-9c25-1fc295de2e71>
+	mu:uuid "d01bb1f6-2439-4e33-9c25-1fc295de2e71" ;
+	a ext:BestuurseenheidClassificatieCode ;
+	a skos:Concept ;
+	skos:prefLabel "Dienstverlenende vereniging" .

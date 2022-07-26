@@ -50,13 +50,24 @@ export default class MunicipalitiesService extends Service {
     // TODO: fuzzy searching
     // TODO: replace mock tax & decision data with the real thing
 
-    let bestuurseenheden = await this.store.query("bestuurseenheid", {
-      naam: term.toLowerCase()
+    let municipalities = await this.store.query("bestuurseenheid", {
+      filter: {
+        // naam: term,
+        classificatie: await this.store.queryRecord("bestuurseenheid-classificatie-code", {
+          filter: {
+            label: "Gemeente"
+          }
+        })
+        // classificatie: "http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/5ab0e9b8a3b2ca7c5e000001"
+          // This is the URI of the "Gemeente" BestuurseenheidClassificatieCode
+          // Hardcoding the URI is a terrible hack, the proper way is to migrate this data into our project. But this'll do for now.
+      }
     });
-    let names = await bestuurseenheden.getEach("naam");
-    return names.map(n => {
+    let names = await municipalities.getEach("naam");
+
+    return names.map(name => {
       return {
-        title: n,
+        title: name,
         taxData: addTaxData(),
         decisionData: addDecisionData()
       };
