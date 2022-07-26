@@ -1,53 +1,28 @@
-# oSoc19-website
+# Osoc18 gh-pages template
+If you want to use this template, fork it to your /gh-pages branch, break it, fix it, ship it!
 
-Website for open Summer of code 2019
+## No hidden tigers or dragons
+It's just html pages. Start fiddling with the index.html to see your project come to life.
+The css is also just regular css, no compiling needed.
 
--- This site is based on Foundation for Sites Template
+## Styleguide
+There's a tiny style guide that shows you what elements you have at your disposal.
 
-# Foundation for Sites Template documentation
+## Where is it deployed?
+The site for your project will be: https://osoc18.github.io/[NAMEOFYOURREPO]
+The site for this template can be found here: https://osoc18.github.io/website/
 
-**Please open all issues with this template on the main [Foundation for Sites](https://github.com/zurb/foundation-sites/issues) repo.**
+--
 
-This is the basic starter project for [Foundation for Sites 6](http://foundation.zurb.com/sites). It includes a Sass compiler and a starter HTML file for you.
+## How to reuse
+* Go to your repo. Make a new branch called "gh-pages".
+* Make sure you remove all the files that were in that folder — but the .git folder.
+* Copy everything from this gh-pages folder into your gh-pages branch
+* Go to "settings" and make sure your gh-pages branch is set as github page (you will also find your url here).
+* Fiddle with the html and css and party!
 
-## Installation
+### Help, I can't set my gh-pages branch as github page!
+Ask your coach or an other owner of your repo to do it for you.
 
-To use this template, your computer needs:
-
-- [NodeJS](https://nodejs.org/en/) (0.12 or greater)
-- [Git](https://git-scm.com/)
-
-This template can be installed with the Foundation CLI, or downloaded and set up manually.
-
-### Using the CLI
-
-Install the Foundation CLI with this command:
-
-```bash
-npm install foundation-cli --global
-```
-
-Use this command to set up a blank Foundation for Sites project with this template:
-
-```bash
-foundation new --framework sites --template basic
-```
-
-The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
-
-### Manual Setup
-
-To manually set up the template, first download it with Git:
-
-```bash
-git clone https://github.com/zurb/foundation-sites-template projectname
-```
-
-Then open the folder in your command line, and install the needed dependencies:
-
-```bash
-cd projectname
-npm install
-```
-
-Finally, run `gulp` to run the Sass compiler. It will re-run every time you save a Sass file.
+### Help, my css doesn't work when I copy everything!
+You might have kept the gitignore file. That's okay, just make sure you open it and remove the "css" folder, because it's ignoring the files...
