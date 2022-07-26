@@ -1,21 +1,4 @@
 
-<style> 
-	center {
-		display: flex;
-		justify-content: center;
-	}
-	
-	footer {
-		left: 0;
-		bottom: 0;
-		width: 100%;
-
-		text-align: center;
-	}
-
-</style>
-
-
 <center><img src="resources/Crest_ABB.svg" width="250"></center>
 
 # LYNX
@@ -81,7 +64,7 @@ For setting up a local development environment, you first need to install a pair
 
 <footer>
 	<img src="resources/vo_naakt.jpg" alt="snoep"/><br/>
-	This project was medemogelijk gemaakt door de Vlaamse Overheid...  
+	This project was made possible thanks to the Flemish Government...  
 	<img src="resources/1532593594328.jpeg"/><br/>
-	En Open Summer of Code!  
+	As well as Open Summer of Code!  
 </footer>
