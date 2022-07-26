@@ -11,10 +11,15 @@ services:
     volumes:
       - virtuoso_data:/data
 
-  dispatcher:
-    build: ./backend/dispatcher
+  identifier:
+    image: semtech/mu-identifier:1.10.0
     ports:
       - "8000:80"
+    environment:
+      - DEFAULT_ACCESS_CONTROL_ALLOW_ORIGIN_HEADER=*
+
+  dispatcher:
+    build: ./backend/dispatcher
 
   resources:
     build: ./backend/resources

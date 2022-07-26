@@ -50,6 +50,7 @@ export default class MunicipalitiesService extends Service {
     //   mun.title.toLowerCase().includes(term.toLowerCase())
     // );
     // TODO: actually filter this by name
+    // TODO: check if we can use async/await instead of dumbass .then(function) thing
     return this.store.findAll('bestuurseenheid');
   }
 }
