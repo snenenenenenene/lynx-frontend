@@ -4,6 +4,7 @@ import { tracked } from '@glimmer/tracking';
 import { municipality_data } from '../data/municipality-data';
 import { tax_data } from '../data/tax-data';
 import { action } from '@ember/object';
+import { addTaxData, addDecisionData } from '../data/municipality-data';
 
 export default class MunicipalitiesService extends Service {
   @service store;
@@ -45,12 +46,20 @@ export default class MunicipalitiesService extends Service {
     this.showMap = !this.showMap;
   }
 
-  @action searchRepo(term) {
-    // return this.data.filter((mun) =>
-    //   mun.title.toLowerCase().includes(term.toLowerCase())
-    // );
-    // TODO: actually filter this by name
-    // TODO: check if we can use async/await instead of dumbass .then(function) thing
-    return this.store.findAll('bestuurseenheid');
+  @action async searchRepo(term) {
+    // TODO: fuzzy searching
+    // TODO: replace mock tax & decision data with the real thing
+
+    let bestuurseenheden = await this.store.query("bestuurseenheid", {
+      naam: term.toLowerCase()
+    });
+    let names = await bestuurseenheden.getEach("naam");
+    return names.map(n => {
+      return {
+        title: n,
+        taxData: addTaxData(),
+        decisionData: addDecisionData()
+      };
+    })
   }
 }

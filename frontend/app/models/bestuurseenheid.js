@@ -2,7 +2,7 @@ import Model, { attr, belongsTo, hasMany } from '@ember-data/model';
 
 export default class Bestuurseenheid extends Model {
   @attr() naam;
-  @attr('string-set') alternatieveNaam;
+  @attr('string') alternatieveNaam;
 
   @belongsTo('werkingsgebied', { inverse: null }) werkingsgebied;
   @belongsTo('werkingsgebied', { inverse: null }) provincie;
