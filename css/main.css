@@ -16,6 +16,17 @@ img {
 }
 
 
+.circle {
+	border-radius: 50%;
+}
+
+.justified-text {
+	text-align: justify;
+	text-justify: inter-word;
+  
+}
+
+
 /* osoc colors
 
 Green: #44dba4;
