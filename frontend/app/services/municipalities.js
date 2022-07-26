@@ -52,8 +52,9 @@ export default class MunicipalitiesService extends Service {
 
     let municipalities = await this.store.query("bestuurseenheid", {
       filter: {
+        naam: term,
         classificatie: {
-          "exact:label": "Gemeente"
+          ":exact:label": "Gemeente"
         }
       }
     });
