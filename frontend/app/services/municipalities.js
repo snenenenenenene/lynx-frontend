@@ -52,15 +52,9 @@ export default class MunicipalitiesService extends Service {
 
     let municipalities = await this.store.query("bestuurseenheid", {
       filter: {
-        // naam: term,
-        classificatie: await this.store.queryRecord("bestuurseenheid-classificatie-code", {
-          filter: {
-            label: "Gemeente"
-          }
-        })
-        // classificatie: "http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/5ab0e9b8a3b2ca7c5e000001"
-          // This is the URI of the "Gemeente" BestuurseenheidClassificatieCode
-          // Hardcoding the URI is a terrible hack, the proper way is to migrate this data into our project. But this'll do for now.
+        classificatie: {
+          "exact:label": "Gemeente"
+        }
       }
     });
     let names = await municipalities.getEach("naam");
