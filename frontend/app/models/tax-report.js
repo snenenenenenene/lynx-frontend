@@ -4,5 +4,5 @@ export default class TaxReportModel extends Model {
 	@attr('number') year;
 	@attr('number') amount;
 	@hasOne('mar-code') MARCode;
-	@hasOne('bestuursorgaan') municipality;
+	@hasOne('bestuurseenheid') municipality;
 }
