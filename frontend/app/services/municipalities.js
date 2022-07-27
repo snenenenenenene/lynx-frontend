@@ -11,7 +11,7 @@ export default class MunicipalitiesService extends Service {
 
   @tracked data = municipality_data;
   @tracked tax_cat = tax_data;
-  @tracked currentMunicipalityRoute = 'BRUGGE';
+  @tracked currentMunicipalityRoute = 'Brugge';
   @action setCurrentMunicipalityRoute(municipality) {
     this.currentMunicipalityRoute = municipality;
   }

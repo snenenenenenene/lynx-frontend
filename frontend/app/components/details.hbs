@@ -1,10 +1,9 @@
-{{page-title 'Info'}}
-{{!-- <div style='width: 100%; display: flex; justify-content: end; gap: 10px;'>
-  <AuButton @icon='chevron-left' {{on 'click' this.nextGraph}} />
-  <AuButton @icon='chevron-right' {{on 'click' this.nextGraph}} />
-</div> --}}
-<div style='display:flex;'>
+{{page-title 'Details'}}
 
+<section
+  class='au-o-region-large au-u-background-gray-200'
+  style='margin: 0;display:flex;'
+>
   <div style='width: 33%;'>
     <C3Chart
       @data={{this.graphData1}}
@@ -29,6 +28,5 @@
       @color={{this.color}}
     />
   </div>
-  <h1>{{this.municipality.averageRevenue}}</h1>
-  <h1>{{this.municipality.totalRevenue}}</h1>
-</div>
+</section>
+<Footer />

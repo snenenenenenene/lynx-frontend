@@ -63,7 +63,7 @@ export default class DetailsComponent extends Component {
   };
   @tracked graphData3 = {
     columns: this.revenuePerCategoryData,
-    type: this.graphType[this.currGraphNr],
+    type: 'bar',
   };
 
   @tracked graphTitle1 = { text: 'Omzet per jaar' };
