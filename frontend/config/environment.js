@@ -21,6 +21,7 @@ module.exports = function (environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     },
+    BACKEND_URL: process.env.BACKEND_URL || "http://localhost:8000",
   };
 
   if (environment === 'development') {

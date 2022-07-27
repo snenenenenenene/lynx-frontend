@@ -1,4 +1,4 @@
-const addTaxData = () => {
+export const addTaxData = () => {
   return [2018, 2019, 2020, 2021, 2022].map((minecraft) => {
     return {
       year: minecraft,
@@ -8,7 +8,7 @@ const addTaxData = () => {
   });
 };
 
-const addDecisionData = () => {
+export const addDecisionData = () => {
   return Array.from(Array(Math.floor(Math.random() * 32) + 10).keys()).map(
     () => {
       return {

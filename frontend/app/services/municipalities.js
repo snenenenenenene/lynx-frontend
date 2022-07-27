@@ -1,10 +1,14 @@
 import Service from '@ember/service';
+import { inject as service } from '@ember/service';
 import { tracked } from '@glimmer/tracking';
 import { municipality_data } from '../data/municipality-data';
 import { tax_data } from '../data/tax-data';
 import { action } from '@ember/object';
+import { addTaxData, addDecisionData } from '../data/municipality-data';
 
 export default class MunicipalitiesService extends Service {
+  @service store;
+
   @tracked data = municipality_data;
   @tracked tax_cat = tax_data;
   @tracked currentMunicipalityRoute = 'BRUGGE';
@@ -88,9 +92,26 @@ export default class MunicipalitiesService extends Service {
     this.showMap = !this.showMap;
   }
 
-  @action searchRepo(term) {
-    return this.data.filter((mun) =>
-      mun.title.toLowerCase().includes(term.toLowerCase())
-    );
+  @action async searchRepo(term) {
+    // TODO: fuzzy searching
+    // TODO: replace mock tax & decision data with the real thing
+
+    let municipalities = await this.store.query("bestuurseenheid", {
+      filter: {
+        naam: term,
+        classificatie: {
+          ":exact:label": "Gemeente"
+        }
+      }
+    });
+    let names = await municipalities.getEach("naam");
+
+    return names.map(name => {
+      return {
+        title: name,
+        taxData: addTaxData(),
+        decisionData: addDecisionData()
+      };
+    })
   }
 }

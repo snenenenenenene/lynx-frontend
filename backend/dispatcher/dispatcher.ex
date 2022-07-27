@@ -14,6 +14,15 @@ defmodule Dispatcher do
   @json %{ accept: %{ json: true } }
 
 
+  # Handle OPTIONS preflight HTTP request
+  options "/*" do
+    conn
+    |> Plug.Conn.put_resp_header( "access-control-allow-headers", "content-type,accept" )
+    |> Plug.Conn.put_resp_header( "access-control-allow-methods", "*" )
+    |> send_resp( 200, "{ \"message\": \"ok\" }" )
+  end
+
+
   ###############################################################
   # General/Shared
   ###############################################################
