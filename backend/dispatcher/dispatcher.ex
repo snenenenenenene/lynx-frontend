@@ -55,6 +55,10 @@ defmodule Dispatcher do
     Proxy.forward conn, [], "http://file/files/" <> id <> "/download"
   end
 
+  get "/submissions/*path", @json do
+    Proxy.forward conn, path, "http://resources/submissions/"
+  end
+
 
   ###############################################################
   # LYNX backend

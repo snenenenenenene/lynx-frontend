@@ -105,18 +105,21 @@ export default class MunicipalitiesService extends Service {
     });
 
     return municipalities.map(async m => {
-      let taxData = await this.store.query("tax-report", {
+      let decisionData = await this.store.query("submission", {
+        include: "form-data",
         filter: {
-          municipality: {
+          organization: {
             ":id:": await m.get("id")
           }
         }
       });
 
+      let decisionDataJSON = decisionData.map(async d => d.serialize().data.attributes);
+
       return {
         title: m.get("naam"),
-        taxData,
-        decisionData: addDecisionData()
+        taxData: addTaxData(),
+        decisionData
       };
     });
   }
