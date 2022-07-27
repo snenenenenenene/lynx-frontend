@@ -108,6 +108,7 @@ h6,
 .h6 {
 	font-size: 1.5rem;
 	font-weight: normal;
+	text-decoration: none;
 }
 
 	@media only screen and (min-width: 30em) {
@@ -121,7 +122,13 @@ h6,
 
 
 a {
-	color: #f14a3b;
+	color: #00005C;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #00005C;
 }
 
 	h1 a,

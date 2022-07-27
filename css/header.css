@@ -1,8 +1,9 @@
 /* hero */
 
 .hero {
-	background-color: rgba(0,0,0,0.05);
+	background-color: #E8EBEEAA;
 	margin-bottom: 5rem;
+	
 }
 
 	@media only screen and (min-width: 30em) {
@@ -54,12 +55,7 @@
 	@media only screen and (min-width: 64em) {
 		.hero-card {
 			top: 4rem;
-			padding: 3rem;
-		}
-	}
-
-	@media only screen and (min-width: 75em) {
-		.hero-card {
+			text-decoration: none;
 			top: 5rem;
 		}
 	}
@@ -71,7 +67,7 @@
 		height: 50rem;
 		position: absolute;
 		z-index: -1;
-		background-image: url("../img/osoc-emblem.png");
+		background-image: url("../img/lynx-kop.svg");
 		background-size: contain;
 		background-repeat: no-repeat;
 		right: -25rem;
@@ -113,8 +109,7 @@
 	}
 
 .hero .button-group {
-	margin-top: 1rem;
-	text-align: left;
+	text-decoration: none;
 }
 
 	@media only screen and (min-width: 64em) {
