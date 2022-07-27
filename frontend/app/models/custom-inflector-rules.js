@@ -40,4 +40,5 @@ inflector.irregular('form-data', 'form-data');
 inflector.irregular('concept', 'concepts');
 inflector.irregular('concept-scheme', 'concept-schemes');
 inflector.irregular('search-query', 'search-queries');
+inflector.irregular('tax-report', 'tax-reports');
 export default {};

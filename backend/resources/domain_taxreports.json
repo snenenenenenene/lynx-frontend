@@ -28,7 +28,7 @@
 				},
 				"municipality": {
 					"predicate": "lynx:inMunicipality",
-					"target": "bestuursorgaan",
+					"target": "bestuurseenheid",
 					"cardinality": "one"
 				}
 			},

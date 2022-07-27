@@ -93,7 +93,6 @@ export default class MunicipalitiesService extends Service {
   }
 
   @action async searchRepo(term) {
-    // TODO: fuzzy searching
     // TODO: replace mock tax & decision data with the real thing
 
     let municipalities = await this.store.query("bestuurseenheid", {
@@ -104,14 +103,21 @@ export default class MunicipalitiesService extends Service {
         }
       }
     });
-    let names = await municipalities.getEach("naam");
 
-    return names.map(name => {
+    return municipalities.map(async m => {
+      let taxData = await this.store.query("tax-report", {
+        filter: {
+          municipality: {
+            ":id:": await m.get("id")
+          }
+        }
+      });
+
       return {
-        title: name,
-        taxData: addTaxData(),
+        title: m.get("naam"),
+        taxData,
         decisionData: addDecisionData()
       };
-    })
+    });
   }
 }
