@@ -17,6 +17,7 @@
 
 	.button:hover {
 		background-color: #00005C;
+		color: white;
 	}
 
 .button--alt {
