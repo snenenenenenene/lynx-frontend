@@ -1,10 +1,11 @@
 /* hero */
 
 .hero {
-	background-color: #E8EBEEAA;
+	background-color: rgba(0,0,0,0.05);
 	margin-bottom: 5rem;
 	
 }
+
 
 	@media only screen and (min-width: 30em) {
 		.hero {
@@ -67,7 +68,7 @@
 		height: 50rem;
 		position: absolute;
 		z-index: -1;
-		background-image: url("../img/lynx-kop.svg");
+		background-image: url("../img/lynx-kop.svg");		
 		background-size: contain;
 		background-repeat: no-repeat;
 		right: -25rem;
