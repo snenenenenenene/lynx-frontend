@@ -4,6 +4,7 @@
   <AuButton @icon='chevron-right' {{on 'click' this.nextGraph}} />
 </div> --}}
 <div style='display:flex;'>
+
   <div style='width: 33%;'>
     <C3Chart
       @data={{this.graphData1}}
@@ -28,4 +29,6 @@
       @color={{this.color}}
     />
   </div>
+  <h1>{{this.municipality.averageRevenue}}</h1>
+  <h1>{{this.municipality.totalRevenue}}</h1>
 </div>

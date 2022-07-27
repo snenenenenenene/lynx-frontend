@@ -3,7 +3,7 @@
   <Navbar />
   <AuMainContainer as |m|>
     <m.content>
-      <AuContentHeader @titlePartTwo='Hoeveel belastingen betaal ik in...?'>
+      <AuContentHeader @titlePartTwo='Tax decisions made easy'>
 
         <img
           src={{'https://appuniversum.github.io/ember-appuniversum/images/loket-header-1600.jpg'}}
@@ -71,9 +71,12 @@
                     van de bevolking.
                   </p>
                 </c.content>
-                <c.footer>
-                  <AuButton style='color: white;'>
-                    <LinkTo @route='wat-zijn-belastingen'>
+                <c.footer style='display: flex; width: 100%;'>
+                  <AuButton style='color: white; margin: auto;'>
+                    <LinkTo
+                      style='color: white; underline: none;'
+                      @route='wat-zijn-belastingen'
+                    >
                       Meer info
                     </LinkTo>
                   </AuButton>
@@ -107,9 +110,12 @@
                   </p>
 
                 </c.content>
-                <c.footer>
-                  <AuButton style='color: white;'>
-                    <LinkTo @route='hoe-worden-beslissingen-genomen'>
+                <c.footer style='display: flex; width: 100%;'>
+                  <AuButton style='color: white; margin: auto;'>
+                    <LinkTo
+                      style='color: white; underline: none;'
+                      @route='hoe-worden-beslissingen-genomen'
+                    >
                       Meer info
                     </LinkTo>
                   </AuButton>
