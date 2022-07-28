@@ -108,8 +108,8 @@ export default class MunicipalitiesService extends Service {
         }
       });
 
-      let decisionDataConverted = decisionData.map(async d => {
-        let formData = await decisionData.get("formData");
+      let decisionDataConverted = await Promise.all(decisionData.map(async d => {
+        let formData = await d.get("formData");
         let marCode = await (await formData.get("chartOfAccount")).get("notation");
         let category = await this.store.query("marCode", {
           filter: {
@@ -120,11 +120,11 @@ export default class MunicipalitiesService extends Service {
         return {
           category,
           subcategories: [await marCode.get("description")],
-          document: await (await decisionData.get("document")).get("uri"),
+          document: await (await d.get("document")).get("uri"),
           date: await formData.get("datePublication"),
           total: 0  // We don't have data for this lmao
         }
-      });
+      }));
 
       return {
         title: m.get("naam"),
