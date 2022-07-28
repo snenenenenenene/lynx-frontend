@@ -114,7 +114,21 @@ export default class MunicipalitiesService extends Service {
         }
       });
 
-      let decisionDataJSON = decisionData.map(async d => d.serialize().data.attributes);
+      let formData = await decisionData.get("formData");
+      let marCode = await (await formData.get("chartOfAccount")).get("notation");
+      let category = await this.store.query("marCode", {
+        filter: {
+          ":exact:code": marCode
+        }
+      });
+
+      decisionData = {
+        category,
+        subcategories: [await marCode.get("description")],
+        document: await (await decisionData.get("document")).get("uri"),
+        date: await formData.get("datePublication"),
+        total: 0  // We don't have data for this lmao
+      }
 
       return {
         title: m.get("naam"),

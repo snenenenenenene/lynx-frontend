@@ -1,7 +1,7 @@
 import Model, { attr, belongsTo, hasMany } from '@ember-data/model';
 
 export default class FormDataModel extends Model {
-  @attr('datetime') datePublication;
+  @attr('string') datePublication;
   @attr financialYear;
   @attr description;
   @attr comment;

@@ -1,20 +1,20 @@
 import Model, { attr, belongsTo, hasMany } from '@ember-data/model';
 
 export default class Submission extends Model {
-  @attr('datetime', {
+  @attr('string', {
     defaultValue() {
       return new Date();
     },
   })
   created;
-  @attr('datetime', {
+  @attr('string', {
     defaultValue() {
       return new Date();
     },
   })
   modified;
-  @attr('datetime') sentDate;
-  @attr('datetime') receivedDate;
+  @attr('string') sentDate;
+  @attr('string') receivedDate;
   @attr source;
   @attr uri;
   @attr href;
