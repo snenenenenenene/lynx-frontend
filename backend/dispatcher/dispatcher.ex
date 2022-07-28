@@ -63,6 +63,10 @@ defmodule Dispatcher do
     Proxy.forward conn, path, "http://resources/form-data/"
   end
 
+  get "/chart-of-accounts/*path", @json do
+    Proxy.forward conn, path, "http://resources/chart-of-accounts/"
+  end
+
 
   ###############################################################
   # LYNX backend
