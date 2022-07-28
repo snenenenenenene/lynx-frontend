@@ -108,26 +108,28 @@ export default class MunicipalitiesService extends Service {
         }
       });
 
-      let formData = await decisionData.get("formData");
-      let marCode = await (await formData.get("chartOfAccount")).get("notation");
-      let category = await this.store.query("marCode", {
-        filter: {
-          ":exact:code": marCode
+      let decisionDataConverted = decisionData.map(async d => {
+        let formData = await decisionData.get("formData");
+        let marCode = await (await formData.get("chartOfAccount")).get("notation");
+        let category = await this.store.query("marCode", {
+          filter: {
+            ":exact:code": marCode
+          }
+        });
+
+        return {
+          category,
+          subcategories: [await marCode.get("description")],
+          document: await (await decisionData.get("document")).get("uri"),
+          date: await formData.get("datePublication"),
+          total: 0  // We don't have data for this lmao
         }
       });
-
-      decisionData = {
-        category,
-        subcategories: [await marCode.get("description")],
-        document: await (await decisionData.get("document")).get("uri"),
-        date: await formData.get("datePublication"),
-        total: 0  // We don't have data for this lmao
-      }
 
       return {
         title: m.get("naam"),
         taxData: addTaxData(),
-        decisionData
+        decisionData: decisionDataConverted
       };
     });
   }
