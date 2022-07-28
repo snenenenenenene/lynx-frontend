@@ -28,34 +28,31 @@ export default class MunicipalitiesService extends Service {
   }
 
   @action toggleModal(data) {
-    this.modalData = this.currentSelectedMunicipality(
-      data.target.feature.properties.ADMUNADU
-    );
+    try {
+      this.modalData = this.currentSelectedMunicipality(
+        data.target.feature.properties.ADMUNADU
+      );
 
-    this.counts = this.modalData.decisionData.reduce((acc, decision) => {
-      try {
-        const index = acc.findIndex((val) => val[0] === decision.category);
+      console.log(this.modalData);
 
-        if (index === -1) {
-          acc.push([decision.category, decision.total]);
-        } else {
-          acc[index][1]++;
-        }
-        return acc;
-      } catch (error) {
-        console.log(error);
-      }
-    }, []);
-    this.modalGraphData = {
-      type: 'pie',
-      columns: this.counts,
-    };
+      this.revenuePerCategoryData = revenuePerCategory(
+        this.modalData.title
+      ).then(async (resp) => {
+        this.modalGraphData = {
+          columns: resp,
+          type: 'pie',
+        };
+        return resp;
+      });
 
-    this.showModal = !this.showModal;
+      this.showModal = !this.showModal;
+    } catch (err) {
+      console.log(err);
+    }
   }
 
   @tracked modalGraphData = {
-    columns: this.counts,
+    columns: this.revenuePerCategoryData,
     type: 'pie',
   };
 
@@ -63,7 +60,7 @@ export default class MunicipalitiesService extends Service {
     this.municipalities.modalData.title
   ).then(async (resp) => {
     console.log(resp);
-    this.graphData2 = {
+    this.modalGraphData = {
       columns: resp,
       type: 'pie',
     };

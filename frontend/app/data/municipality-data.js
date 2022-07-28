@@ -45,7 +45,10 @@ export const addDecisionData = () => {
           'Parkeren',
           'Dieren',
         ][Math.floor(Math.random() * 15)],
-        document: 'https://www.minecraft.net',
+        document:
+          'https://www.vlaanderen.be/beslissing/' +
+          Math.floor(Math.random() * 1000) +
+          1,
         subcategories: [
           { title: 'Hamster', value: Math.floor(Math.random() * 100) + 1 },
           { title: 'Paard', value: Math.floor(Math.random() * 100) + 1 },
