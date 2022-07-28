@@ -15,26 +15,28 @@ export default class DetailsComponent extends Component {
       this.municipalities.modalData.title.toUpperCase()
   );
 
-  @tracked graphType = ['bar', 'pie'];
-
-  @tracked color = {
-    pattern: ['#003B8E', '#FFA10A', '#FFE615'],
-  };
-
   @tracked taxCategoryCountsData = decisionAmountPerYear(
     this.municipalities.modalData.title
-  ).then(async (resp) => {
+  ).then((resp) => {
     this.graphData3 = {
-      columns: resp,
-      type: 'bar',
+      x: 'x',
+      columns: resp.reduce(
+        (acc, curr) => {
+          acc[0].push(`${curr[0]}-01-01`);
+          acc[1].push(parseFloat(curr[1]));
+          console.log(acc);
+          return acc;
+        },
+        [['x'], ['Aantal beslissingen']]
+      ),
+      type: 'line',
     };
     return resp;
   });
 
   @tracked revenuePerCategoryData = revenuePerCategory(
     this.municipalities.modalData.title
-  ).then(async (resp) => {
-    console.log(resp);
+  ).then((resp) => {
     this.graphData2 = {
       columns: resp,
       type: 'pie',
@@ -42,28 +44,46 @@ export default class DetailsComponent extends Component {
     return resp;
   });
 
+  @tracked axis = {
+    x: {
+      type: 'timeseries',
+      tick: {
+        format: '%Y',
+      },
+    },
+  };
+
   @tracked revenuePerYearData = revenuePerYear(
     this.municipalities.modalData.title
   ).then(async (resp) => {
-    console.log(resp);
     this.graphData1 = {
-      columns: resp.sort(),
-      type: 'bar',
+      x: 'x',
+      columns: resp.reduce(
+        (acc, curr) => {
+          acc[0].push(`${curr[0]}-01-01`);
+          acc[1].push(parseFloat(curr[1]));
+          return acc;
+        },
+        [['x'], ['Omzet']]
+      ),
+      type: 'line',
     };
     return resp;
   });
 
   @tracked graphData1 = {
+    x: 'x',
     columns: this.revenuePerYearData,
-    type: 'bar',
+    type: 'line',
   };
   @tracked graphData2 = {
-    columns: this.taxCategoryCountsData,
-    type: 'bar',
+    columns: this.revenuePerCategoryData,
+    type: 'pie',
   };
   @tracked graphData3 = {
-    columns: this.revenuePerCategoryData,
-    type: 'bar',
+    x: 'x',
+    columns: this.taxCategoryCountsData,
+    type: 'line',
   };
 
   @tracked graphTitle1 = { text: 'Omzet per jaar' };

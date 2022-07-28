@@ -6,9 +6,12 @@ import { tax_data } from '../data/tax-data';
 import { action } from '@ember/object';
 import { addTaxData, addDecisionData } from '../data/municipality-data';
 import { revenuePerCategory } from '../helpers/apiInterface';
+
 export default class MunicipalitiesService extends Service {
   @service store;
-
+  @tracked color = {
+    pattern: ['#003B8E', '#FFA10A', '#FFE615'],
+  };
   @tracked data = municipality_data;
   @tracked tax_cat = tax_data;
   @tracked currentMunicipalityRoute = 'Brugge';
@@ -37,7 +40,7 @@ export default class MunicipalitiesService extends Service {
 
       this.revenuePerCategoryData = revenuePerCategory(
         this.modalData.title
-      ).then(async (resp) => {
+      ).then((resp) => {
         this.modalGraphData = {
           columns: resp,
           type: 'pie',
@@ -58,7 +61,7 @@ export default class MunicipalitiesService extends Service {
 
   @tracked revenuePerCategoryData = revenuePerCategory(
     this.municipalities.modalData.title
-  ).then(async (resp) => {
+  ).then((resp) => {
     console.log(resp);
     this.modalGraphData = {
       columns: resp,
