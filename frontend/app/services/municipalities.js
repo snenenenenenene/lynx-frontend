@@ -5,13 +5,13 @@ import { municipality_data } from '../data/municipality-data';
 import { tax_data } from '../data/tax-data';
 import { action } from '@ember/object';
 import { addTaxData, addDecisionData } from '../data/municipality-data';
-
+import { revenuePerCategory } from '../helpers/apiInterface';
 export default class MunicipalitiesService extends Service {
   @service store;
 
   @tracked data = municipality_data;
   @tracked tax_cat = tax_data;
-  @tracked currentMunicipalityRoute = 'BRUGGE';
+  @tracked currentMunicipalityRoute = 'Brugge';
   @action setCurrentMunicipalityRoute(municipality) {
     this.currentMunicipalityRoute = municipality;
   }
@@ -28,58 +28,51 @@ export default class MunicipalitiesService extends Service {
   }
 
   @action toggleModal(data) {
-    this.modalData = this.currentSelectedMunicipality(
-      data.target.feature.properties.ADMUNADU
-    );
+    try {
+      this.modalData = this.currentSelectedMunicipality(
+        data.target.feature.properties.ADMUNADU
+      );
 
-    this.counts = this.modalData.decisionData.reduce((acc, decision) => {
-      try {
-        const index = acc.findIndex((val) => val[0] === decision.category);
+      console.log(this.modalData);
 
-        if (index === -1) {
-          acc.push([decision.category, decision.total]);
-        } else {
-          acc[index][1]++;
-        }
-        return acc;
-      } catch (error) {
-        console.log(error);
-      }
-    }, []);
-    this.modalGraphData = {
-      type: 'bar',
-      columns: this.counts,
-    };
+      this.revenuePerCategoryData = revenuePerCategory(
+        this.modalData.title
+      ).then(async (resp) => {
+        this.modalGraphData = {
+          columns: resp,
+          type: 'pie',
+        };
+        return resp;
+      });
 
-    this.showModal = !this.showModal;
+      this.showModal = !this.showModal;
+    } catch (err) {
+      console.log(err);
+    }
   }
 
   @tracked modalGraphData = {
-    columns: this.counts,
-    type: 'bar',
+    columns: this.revenuePerCategoryData,
+    type: 'pie',
   };
 
-  @tracked counts = this.modalData.decisionData.reduce((acc, decision) => {
-    try {
-      const index = acc.findIndex((val) => val[0] === decision.category);
-
-      if (index === -1) {
-        acc.push([decision.category, decision.total]);
-      } else {
-        acc[index][1]++;
-      }
-      return acc;
-    } catch (error) {
-      console.log(error);
-    }
-  }, []);
+  @tracked revenuePerCategoryData = revenuePerCategory(
+    this.municipalities.modalData.title
+  ).then(async (resp) => {
+    console.log(resp);
+    this.modalGraphData = {
+      columns: resp,
+      type: 'pie',
+    };
+    return resp;
+  });
 
   @action tableToggleModal(data) {
     this.modalData = this.currentSelectedMunicipality(data.target.innerText);
 
     this.modalGraphData = {
       type: 'bar',
-      columns: this.counts,
+      columns: this.revenuePerCategoryData,
     };
     this.showModal = !this.showModal;
   }
@@ -95,14 +88,15 @@ export default class MunicipalitiesService extends Service {
   @action async searchRepo(term) {
     // TODO: replace mock tax & decision data with the real thing
 
-    let municipalities = await this.store.query("bestuurseenheid", {
+    let municipalities = await this.store.query('bestuurseenheid', {
       filter: {
         naam: term,
         classificatie: {
-          ":exact:label": "Gemeente"
-        }
-      }
+          ':exact:label': 'Gemeente',
+        },
+      },
     });
+    let names = await municipalities.getEach('naam');
 
     return municipalities.map(async m => {
       let decisionData = await this.store.query("submission", {

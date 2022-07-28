@@ -217,4 +217,13 @@ $paddingValue: 1vh;
   outline: 0;
 }
 
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 @import 'ember-power-select';
