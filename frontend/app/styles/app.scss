@@ -9,12 +9,32 @@
 @import 'ember-appuniversum/a-plugins';
 @import 'ember-appuniversum/a-utilities';
 
+// @import 'tailwind/base';
+// @import 'tailwind/components';
+// @import 'tailwind/utilities';
+
 $navBarHeight: 4.5vh;
 $toolBarHeight: 5vh;
 $paddingValue: 1vh;
 
 .hidden {
   display: none;
+}
+
+.decision-container {
+  transition: opacity 2s ease-in;
+    .decision-vote-dashboard {
+      transition: opacity 2s ease-in;
+      display: none;
+    }
+}
+
+.decision-container:hover {
+  transition: opacity 2s ease-in;
+  .decision-vote-dashboard {
+    transition: opacity 2s ease-in;
+    display: flex;
+  }
 }
 
 .ember-application {

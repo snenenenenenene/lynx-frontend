@@ -4,15 +4,15 @@
   <Group>
     <AuHeading @skin='2'>
       Beslissingen in de gemeente
-      {{this.model.currentMunicipality}}
+      {{this.model}}
     </AuHeading>
   </Group>
   <Group class='au-c-toolbar__group--center'>
     <AuButton @icon='book' @iconAlignment='left'>
       <LinkTo
-        @model={{this.model.currentMunicipality}}
+        @model={{this.model}}
         @route={{'municipality.info'}}
-        style='color: white;'
+        style='color: white; text-decoration: none;'
       >
         Algemene info
       </LinkTo>

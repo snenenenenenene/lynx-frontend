@@ -3,15 +3,15 @@
   <Group>
     <AuHeading @skin='2'>
       Algemene info over
-      {{this.model.currentMunicipality}}
+      {{this.model}}
     </AuHeading>
   </Group>
   <Group class='au-c-toolbar__group--center'>
     <AuButton @icon='message' @iconAlignment='left'>
       <LinkTo
-        @model={{this.model.currentMunicipality}}
+        @model={{this.model}}
         @route={{'municipality.decisions'}}
-        style='color: white;'
+        style='color: white; text-decorations: none;'
       >
         Beslissingen
       </LinkTo>
