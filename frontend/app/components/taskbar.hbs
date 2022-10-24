@@ -14,6 +14,13 @@
           @size='large'
           @icon='search'
         />Bekijken in kaart{{/if}}</AuButton>
+    <AuLink style='text-decoration: none;' @route='index.all_decisions'>
+      <AuButton
+        style='margin-left: 20px; width: 180px; display: flex; justify-content: space-around;'
+      >
+        Alle Besluiten
+      </AuButton>
+    </AuLink>
   </Group>
   <Group class='au-c-toolbar__group--center'>
     <PowerSelect

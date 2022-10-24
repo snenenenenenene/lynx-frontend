@@ -11,7 +11,7 @@ Router.map(function () {
   this.route('index', { path: '/' }, function () {
     this.route('index', { path: '/' });
     this.route('dashboard');
-
+    this.route('all_decisions', { path: '/beslissingen' });
     this.route('municipality', { path: '/gemeente/:mun_id' }, function () {
       this.route('index', { path: '/' });
       this.route('werk');
@@ -28,6 +28,7 @@ Router.map(function () {
     this.route('wat-zijn-belastingen');
     this.route('hoe-worden-beslissingen-genomen');
     this.route('login');
+
     this.route('BesluitenForm');
   });
 });
