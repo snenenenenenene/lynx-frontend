@@ -11,16 +11,6 @@
           @field='title'
           @label='Gemeente'
           @class='data-table__header-title'
-        />
-        <AuDataTableThSortable
-          @field='description'
-          @label='Totale inkomsten (€)'
-          @class='data-table__header-title'
-        />
-        <AuDataTableThSortable
-          @field='description'
-          @label='Globale inkomen per inwoner (€)'
-          @class='data-table__header-title'
         /><AuDataTableThSortable
           @field='description'
           @label=''
@@ -37,19 +27,14 @@
               {{row.title}}
             </td>
             <td>
-              {{format-currency row.taxData.1.totalRevenue}}
-            </td><td>
-              {{format-currency row.taxData.1.averageRevenue}}
-            </td><td>
-              <AuButton @icon='unordered-list' @iconAlignment='right'>
-                <LinkTo
-                  @route={{'municipality.info'}}
-                  @model={{row.title}}
-                  style='color: white;'
-                >
-                  Meer info
-                </LinkTo>
-              </AuButton>
+
+              <AuLink
+                @model={{row.title}}
+                @route={{'index.municipality.decisions'}}
+                @icon='chevron-right'
+              >
+                Bekijk besluiten
+              </AuLink>
             </td>
           {{/if}}
         {{else}}
@@ -60,19 +45,13 @@
             {{row.title}}
           </td>
           <td>
-            {{format-currency row.taxData.1.totalRevenue}}
-          </td><td>
-            {{format-currency row.taxData.1.averageRevenue}}
-          </td><td>
-            <AuButton @icon='unordered-list' @iconAlignment='right'>
-              <LinkTo
-                @model={{row.title}}
-                @route={{'municipality.info'}}
-                style='color: white;'
-              >
-                Meer info
-              </LinkTo>
-            </AuButton>
+            <AuLink
+              @model={{row.title}}
+              @route={{'index.municipality.decisions'}}
+              @icon='chevron-right'
+            >
+              Bekijk besluiten
+            </AuLink>
           </td>
         {{/if}}
       </c.body>

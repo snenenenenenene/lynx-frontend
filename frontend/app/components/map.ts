@@ -1,7 +1,6 @@
 import Component from '@glimmer/component';
 import { inject as service } from '@ember/service';
 import { tracked } from '@glimmer/tracking';
-// import geoJSONData from '../data/BELGIUM_-_Municipalities.geojson';
 import { soup as municipalityGeoJSONData } from '../data/munData';
 import { action } from '@ember/object';
 import MunicipalitiesService from '../services/municipalities';

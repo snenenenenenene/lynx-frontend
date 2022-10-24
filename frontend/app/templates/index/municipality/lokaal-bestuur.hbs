@@ -1,0 +1,24 @@
+<div style='width: 100%; display:flex; gap:40px;'>
+  <section style='width: 33%;'>
+    <C3Chart
+      @data={{this.uitgavenGraphData}}
+      @oninit={{this.setup}}
+      @title={{this.uitgavenTitle}}
+      @axis={{this.axis}}
+    />
+  </section>
+  <section style='width: 33%;'>
+    <C3Chart
+      @data={{this.ontvangstenGraphData}}
+      @title={{this.ontvangstenTitle}}
+      @axis={{this.axis}}
+    />
+  </section><section style='width: 33%;'>
+    <C3Chart
+      @data={{this.financiele_schuldGraphData}}
+      @title={{this.financiele_schuldTitle}}
+      @axis={{this.axis}}
+    />
+  </section>
+</div>
+{{outlet}}

@@ -47,12 +47,10 @@ export const generateDecisionData: () => Array<Decision> = () => {
           'Parkeren',
           'Dieren',
         ][Math.floor(Math.random() * 15)],
-        document:
-          'https://www.vlaanderen.be/beslissing/' +
-          Math.floor(Math.random() * 1000) +
-          1,
-        total: Math.floor(Math.random() * 10000) + 100,
-        date: '11-11-2019',
+        name: 'Besluit van de gemeenteraad van 1 januari 2021 betreffende de belasting op de inwoners van de gemeente',
+        body: { aanwezig: 'Lynx team', besluit: 'woorden' },
+        date: { begin: '11-11-2019', end: '11-11-2022' },
+        accepted: Math.random() > 0.5 ? true : false,
       };
     }
   );

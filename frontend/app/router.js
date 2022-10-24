@@ -8,13 +8,26 @@ export default class Router extends EmberRouter {
 
 Router.map(function () {
   this.route('four-oh-four', { path: '/*path' });
-  this.route('index', { path: '/' });
-  this.route('dashboard');
+  this.route('index', { path: '/' }, function () {
+    this.route('index', { path: '/' });
+    this.route('dashboard');
 
-  this.route('municipality', { path: '/gemeente/:mun_id' }, function () {
-    this.route('info');
-    this.route('decisions', { path: 'beslissingen' });
+    this.route('municipality', { path: '/gemeente/:mun_id' }, function () {
+      this.route('index', { path: '/' });
+      this.route('werk');
+      this.route('lokaal-bestuur');
+      this.route('onderwijs-en-vorming');
+      this.route('wonen-en-woonomgeving');
+      this.route('alle-indicatoren');
+
+      this.route('decisions', { path: '/beslissingen' }, function () {
+        this.route('subscribe');
+      });
+      this.route('decision', { path: '/beslissing/:decision_id' });
+    });
+    this.route('wat-zijn-belastingen');
+    this.route('hoe-worden-beslissingen-genomen');
+    this.route('login');
+    this.route('BesluitenForm');
   });
-  this.route('wat-zijn-belastingen');
-  this.route('hoe-worden-beslissingen-genomen');
 });

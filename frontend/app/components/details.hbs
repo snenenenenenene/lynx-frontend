@@ -30,6 +30,16 @@
       @color={{this.municipalities.color}}
       @axis={{this.axis}}
     />
+    <p>{{this.thuiswerken}}</p>
+  </div>
+  <select onchange={{action 'handleSelect' value='target.value'}}>
+    <option value=''>Selecteer een gemeente</option>
+    {{#each this.infoTypes as |infoType|}}
+      <option value={{infoType}}>{{infoType}}</option>
+    {{/each}}
+  </select>
+  <div>
+    {{outlet}}
   </div>
 </section>
 <Footer />

@@ -1,0 +1,129 @@
+<AuToaster />
+
+<AuToolbar @size='medium' @skin='tint' @border='bottom' as |Group|>
+  <Group>
+    <ul class='au-c-list-horizontal au-c-list-horizontal--small'>
+      <li class='au-c-list-horizontal__item'>
+        <AuLink
+          @linkRoute='index.municipality.decisions'
+          @model={{this.municipalities.currentMunicipality}}
+          @icon='arrow-left'
+        >
+          Besluiten
+        </AuLink>
+      </li>
+      <li class='au-c-list-horizontal__item'>
+        {{this.model}}
+      </li>
+
+    </ul>
+  </Group>
+</AuToolbar>
+<section
+  class='au-o-region-large au-u-background-gray-200'
+  style='margin: 0;display:flex; padding: 20px; overflow: hidden;'
+>
+  <div
+    style='display: flex; width: 50%; flex-direction:column; height:85vh; overflow: hidden;'
+  >
+    <div
+      style='gap: 48px; padding-right: 100px;height:100%; background-color:white;padding:40px; overflow-y: scroll;'
+      class='au-c-card au-c-card--fill'
+    >
+      <AuContent>
+        <h4 class='au-u-h5'>Aanwezig</h4>
+        <p class='au-u-para'>{{this.decision.body.aanwezig}}</p>
+        <h4 class='au-u-h5'>Juridische grond</h4>
+        <p
+          class='au-u-para'
+          style='text-align: justify;'
+        >{{this.decision.body.juridische_grond}}</p>
+        <h4 class='au-u-h5'>Context & argumentatie</h4>
+        <p
+          class='au-u-para'
+        >{{this.decision.body.body.context-en-argumentatie}}</p>
+        <h4 class='au-u-h4'>Besluit</h4>
+        <section class='au-u-para'>
+          <p class='au-u-bold' style='text-decoration: underline;'>
+            Artikel 1
+          </p>
+          <p>
+
+            Op donderdag 23 juni 2022 en vrijdag 24 juni 2022 geldt een algemeen
+            verbod voor minderjarigen of studenten om in het bezit te zijn van
+            alcohol op openbaar domein. Terrassen van horecazaken worden niet
+            als openbaar domein beschouwd. Op vrijdag 24 juni 2022 loopt dit
+            verbod op de Grote Markt tot 18 u.
+          </p>
+          <p class='au-u-bold' style='text-decoration: underline;'>
+            Artikel 2
+
+          </p>
+          <p>
+
+            Overtredingen van dit besluit zullen bestraft worden met een
+            administratieve sanctie conform de wet op de gemeentelijke
+            administratieve sancties van 24 juni 2013, artikel 119 bis van de
+            Nieuwe Gemeentewet en bijlage 1 van het Stedelijk Gecoördineerd
+            Politiereglement van 14 december 2015.
+          </p>
+          <p class='au-u-bold' style='text-decoration: underline;'>
+
+            Artikel 3
+          </p>
+          <p>
+
+            Een afschrift van dit besluit zal verstuurd worden aan de : •
+            Rechtbank van Eerste Aanleg West-Vlaanderen, afdeling Kortrijk,
+            Burgemeester Nolfstraat 10a, 8500 Kortrijk • Politierechtbank
+            West-Vlaanderen (piet.vantieghem@just.fgov.be) • Politiezone RIHO •
+            Toezichthoudende overheid (via het digitaal loket)
+          </p>
+          <p class='au-u-bold' style='text-decoration: underline;'>
+            Artikel 4
+          </p>
+          <p>
+
+            Dit besluit wordt na goedkeuring bekend gemaakt op de website van de
+            Stad Roeselare cfr. artikels 285, 286 en 287 van het decreet lokaal
+            bestuur en opgenomen in het register van de bekendmakingen.</p>
+        </section>
+      </AuContent>
+    </div>
+    <AuButton><a
+        style='text-decoration: none; color:white;'
+        href='/public/assets/Besluit.pdf'
+      >
+        Bekijk besluit
+      </a>
+    </AuButton>
+  </div>
+  <div style='width: 50%; height: 100%; display:flex; flex-direction:column;'>
+    <section style='width: 100%; height:50%;'>
+      <C3Chart
+        @data={{this.data}}
+        @color={{this.color}}
+        @title={{this.title}}
+      />
+    </section>
+    <section
+      style='width:70%; height: 50%; display:flex; flex-direction:column; margin: 0 auto;'
+    >
+      <p class='au-u-para'>
+        Om de lokale democratie te bevorderen en om de burger te betrekken tot
+        besluiten kan u hier uw mening geven omtrent dit besluit. Uw mening is
+        anoniem.
+      </p>
+      <div style='width: 100%; display:flex; justify-content:space-around'>
+        <AuButton
+          @skin={{this.button1}}
+          {{action 'vote' 'button1'}}
+        >Voor</AuButton>
+        <AuButton
+          {{action 'vote' 'button2'}}
+          @skin={{this.button2}}
+        >Tegen</AuButton>
+      </div>
+    </section>
+  </div>
+</section>

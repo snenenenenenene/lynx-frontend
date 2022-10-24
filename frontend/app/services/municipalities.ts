@@ -3,10 +3,6 @@ import { inject as service } from '@ember/service';
 import { tracked } from '@glimmer/tracking';
 import { municipality_data } from '../data/municipality-data';
 import { action } from '@ember/object';
-import {
-  generateTaxData,
-  generateDecisionData,
-} from '../data/municipality-data';
 import { revenuePerCategory } from '../helpers/apiInterface';
 import { GraphOptions, Municipality } from 'index';
 import emberData__store from '@ember-data/store';

@@ -1,8 +1,27 @@
 export type Decision = {
   category?: string;
-  document: string;
-  total: number;
-  date: string;
+  name: string;
+  date?: {
+    begin: string;
+    end?: string;
+  };
+  accepted: true | false;
+  body: {
+    aanwezig?: string;
+    juridische_grond?: string;
+    context_en_argumentatie?: string;
+    besluit?: string;
+  };
+  municipal_vote?: {
+    for?: number;
+    against?: number;
+    neutral?: number;
+  };
+  public_vote?: {
+    for?: number;
+    against?: number;
+    neutral?: number;
+  };
 };
 
 export type Tax = {
@@ -19,6 +38,6 @@ export type Municipality = {
 
 export type GraphOptions = {
   x?: string;
-  columns: Array<[string | number, string | number]>;
-  type: 'pie' | 'line' | 'bar';
+  columns: Array<any>;
+  type: 'pie' | 'line' | 'bar' | 'spline';
 };

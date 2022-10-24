@@ -9,10 +9,6 @@
 @import 'ember-appuniversum/a-plugins';
 @import 'ember-appuniversum/a-utilities';
 
-// @import 'tailwind/base';
-// @import 'tailwind/components';
-// @import 'tailwind/utilities';
-
 $navBarHeight: 4.5vh;
 $toolBarHeight: 5vh;
 $paddingValue: 1vh;
@@ -21,19 +17,35 @@ $paddingValue: 1vh;
   display: none;
 }
 
-.decision-container {
-  transition: opacity 2s ease-in;
-    .decision-vote-dashboard {
-      transition: opacity 2s ease-in;
-      display: none;
-    }
+body {
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
 }
 
-.decision-container:hover {
-  transition: opacity 2s ease-in;
+::-moz-selection {
+  //  background: #ffe6154d;
+  background: #ffe6154d;
+  color: #333332;
+}
+
+::selection {
+  background: #ffe6154d;
+  color: #333332;
+}
+
+.decision-container {
+  transition: all 10s ease-in;
+  z-index: 100;
+  &:hover {
+    transition: all 10s ease-in;
+    .decision-vote-dashboard {
+      display: flex;
+    }
+  }
   .decision-vote-dashboard {
-    transition: opacity 2s ease-in;
-    display: flex;
+    transition: all 10s ease-in;
+    display: none;
   }
 }
 
@@ -120,6 +132,36 @@ $paddingValue: 1vh;
   margin-top: 0;
 }
 
+.diagonal-box {
+  padding-left: 20px;
+  width: 200px;
+  height: 100%;
+  background-color: #ffe615;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 21% 100%);
+  &:hover {
+    background-color: #ffec40;
+    color: #06c;
+  }
+}
+.au-c-list-horizontal__item {
+  display: flex;
+}
+
+.au-c-main-header__actions {
+  padding: 0;
+  height: 100%;
+}
+.au-c-list-horizontal {
+  height: 100%;
+}
+.au-c-list-horizontal__item {
+  height: 100%;
+}
+
 .taskbar__actions {
   margin-left: auto;
   margin-right: 3rem;
@@ -153,10 +195,14 @@ $paddingValue: 1vh;
   height: 30px;
 }
 
+.ember-application {
+  height: 100vh;
+  width: 100vw;
+}
+
 .mobile-nav {
   visibility: hidden;
 }
-
 .au-c-main-header {
   visibility: visible;
 }
@@ -244,6 +290,14 @@ $paddingValue: 1vh;
 .flex-column {
   display: flex;
   flex-direction: column;
+}
+
+.floating-button-dock {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  display: flex;
 }
 
 @import 'ember-power-select';

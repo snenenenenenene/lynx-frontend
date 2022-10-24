@@ -3,11 +3,29 @@
   @brandLink='https://www.vlaanderen.be/nl'
   @homeRoute='index'
   @appTitle='Lynx'
-  style='padding-right: 0;'
 >
-  <AuButton style='margin-right: 0;' @icon='sitemap' @iconAlignment='left'>
-    <LinkTo @route='dashboard' style='color: white; text-decoration:none;'>
-      Bekijken in kaart
+  {{! <AuButton style='margin-right: 0;' @icon='sitemap' @iconAlignment='left'>
+
+  </AuButton> }}
+  <AuDropdown
+    @title='Aangemeld als ...'
+    @alignment='right'
+    style='margin-right: 10px;'
+  >
+    <AuButton @skin='tertiary' role='menuitem'>
+      <AuLink @route='index.dashboard'>
+        <AuIcon @icon='link' @alignment='left' />Kaart
+      </AuLink>
+    </AuButton>
+    <AuButton @skin='tertiary' role='menuitem'>
+      <AuIcon @icon='logout' @alignment='left' />Afmelden
+    </AuButton>
+  </AuDropdown>
+  {{! <div class='diagonal-box'>
+    <LinkTo @route='index.dashboard' style='text-decoration:none;'>
+      <p class='au-u-h5' style='font-weight: 500; color:black;'>
+        BEKIJK DE KAART
+      </p>
     </LinkTo>
-  </AuButton>
+  </div> }}
 </AuMainHeader>
