@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "description": "Small description for frontend goes here",
-  "repository": "",
+  "repository": "lynx",
   "license": "MIT",
-  "author": "",
+  "author": "Senne Bels",
   "directories": {
     "doc": "doc",
     "test": "tests"

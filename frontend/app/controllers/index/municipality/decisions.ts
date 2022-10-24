@@ -10,6 +10,7 @@ export default class MunicipalityDecisions extends Controller {
   @service declare municipalities: MunicipalitiesService;
   @tracked decisionData: Array<Decision> = [];
   @tracked searchQuery: string = '';
+  @tracked loading: boolean = false;
   @tracked termsArray: any = {
     texts: [
       {
@@ -18,27 +19,60 @@ export default class MunicipalityDecisions extends Controller {
       },
     ],
   };
+  @tracked savedSearchThemes: Array<string> = [];
 
   @action getSearchPredictionVectors() {
-    axios
-      .post(
-        'root@ai-data-store.s.redhost.be:8000/embed-search-term/predictions/EmbedBert/1.0',
-        {
-          texts: [
-            {
-              text_id: 1,
-              text: this.searchQuery,
-            },
-          ],
-        }
-      )
-      .then((response) => {
-        this.getSearchQuerriesFromVectors(response.data);
-      });
+    this.loading = true;
+    axios({
+      method: 'post',
+
+      url: 'http://www.ai-data-store.s.redhost.be:8000/embed-search-term/predictions/EmbedBert/1.0',
+
+      data: {
+        texts: [{ text_id: 1, text: this.searchQuery }],
+      },
+    }).then((response) => {
+      this.loading = false;
+      this.getSearchQuerriesFromVectors(response.data);
+    });
   }
 
   @action getSearchQuerriesFromVectors(searchPredictionVectors: any) {
-    console.log(searchPredictionVectors);
+    console.log(searchPredictionVectors.texts[0].embedding);
+    this.savedSearchThemes = ['corona', 'covid'];
+    console.log(this.savedSearchThemes);
+    axios({
+      method: 'post',
+      url: 'http://www.ai-data-store.s.redhost.be:8000/search',
+      data: {
+        query: {
+          script_score: {
+            query: {
+              bool: {
+                filter: {
+                  term: {
+                    name: 'published',
+                  },
+                },
+              },
+            },
+            script: {
+              source:
+                "cosineSimilarity(params.query_vector, 'my_vector') + 1.0",
+              params: {
+                query_vector: searchPredictionVectors.texts[0].embedding,
+              },
+            },
+          },
+        },
+      },
+    })
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }
 
   @tracked findMunicipalities = () => {
