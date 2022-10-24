@@ -10,7 +10,7 @@
     "noUncheckedIndexedAccess": true,
     "allowSyntheticDefaultImports": false,
     "esModuleInterop": false,
-
+    "useUnknownInCatchVariables": false,
     "noPropertyAccessFromIndexSignature": true,
     "noEmitOnError": true,
     "noEmit": true,

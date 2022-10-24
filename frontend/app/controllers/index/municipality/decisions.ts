@@ -22,7 +22,7 @@ export default class MunicipalityDecisions extends Controller {
   @action getSearchPredictionVectors() {
     axios
       .post(
-        'http://localhost:3000/embed-search-term/predictions/EmbedBert/1.0',
+        'root@ai-data-store.s.redhost.be:8000/embed-search-term/predictions/EmbedBert/1.0',
         {
           texts: [
             {
@@ -44,7 +44,8 @@ export default class MunicipalityDecisions extends Controller {
   @tracked findMunicipalities = () => {
     axios
       .get(
-        `http://localhost:3000/municipality/${this.municipalities?.modalData?.title.toLowerCase()}/besluiten`
+        // @ts-ignore
+        `http://localhost:3000/municipality/${this.model.toLowerCase()}/besluiten`
       )
       .then((resp) => {
         this.decisionData = resp.data.docs;

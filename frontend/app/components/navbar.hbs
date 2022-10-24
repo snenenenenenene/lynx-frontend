@@ -4,13 +4,11 @@
   @homeRoute='index'
   @appTitle='Lynx'
 >
-  {{! <AuButton style='margin-right: 0;' @icon='sitemap' @iconAlignment='left'>
 
-  </AuButton> }}
   <AuDropdown
     @title='Aangemeld als ...'
     @alignment='right'
-    style='margin-right: 10px;'
+    style='margin-right: 10px; display: flex;'
   >
     <AuButton @skin='tertiary' role='menuitem'>
       <AuLink @route='index.dashboard'>
