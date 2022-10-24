@@ -1,34 +1,158 @@
 version: '3.7'
 
 services:
-  database:
-    build: ./backend/virtuoso
+
+  triplestore:
+    image: redpencil/virtuoso
     environment:
       SPARQL_UPDATE: "true"
       DEFAULT_GRAPH: "http://mu.semte.ch/application"
     ports:
       - "8890:8890"
     volumes:
-      - virtuoso_data:/data
+      - ./data/virtuoso:/data/virtuoso
+    labels:
+      - logging=true
+    
+  database:
+    image: semtech/mu-authorization:0.6.0-beta.5
+    environment:
+      MU_SPARQL_ENDPOINT: "http://triplestore:8890/sparql"
+      ERROR_ON_UNWRITTEN_DATA: "on"
+    volumes:
+      - ./config/authorization:/config
+    labels:
+      - logging=true
 
   identifier:
     image: semtech/mu-identifier:1.10.0
     ports:
       - "8000:80"
     environment:
-      - DEFAULT_ACCESS_CONTROL_ALLOW_ORIGIN_HEADER=*
+      DEFAULT_MU_AUTH_ALLOWED_GROUPS_HEADER: "[{\"variables\":[],\"name\":\"public\"}]"
+      DEFAULT_ACCESS_CONTROL_ALLOW_ORIGIN_HEADER: "*"
+    labels:
+      - logging=true
 
   dispatcher:
-    build: ./backend/dispatcher
+    image: semtech/mu-dispatcher:2.1.0-beta.2 
+    volumes:
+      - ./config/dispatcher:/config
+    labels:
+      - logging=true
 
   resources:
-    build: ./backend/resources
+    image: semtech/mu-cl-resources:1.21.1 
+    volumes:
+      - ./config/resources:/config
+    labels:
+      - logging=true
 
   migrations:
-    build: ./backend/migrations
+    image: semtech/mu-migrations-service:0.8.0 
+    links:
+      - triplestore:database
+    volumes:
+      - ./config/migrations:/data/migrations
+
 
   aggregations:
     build: ./backend/aggregations
 
+  file:
+    image: semtech/mu-file-service:3.3.0
+    links:
+      - database:database
+    volumes:
+      - ./data/files:/share
+    labels:
+      - logging=true
+
+  # module for sending delta messages
+  # currently used by:
+  #   - tika-text-extractor, for saving text when a file is 
+  deltanotifier:
+    image: semtech/mu-delta-notifier
+    volumes:
+      - ./config/delta:/config 
+    labels:
+      - logging=true
+
+  search:
+    image: semtech/mu-search:feature-dense-vector
+    links:
+      - database:database
+    volumes:
+      - ./config/search:/config
+
+  elasticsearch:
+    image: semtech/mu-search-elastic-backend:1.1.0
+    volumes:
+      - ./data/elasticsearch/:/usr/share/elasticsearch/data
+    environment:
+      - discovery.type=single-node
+
+  models-init:
+    image: google/cloud-sdk:alpine
+    command:
+      - "gsutil"
+      - "-m"
+      - "cp"
+      - "-r"
+      - "gs://abb-textgen-models/topic.model"
+      - "gs://abb-textgen-models/RobertaModel_PDF_V1"
+      - "gs://abb-textgen-models/NER-model"
+      - "gs://abb-textgen-models/zero-shot-model"
+      - "gs://abb-textgen-models/translate-nl-en"
+      - "gs://abb-textgen-models/dutch-gpt-medium"
+      - "gs://abb-textgen-models/dutch-gpt-neo"
+      - "gs://abb-textgen-models/gpt2-retrain"
+      - "/models/"
+    volumes:
+      - ./config/poc-ai-embed/models/:/models
+
+  poc-ai-embed:
+    image: lblod/poc-ai-embed:latest
+    pull_policy: always
+    volumes: 
+      - ./config/poc-ai-embed/models:/models/
+    container_name: lblod-embed-api
+    depends_on:
+      - models-init
+    restart: unless-stopped
+    ports:
+      - 8081:8080
+
+  # embed-ai-controller:
+  #   build: ./backend/embed-ai-controller
+
+  tika-text-extractor:
+    build: ./backend/tika-text-extractor
+    environment:
+      LOG_LEVEL: "debug"
+      FILE_RESOURCE_BASE: http://mu.semte.ch/services/file-service/files/
+      MU_APPLICATION_FILE_STORAGE_PATH: /share
+      MU_SPARQL_ENDPOINT: http://database:8890/sparql
+      MU_SPARQL_TIMEOUT: 60
+      MODE: "development"
+      TARGET_GRAPH: "<https://rdfs.org/soic/ns#content>"
+      FILE_DIR: "/share"
+    volumes:
+      - ./data/files:/share
+      - ./backend/tika-text-extractor:/app
+    labels:
+      - logging=true
+
+  swagger-ui:
+    image: swaggerapi/swagger-ui
+    container_name: "swagger-ui"
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./docs/swagger.json:/swagger.json
+    environment:
+      SWAGGER_JSON: /docs/swagger.json
+      BASE_URL: "/docs"
+
 volumes:
-  virtuoso_data:
+  model_store:

@@ -1,1 +1,13 @@
 .env
+data
+.vscode
+.editorconfig
+ignore
+docs
+.DS_Store
+config/poc-ai-embed
+config/migrations
+backend/embed-ai-controller
+
+
+

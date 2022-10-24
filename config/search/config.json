@@ -1,0 +1,68 @@
+{
+    "automatic_index_updates": true,
+    "enable_raw_dsl_endpoint": true,
+    "persist_indexes": true,
+    "number_of_threads": 11,
+    "eager_indexing_groups": [
+      [
+        {
+          "variables": [],
+          "name": "clean"
+        }
+      ],
+      [
+  
+        {
+          "variables": [],
+          "name": "public"
+        }
+      ]
+   
+    ],
+    "default_settings" : {
+      "analysis": {
+        "normalizer": {
+          "custom_sort_normalizer": {
+              "type": "custom",
+              "char_filter": [],
+              "filter": [
+                  "lowercase",
+                  "trim",
+                  "asciifolding"
+              ]
+          }
+      }
+      }
+    },
+    "types": [
+      {
+        "type": "poc",
+        "on_path": "pocs",
+        "rdf_type": "http://bittich.be/Youpi",
+        "properties": {
+          "name": "http://bittich.be/woops",
+          "my_vector": {
+            "via": "http://bittich.be/vector",
+            "vector_dense": true
+          }
+        },
+        "mappings": {
+          "properties": {
+            "my_vector": {
+                "type": "dense_vector",
+                "dims": 3
+            },
+            "name": {
+              "type": "text",
+              "fields": {
+                "field": {
+                  "type": "keyword",
+                  "normalizer": "custom_sort_normalizer"
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
