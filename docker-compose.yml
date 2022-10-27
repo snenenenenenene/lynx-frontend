@@ -1,7 +1,21 @@
-version: '3.7'
+version: "3.7"
+
+x-logging: &default-logging
+  driver: "json-file"
+  options:
+    max-size: "10m"
+    max-file: "3"
 
 services:
-
+  frontend:
+    # image: lblod/frontend-public-decisions:1.4.0
+    build: ./frontend
+    volumes:
+      - ./config/frontend:/config
+    labels:
+      - "logging=true"
+    restart: always
+    logging: *default-logging
   triplestore:
     image: redpencil/virtuoso
     environment:
@@ -13,7 +27,19 @@ services:
       - ./data/virtuoso:/data/virtuoso
     labels:
       - logging=true
-    
+  # ember:
+  #   image: danlynn/ember-cli:latest
+  #   volumes:
+  #     - .:/frontend
+  #     - .bash_history:/root/.bash_history
+  #     - node_modules:/myapp/node_modules
+  #   tmpfs:
+  #     - /frontend/tmp
+  #   ports:
+  #     - "4200:4200"
+  #     - "7020:7020"
+  #     - "7357:7357"
+
   database:
     image: semtech/mu-authorization:0.6.0-beta.5
     environment:
@@ -29,32 +55,31 @@ services:
     ports:
       - "8000:80"
     environment:
-      DEFAULT_MU_AUTH_ALLOWED_GROUPS_HEADER: "[{\"variables\":[],\"name\":\"public\"}]"
+      DEFAULT_MU_AUTH_ALLOWED_GROUPS_HEADER: '[{"variables":[],"name":"public"}]'
       DEFAULT_ACCESS_CONTROL_ALLOW_ORIGIN_HEADER: "*"
     labels:
       - logging=true
 
   dispatcher:
-    image: semtech/mu-dispatcher:2.1.0-beta.2 
+    image: semtech/mu-dispatcher:2.1.0-beta.2
     volumes:
       - ./config/dispatcher:/config
     labels:
       - logging=true
 
   resources:
-    image: semtech/mu-cl-resources:1.21.1 
+    image: semtech/mu-cl-resources:1.21.1
     volumes:
       - ./config/resources:/config
     labels:
       - logging=true
 
   migrations:
-    image: semtech/mu-migrations-service:0.8.0 
+    image: semtech/mu-migrations-service:0.8.0
     links:
       - triplestore:database
     volumes:
       - ./config/migrations:/data/migrations
-
 
   aggregations:
     build: ./backend/aggregations
@@ -70,11 +95,11 @@ services:
 
   # module for sending delta messages
   # currently used by:
-  #   - tika-text-extractor, for saving text when a file is 
+  #   - tika-text-extractor, for saving text when a file is
   deltanotifier:
     image: semtech/mu-delta-notifier
     volumes:
-      - ./config/delta:/config 
+      - ./config/delta:/config
     labels:
       - logging=true
 
@@ -114,7 +139,7 @@ services:
   poc-ai-embed:
     image: lblod/poc-ai-embed:latest
     pull_policy: always
-    volumes: 
+    volumes:
       - ./config/poc-ai-embed/models:/models/
     container_name: lblod-embed-api
     depends_on:
@@ -156,3 +181,4 @@ services:
 
 volumes:
   model_store:
+  node_modules:
