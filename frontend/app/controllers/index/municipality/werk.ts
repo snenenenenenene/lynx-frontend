@@ -6,6 +6,7 @@ import { tracked } from '@glimmer/tracking';
 import axios from 'axios';
 import MunicipalitiesService from 'frontend/services/municipalities';
 import { GraphOptions } from 'index';
+type graphTitle = { text: string };
 
 export default class MunicipalityInfoWerk extends Controller {
   @service declare municipalities: MunicipalitiesService;
@@ -16,9 +17,9 @@ export default class MunicipalityInfoWerk extends Controller {
     `http://localhost:3000/werk/niet-werkende_werkzoekenden?gemeente=`,
   ];
 
-  @tracked activiteitsgraadTitle = { text: 'Activiteitsgraad' };
-  @tracked deeltijdswerkenTitle = { text: 'Deeltijdswerken' };
-  @tracked niet_werkende_werkzoekendenTitle = {
+  @tracked activiteitsgraadTitle: graphTitle = { text: 'Activiteitsgraad' };
+  @tracked deeltijdswerkenTitle: graphTitle = { text: 'Deeltijdswerken' };
+  @tracked niet_werkende_werkzoekendenTitle: graphTitle = {
     text: 'Niet werkende werkzoekenden',
   };
 

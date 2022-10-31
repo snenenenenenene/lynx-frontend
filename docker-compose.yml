@@ -27,6 +27,22 @@ services:
       - ./data/virtuoso:/data/virtuoso
     labels:
       - logging=true
+  gemeente-excel-extraction-backend:
+    build: ./gemeente-excel-extraction-tool
+    depends_on:
+      - couchdb
+    container_name: excel-extraction-tool
+    ports:
+      - "81:8080"
+
+  couchdb:
+    image: couchdb:3.2.0
+    container_name: couchdb
+    ports:
+      - "5984:5984"
+    environment:
+      COUCHDB_USER: admin
+      COUCHDB_PASSWORD: admin
   # ember:
   #   image: danlynn/ember-cli:latest
   #   volumes:
