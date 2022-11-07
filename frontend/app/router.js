@@ -6,6 +6,11 @@ export default class Router extends EmberRouter {
   rootURL = config.rootURL;
 }
 
+export type meow = {
+  lol:string;
+
+}
+
 Router.map(function () {
   this.route('four-oh-four', { path: '/*path' });
   this.route('index', { path: '/' }, function () {

@@ -9,7 +9,7 @@ import {
 import MunicipalitiesService from '../../../services/municipalities';
 import { action } from '@ember/object';
 import { GraphOptions } from 'index';
-import { infoTypes } from 'frontend/data/constants';
+import { infoTypes } from 'frontend/types';
 
 export default class MunicipalityInfo extends Controller {
   @service declare municipalities: MunicipalitiesService;
