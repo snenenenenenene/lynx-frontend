@@ -1,0 +1,49 @@
+{{page-title 'Info'}}
+<AuToolbar class='au-o-box' as |Group|>
+  <Group>
+    <AuHeading @skin='2'>
+      Gemeente
+      {{this.model}}
+    </AuHeading>
+  </Group>
+</AuToolbar>
+<div style='height: 100%;'>
+
+  <section
+    style='display:flex; justify-content:center; align-items:center; width:100%; height:50%; margin: 0; padding: 0px 40px;'
+  >
+    <div style='width: 33%;'>
+      <C3Chart
+        @data={{this.graphData1}}
+        @title={{this.graphTitle1}}
+        @color={{this.municipalities.color}}
+        @padding={{this.padding}}
+        @axis={{this.axis}}
+        @oninit={{this.setup}}
+      />
+    </div>
+    <div style='width: 33%;'>
+      <C3Chart
+        @data={{this.graphData2}}
+        @title={{this.graphTitle2}}
+        @padding={{this.padding}}
+        @color={{this.municipalities.color}}
+      />
+    </div>
+    <div style='width: 33%;'>
+      <C3Chart
+        @data={{this.graphData3}}
+        @title={{this.graphTitle3}}
+        @padding={{this.padding}}
+        @color={{this.municipalities.color}}
+        @axis={{this.axis}}
+      />
+    </div>
+  </section>
+  <div
+    class='--au-white'
+    style='display:flex; justify-content:center; align-items:center; width:100%; height:50%; padding: 0px 40px;'
+  >
+    {{outlet}}
+  </div>
+</div>

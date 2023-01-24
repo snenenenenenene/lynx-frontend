@@ -1,74 +1,56 @@
+# frontend
 
+This README outlines the details of collaborating on this Ember application.
+A short introduction of this app could easily go here.
 
-<p align="center">
-  <img src="resources/Crest_ABB.svg" width="250">
-</p>
+## Prerequisites
 
+You will need the following things properly installed on your computer.
 
-# LYNX
-#### Project for the Belgian Agency of Domestic Affairs.
-<br/>
+* [Git](https://git-scm.com/)
+* [Node.js](https://nodejs.org/) (with npm)
+* [Ember CLI](https://cli.emberjs.com/release/)
+* [Google Chrome](https://google.com/chrome/)
 
-# A brief summary of Lynx
+## Installation
 
-<p align="center"><img src="resources/mockup.png" style="size:60%;"></p>
+* `git clone <repository-url>` this repository
+* `cd frontend`
+* `npm install`
 
-<br/>
-LYNX is a linked open data web-based application developed for Agentschap Binnenlands Bestuur (ABB) in collaboration with Open Summer of Code. The web app simplifies the information hierarchy between citizens and their local governments in Flanders and Brussels with the final goal to improve communication transparency in tax information. As the amount of tax data becomes more abundant without a clear and organized structure, citizens find it too difficult to stay up to date with the tax decisions from their local municipality and many are discouraged to do their own research. With LYNX, citizens will be able to consult the latest tax decisions in their local municipalities, as well as compare tax-related information between other municipalities. Thanks to linked open data, this government service will increase citizen engagement in the decision-making process and further improve data-sharing culture between residents and their municipalities.
-<br/><br/>  
+## Running / Development
 
-# Setting up
-For setting up a local development environment, you first need to install a pair of dependencies. 
-  
-## Dependencies
-  
-  For the backend you will need:
-  - Docker: [Click here to install](https://docs.docker.com/get-docker/)
+* `ember serve`
+* Visit your app at [http://localhost:4200](http://localhost:4200).
+* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 
-  And for the frontend:
-  - NodeJS: [Click here to install](https://nodejs.org/en/download/)
-  
-<br/>
-  
-# Running and Deploying
-  
-  ## Backend
-  For running the backend you first need to change to the backend directory:  
-  ```
-  cd backend
-  ```  
-  
-  then instantiate the docker environment
-  ```
-  docker compose-up
-  ```
-  
-  After these instructions you will find the API on localhost:8890
-  
-  ## Frontend
-  For running the frontend you need to change to the frontend directory:
-  ```
-  cd frontend
-  ```  
-  
-  Then install the node dependencies.
-  ```
-  npm install
-  ```  
-  
-  After that you can start the frontend application
-  ```
-  npm start
-  ```  
-  
-  You will find the application on localhost:5000
-<br/><br/>
+### Code Generators
 
-# Credits
+Make use of the many generators for code, try `ember help generate` for more details
 
-<footer>
-	<p align="center"><img src="resources/vo_naakt.jpg"></p>br/>
-	This project was made possible thanks to the Flemish Government...  
-	<p align="center"><img src="resources/1532593594328.jpeg"/></p><br/>
-	As well as Open Summer of Code!  
-</footer>
+### Running Tests
+
+* `ember test`
+* `ember test --server`
+
+### Linting
+
+* `npm run lint`
+* `npm run lint:fix`
+
+### Building
+
+* `ember build` (development)
+* `ember build --environment production` (production)
+
+### Deploying
+
+Specify what it takes to deploy your app.
+
+## Further Reading / Useful Links
+
+* [ember.js](https://emberjs.com/)
+* [ember-cli](https://cli.emberjs.com/release/)
+* Development Browser Extensions
+  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
+  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)

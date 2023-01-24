@@ -1,0 +1,60 @@
+<div style='margin-top: 30px;'>
+  <AuDataTable
+    @content={{this.municipalities.municipalityData}}
+    @fields='title description'
+    @noDataMessage='Geen data'
+    as |t|
+  >
+    <t.content as |c|>
+      <c.header>
+        <AuDataTableThSortable
+          @field='title'
+          @label='Gemeente'
+          @class='data-table__header-title'
+        /><AuDataTableThSortable
+          @field='description'
+          @label=''
+          @class='data-table__header-title'
+        />
+      </c.header>
+      <c.body as |row|>
+        {{#if this.municipalities.query.title}}
+          {{#if (eq row.title this.municipalities.query.title)}}
+            <td
+              style='width: 200px;'
+              {{on 'click' this.municipalities.tableToggleModal}}
+            >
+              {{row.title}}
+            </td>
+            <td>
+
+              <AuLink
+                @model={{row.title}}
+                @route={{'index.municipality.decisions'}}
+                @icon='chevron-right'
+              >
+                Bekijk besluiten
+              </AuLink>
+            </td>
+          {{/if}}
+        {{else}}
+          <td
+            style='width: 200px;'
+            {{on 'click' this.municipalities.tableToggleModal}}
+          >
+            {{row.title}}
+          </td>
+          <td>
+            <AuLink
+              @model={{row.title}}
+              @route={{'index.municipality.decisions'}}
+              @icon='chevron-right'
+            >
+              Bekijk besluiten
+            </AuLink>
+          </td>
+        {{/if}}
+      </c.body>
+    </t.content>
+  </AuDataTable>
+</div>

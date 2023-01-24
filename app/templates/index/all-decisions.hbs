@@ -1,0 +1,165 @@
+{{page-title 'Decisions'}}
+<p style='display: none;'>{{this.initPage}}</p>
+
+<AuToolbar class='au-o-box' as |Group|>
+  <Group>
+    <ul class='au-c-list-horizontal au-c-list-horizontal--small'>
+      <li class='au-c-list-horizontal__item'>
+        <AuLink @linkRoute='index.dashboard' @icon='arrow-left'>
+          Dashboard
+        </AuLink>
+      </li>
+      <li class='au-c-list-horizontal__item'>
+        Alle Besluiten
+      </li>
+    </ul>
+  </Group>
+</AuToolbar>
+
+<div style='margin-top: 30px;'>
+  {{#if this.loading}}
+    <AuLoader @size='extra-large' />
+  {{else}}
+
+
+
+    <AuModal @modalOpen={{this.openModal}} @closeModal={{this.closeModal}}>
+
+      <:body>
+        <div
+          style='display: flex; flex-direction:column; width:100%; height:100%; justify-content:center; align-items:center;'
+        >
+          {{this.modalData}}
+        </div>
+      </:body>
+    </AuModal>
+
+
+
+
+    <AuDataTable
+      @content={{this.decisionData}}
+      @fields='title description'
+      @noDataMessage='Geen data'
+      @sort={{this.sort}}
+      as |t|
+    >
+
+      <t.menu as |menu|>
+        <menu.general>
+          <AuToolbar class="au-o-box" as |Group|>
+
+            <Group>
+              <AuHeading @skin="2">
+                Besluiten
+              </AuHeading>
+            </Group>
+
+            <Group class='au-c-toolbar__group--center'>
+              <AuInput
+                @placeholder='Gasprijzen'
+                aria-placeholder='Gasprijzen'
+                style='position: relative;'
+                @value={{this.searchQuery}}
+              />
+              <AuButton
+                style='display: flex; justify-content:center; align-items:center; height:35px;'
+                onclick={{action 'getSearchPredictionVectors'}}
+              >
+                {{#if this.loading}}
+                  <AuLoader @size='small' />
+                {{else}}
+                  <AuIcon @icon='search' @size='large' />
+                {{/if}}
+              </AuButton>
+            </Group>
+          </AuToolbar>
+
+
+          <AuToolbar>
+            <div class="au-c-pagination">
+              <div class="au-c-pagination__list-item">
+                <AuButton
+                  @skin="link"
+                  @icon="nav-left"
+                  @iconAlignment="left"
+                  onclick={{action 'loadPrev'}}
+                >
+                  Vorige pagina
+                </AuButton>
+              </div>
+              <div class="au-c-pagination__list-item">
+                <AuButton
+                  @skin="link"
+                  @icon="nav-right"
+                  @iconAlignment="right"
+                  onclick={{action 'loadNext'}}
+                >
+                  Volgende pagina
+                </AuButton>
+              </div>
+            </div>
+          </AuToolbar>
+
+        </menu.general>
+      </t.menu>
+
+      <t.content as |c|>
+        <c.header>
+
+          <AuDataTableThSortable
+            @field='name'
+            @label='Provincie'
+            @class='data-table__header-title'
+          />
+          <AuDataTableThSortable
+            @field='name'
+            @label='Bestuurseenheid'
+            @class='data-table__header-title'
+          />
+          <AuDataTableThSortable
+            @field='name'
+            @label='Type Bestuur'
+            @class='data-table__header-title'
+          />
+          <AuDataTableThSortable
+            @field='name'
+            @label='Inhoud'
+            @class='data-table__header-title'
+          />
+
+
+        </c.header>
+
+        <c.body as |row|>
+          <td>
+            <p>{{row.attributes.province}}</p>
+          </td>
+          <td>
+            <p>{{row.attributes.administrativeUnit}}</p>
+          </td>
+          <td>
+            <p>{{row.attributes.administrativeUnitClassification}}</p>
+          </td>
+
+          <AuButton
+            @skin="link"
+            @icon="nav-right"
+            @iconAlignment="right"
+            onclick={{action 'showModal' row.attributes.data.content }}
+          >
+          Bekijk inhoud
+          </AuButton>
+
+        </c.body>
+
+      </t.content>
+    </AuDataTable>
+
+
+
+
+
+  {{/if}}
+
+</div>

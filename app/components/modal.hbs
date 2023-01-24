@@ -1,0 +1,28 @@
+<AuModal
+  @modalOpen={{this.municipalities.showModal}}
+  @closeModal={{this.municipalities.closeModal}}
+>
+  <:title>{{this.municipalities.modalData.title}}</:title>
+  <:body>
+    <C3Chart
+      @data={{this.municipalities.modalGraphData}}
+      @title={{this.title}}
+      @padding={{this.padding}}
+      @color={{this.municipalities.color}}
+    />
+
+  </:body>
+  <:footer>
+    <AuButton @icon='unordered-list' @iconAlignment='right'>
+      <LinkTo
+        @route={{'index.municipality.index'}}
+        @onClick={{this.municipalities.closeModal}}
+        @model={{this.municipalities.modalData.title}}
+        style='color: white;'
+        @
+      >
+        Meer info
+      </LinkTo>
+    </AuButton>
+  </:footer>
+</AuModal>

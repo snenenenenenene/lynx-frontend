@@ -1,0 +1,26 @@
+<AuToaster @position='top' />
+<AuModal @modalOpen={{this.openModal}} @closeModal={{this.closeModal}}>
+  <:title>
+    <AuBrand />
+  </:title>
+  <:body>
+    <div
+      style='display: flex; flex-direction:column; width:100%; height:100%; justify-content:center; align-items:center;'
+    >
+      <section
+        style='display: flex; flex-direction:column; height:100%; justify-content:center; align-items:center; margin-bottom: 10px;'
+      >
+        <h1 class='au-u-h4' style='margin-bottom: 10px;'>Krijg notificaties
+          wanneer jouw gemeente een nieuwe beslissing maakt.</h1>
+        <p class='au-u-para au-u-muted' style='margin-bottom: 10px;'>Via mail of
+          notificaties!</p>
+        <AuInput
+          @placeholder='email'
+          @value={{this.email}}
+          style='width: 100%; margin-bottom: 10px;'
+        />
+        <AuButton onclick={{action 'clickButton'}}>Abonneer</AuButton>
+      </section>
+    </div>
+  </:body>
+</AuModal>
