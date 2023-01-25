@@ -8,13 +8,10 @@ interface MapArgs {}
 
 export default class MapComponent extends Component<MapArgs> {
   @service declare municipalities: MunicipalitiesService;
-
   @tracked geoData = municipalityGeoJSONData;
-
   @action onLocationfound(e: any) {
     console.log(e);
   }
-
   @action style() {
     return {
       weight: 1,
@@ -23,7 +20,6 @@ export default class MapComponent extends Component<MapArgs> {
       fillOpacity: 0.2,
     };
   }
-
   @action onEachFeature(feature: any, layer: any) {
     layer.on('click', this.municipalities.toggleModal);
   }

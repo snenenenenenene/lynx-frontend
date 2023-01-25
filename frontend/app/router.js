@@ -7,9 +7,8 @@ export default class Router extends EmberRouter {
 }
 
 export type meow = {
-  lol:string;
-
-}
+  lol: string,
+};
 
 Router.map(function () {
   this.route('four-oh-four', { path: '/*path' });

@@ -6,9 +6,11 @@ import { action } from '@ember/object';
 import { revenuePerCategory } from '../helpers/apiInterface';
 import { GraphOptions, Municipality } from 'index';
 import emberData__store from '@ember-data/store';
+import RouterService from '@ember/routing/router-service';
 
 export default class MunicipalitiesService extends Service {
   @service store: emberData__store;
+  @service router: RouterService;
   @tracked color = {
     pattern: ['#003B8E', '#FFA10A', '#FFE615'],
   };
@@ -30,6 +32,10 @@ export default class MunicipalitiesService extends Service {
       (municipality: Municipality) =>
         municipality.title.toUpperCase() === municipalityName.toUpperCase()
     );
+  }
+
+  @action goToMunicipality() {
+    this.router.transitionTo('index.municipality.index');
   }
 
   @action refreshModalChart(municipalityName: string): void {

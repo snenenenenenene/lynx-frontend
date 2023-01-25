@@ -1,13 +1,30 @@
-FROM madnificent/ember:3.28.5 as builder
 
-LABEL maintainer="info@redpencil.io"
 
+FROM node:12.15-alpine
+
+RUN apk add -no-cache yarn git
+RUN yarn global add ember-cli@3.16.0
+RUN yarn global add serve@11.1.0
+
+RUN mkdir /app && \
+    mkdir /dist
+COPY package.json yern.lock /app/
 WORKDIR /app
-COPY package.json .
-RUN npm install
-COPY . .
-RUN ember build -prod
+RUN yarn
 
-FROM semtech/static-file-service:0.2.0
+ARG instance
+ENV INSTANCE $instance
 
-COPY --from=builder /app/dist /data
+ARG API_URI
+ENV API_URI $API_URI
+
+COPY . /app
+RUN ember build --environment=production && \
+    cp -a /app/dist/. /dist/ && \
+    cp serve.json /dist/ && \
+    rm -rf /app
+
+WORKDIR /dist
+
+EXPOSE 5000
+ENTRYPOINT ["serve"]

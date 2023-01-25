@@ -16,7 +16,14 @@ module.exports = function (defaults) {
       sourcemap: true,
     },
     fingerprint: {
-      exclude: ['public/assets'],
+      exclude: [
+        'public/assets',
+        'images/layers-2x.png',
+        'images/layers.png',
+        'images/marker-icon-2x.png',
+        'images/marker-icon.png',
+        'images/marker-shadow.png',
+      ],
     },
   });
   return app.toTree();

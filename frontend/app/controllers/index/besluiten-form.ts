@@ -38,6 +38,7 @@ export default class BesluitenForm extends Controller {
   }
 
   @action async submitDecision() {
+    console.log(this.query.title);
     await axios
       .post(
         `http://localhost:3000/municipality/${this.query.title.toLowerCase()}/besluiten`,
@@ -67,7 +68,7 @@ export default class BesluitenForm extends Controller {
       })
       .catch((err) => {
         console.log(err);
-        this.toaster.success(`Er is iets fout gegaan`, 'Error');
+        this.toaster.error(`Er is iets fout gegaan`, 'Error');
       });
   }
 }

@@ -1,0 +1,16 @@
+version: "3.4"
+
+services:
+  identifier:
+    environment:
+      VIRTUAL_HOST: "lynx.abb.be"
+      LETSENCRYPT_HOST: "lynx.abb.be"
+      LETSENCRYPT_EMAIL: "sennebels@gmail.com"
+    networks:
+      - default
+      - proxy
+
+networks:
+  proxy:
+    external:
+      name: letsencrypt_default
