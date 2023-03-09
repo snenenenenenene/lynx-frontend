@@ -1,30 +1,22 @@
+# FROM node:12.15-alpine
 
+FROM alpine:3.16
 
-FROM node:12.15-alpine
+ENV NODE_VERSION 19.4.0
+LABEL maintainer="sennebels@gmail.com"
+EXPOSE 4200
 
-RUN apk add -no-cache yarn git
-RUN yarn global add ember-cli@3.16.0
-RUN yarn global add serve@11.1.0
+RUN apk add --no-cache yarn git
+RUN yarn global add ember-cli@4.4.0
 
-RUN mkdir /app && \
-    mkdir /dist
-COPY package.json yern.lock /app/
-WORKDIR /app
+RUN mkdir /lynx-frontend
+WORKDIR /lynx-frontend
+COPY . .
+
+WORKDIR /lynx-frontend/frontend
+
 RUN yarn
 
-ARG instance
-ENV INSTANCE $instance
-
-ARG API_URI
-ENV API_URI $API_URI
-
-COPY . /app
-RUN ember build --environment=production && \
-    cp -a /app/dist/. /dist/ && \
-    cp serve.json /dist/ && \
-    rm -rf /app
-
-WORKDIR /dist
-
-EXPOSE 5000
-ENTRYPOINT ["serve"]
+# CMD ["ember", "serve", "--port 4200"]
+# CMD ["ember", "s"]
+CMD ["yarn", "start"]

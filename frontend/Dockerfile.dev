@@ -3,11 +3,10 @@
 FROM alpine:3.16
 
 ENV NODE_VERSION 19.4.0
-
+LABEL maintainer="sennebels@gmail.com"
 EXPOSE 4200
 
 RUN apk add --no-cache yarn git
-# RUN npm install -g ember-cli@3.16.0
 RUN yarn global add ember-cli@4.4.0
 
 RUN mkdir /lynx-frontend

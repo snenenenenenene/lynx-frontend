@@ -1,0 +1,33 @@
+
+
+FROM node:12.15-alpine
+
+RUN apk add yarn git
+LABEL maintainer="sennebels@gmail.com"
+
+
+RUN yarn global add ember-cli@3.16.0
+RUN yarn global add serve@11.1.0
+
+RUN mkdir /app && \
+    mkdir /dist
+COPY package.json yarn.lock /app/
+WORKDIR /app
+RUN yarn
+
+ARG instance
+ENV INSTANCE $instance
+
+ARG API_URI
+ENV API_URI $API_URI
+
+COPY . /app
+RUN ember build --environment=production && \
+    cp -a /app/dist/. /dist/ && \
+    cp serve.json /dist/ && \
+    rm -rf /app
+
+WORKDIR /dist
+
+EXPOSE 5000
+ENTRYPOINT ["serve"]

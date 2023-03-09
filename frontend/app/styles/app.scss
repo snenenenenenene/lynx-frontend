@@ -17,6 +17,16 @@ $paddingValue: 1vh;
   display: none;
 }
 
+.sidebar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 200px;
+  height: 100px;
+  // width: 20%;
+  // height: 100%;
+}
+
 body {
   // overflow-x: hidden;
   height: 100vh;
@@ -74,7 +84,6 @@ body {
       width: 100%;
     }
   }
-
   .au-c-app {
     overflow: visible;
     height: fit-content;
