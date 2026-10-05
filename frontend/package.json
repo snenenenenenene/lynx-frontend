@@ -112,7 +112,7 @@
   },
   "dependencies": {
     "@types/leaflet": "^1.7.11",
-    "axios": "^0.27.2",
+    "axios": "^0.34.0",
     "ember-functions-as-helper-polyfill": "^2.1.1",
     "fetch": "^1.1.0",
     "highcharts": "^10.2.0",
